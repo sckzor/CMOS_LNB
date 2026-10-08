@@ -190,7 +190,7 @@ This current limited ring stage is used to form the core oscillator in the desig
 | M28 | pfet | 5.00u | 0.28u | Thin (3v3) |
 | M30 | pfet | 5.00u | 0.28u | Thin (3v3) |
 | M31 | nfet | 2.50u | 0.28u | Thin (3v3) |
-| C1 | cap_mim_2f0fF | 2u | 5u | - |
+| C1 | cap_mim_2f0fF | 2u | 2u | - |
 
 
 #### Capacitively Loaded Ring Stage
@@ -206,7 +206,7 @@ This is a capacitively loaded buffer stage for the ring oscillator.  It ensures 
 |-------|-----|-------|--------|-------------------|
 | M29 | nfet | 2.50u | 0.28u | Thin (3v3) |
 | M28 | pfet | 5.00u | 0.28u | Thin (3v3) |
-| C1 | cap_mim_2f0fF | 7u | 5u | - |
+| C1 | cap_mim_2f0fF | 2u | 2u | - |
 
 ### Biasing Reference (Self Referenced)
 
