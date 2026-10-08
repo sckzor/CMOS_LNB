@@ -1,6 +1,6 @@
 <Qucs Schematic 26.1.1>
 <Properties>
-  <View=-720,85,1215,1255,0.990641,135,166>
+  <View=-528,252,889,1045,1.11237,0,0>
   <Grid=10,10,1>
   <DataSet=RingInverterMkII.dat>
   <DataDisplay=RingInverterMkII.dpl>
@@ -41,13 +41,13 @@
   <Port Input 1 -20 650 -23 12 0 0 "2" 1 "analog" 0>
   <Port Output 1 340 650 4 12 1 2 "3" 1 "analog" 0>
   <GND * 1 240 790 0 0 0 0>
-  <MOS_SPICE X29 1 120 730 -26 34 0 0 "X" 1 "4" 1 "nmos" 1 "nfet_03v3 L=0.28u W=2.50u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0" 0 "" 0 "" 0 "" 0 "" 0>
   <MOS_SPICE X28 1 120 570 -26 34 0 0 "X" 1 "4" 1 "pmos" 1 "pfet_03v3 L=0.28u W=10.00u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0" 0 "" 0 "" 0 "" 0 "" 0>
   <MOS_SPICE X30 1 120 410 -26 34 0 0 "X" 1 "4" 1 "pmos" 1 "pfet_03v3 L=0.28u W=10.00u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0" 0 "" 0 "" 0 "" 0 "" 0>
-  <MOS_SPICE X31 1 120 870 -26 34 0 0 "X" 1 "4" 1 "nmos" 1 "nfet_03v3 L=0.28u W=2.50u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0" 0 "" 0 "" 0 "" 0 "" 0>
   <Port PBias 1 10 410 -23 12 0 0 "4" 1 "analog" 0>
   <Port NBias 1 10 870 -23 12 0 0 "5" 1 "analog" 0>
-  <C_SPICE C1 1 240 730 17 -26 0 1 "cap_mim_2f0fF c_width=2u c_length=5u" 0 "" 0 "" 0 "" 0 "" 0 "2" 1 "X" 1>
+  <C_SPICE C1 1 240 730 17 -26 0 1 "cap_mim_2f0fF c_width=2u c_length=2u" 0 "" 0 "" 0 "" 0 "" 0 "2" 1 "X" 1>
+  <MOS_SPICE X29 1 120 730 -26 34 0 0 "X" 1 "4" 1 "nmos" 1 "nfet_03v3 L=0.28u W=5.00u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0" 0 "" 0 "" 0 "" 0 "" 0>
+  <MOS_SPICE X31 1 120 870 -26 34 0 0 "X" 1 "4" 1 "nmos" 1 "nfet_03v3 L=0.28u W=5.00u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0" 0 "" 0 "" 0 "" 0 "" 0>
 </Components>
 <Wires>
   <120 920 120 980 "" 0 0 0 "">
@@ -77,7 +77,7 @@
   <120 900 120 920 "" 0 0 0 "">
   <160 870 160 920 "" 0 0 0 "">
   <140 870 160 870 "" 0 0 0 "">
-  <90 410 10 410 "" 0 0 0 "">
+  <10 410 90 410 "" 0 0 0 "">
   <10 870 90 870 "" 0 0 0 "">
 </Wires>
 <Diagrams>

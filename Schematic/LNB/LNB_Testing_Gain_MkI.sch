@@ -1,6 +1,6 @@
 <Qucs Schematic 26.1.1>
 <Properties>
-  <View=-8621,-524,7398,1532,0.693433,5511,90>
+  <View=-709,-611,1868,829,0.611801,1,0>
   <Grid=10,10,1>
   <DataSet=LNB_Testing_Gain_MkI.dat>
   <DataDisplay=LNB_Testing_Gain_MkI.dpl>
@@ -36,11 +36,11 @@
   <R R1 1 940 -30 15 -26 0 1 "50 Ohm" 1 "26.85" 0 "0.0" 0 "0.0" 0 "26.85" 0 "US" 0>
   <GND * 1 940 0 0 0 0 0>
   <Idc I3 1 820 -180 18 -26 1 3 "20 uA" 1>
-  <Idc I1 1 530 -180 18 -26 1 3 "2000 uA" 1>
   <NutmegEq NutmegEq1 1 1220 380 -31 16 0 0 "FFT1" 1 "p_in_db=dB(v(input)) - (10 * log10(50)) + 27" 1 "p_out_db=dB(v(output)) - (10 * log10(50)) + 27" 1>
   <SpicePar SpicePar1 1 -156 163 -29 16 0 0 "sw_stat_global=0" 1 "sw_stat_mismatch=0" 1 "fnoicor=1" 1 "f_val=1.7e9" 1>
   <Pac P2 1 220 -30 -106 -26 1 1 "1" 1 "50 Ohm" 1 "-30 dBm" 0 "2.0e9" 0 "26.85" 0 "true" 0 "false" 0>
   <SpiceLib SpiceLib5 1 -640 -311 -14 16 0 0 "/foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice" 1 "typical" 1>
+  <Idc I1 1 530 -180 18 -26 1 3 "500 uA" 1>
 </Components>
 <Wires>
   <200 -130 350 -130 "" 0 0 0 "">
@@ -75,11 +75,10 @@
 	<"ngspice/ac.v(lo)" #0000ff 0 3 0 0 0>
 	  <Mkr 9.73951e+08 93 -197 3 0 0>
   </Rect>
-  <Rect 90 743 956 607 3 #c0c0c0 1 00 0 0 5e+08 5e+09 0 -60 10 0 1 -1 0.2 1 315 0 225 1 0 0 "" "" "">
+  <Rect 70 763 956 607 3 #c0c0c0 1 00 0 0 5e+08 5e+09 0 -60 10 0 1 -1 0.2 1 315 0 225 1 0 0 "" "" "">
 	<"ngspice/ac.p_out_db" #ff0000 0 3 0 0 0>
 	  <Mkr 1.9999e+09 635 -371 3 0 0>
-	  <Mkr 1.16094e+09 292 -451 3 0 0>
-	  <Mkr 8.38958e+08 210 -527 3 0 0>
+	  <Mkr 8.0196e+08 253 -516 3 0 0>
 	<"ngspice/ac.p_in_db" #0000ff 1 3 0 0 0>
 	  <Mkr 1.9999e+09 565 -469 3 0 0>
   </Rect>

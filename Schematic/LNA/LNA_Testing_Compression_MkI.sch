@@ -1,6 +1,6 @@
 <Qucs Schematic 26.1.1>
 <Properties>
-  <View=-1598,-608,2734,1814,0.644477,372,124>
+  <View=-999,-451,1446,916,0.644477,0,0>
   <Grid=10,10,1>
   <DataSet=LNA_Testing_Compression_MkI.dat>
   <DataDisplay=LNA_Testing_Compression_MkI.dpl>
@@ -62,8 +62,8 @@
 <Diagrams>
   <Rect 151 875 951 549 3 #c0c0c0 1 00 1 1 0.5 4 1 -12.3498 5 15 1 -1 0.5 1 315 0 225 1 0 0 "" "" "">
 	<"ngspice/ac.gain@ac.power_out" #ff00ff 0 3 0 0 0>
-	  <Mkr -39.2831 53 -334 3 0 0>
-	  <Mkr -19.9536 433 -326 3 0 0>
+	  <Mkr -39.2831/0/0 53 -334 3 0 0>
+	  <Mkr -19.9536/0/0 433 -326 3 0 0>
   </Rect>
 </Diagrams>
 <Paintings>
