@@ -208,7 +208,7 @@ This is a capacitively loaded buffer stage for the ring oscillator.  It ensures 
 | M28 | pfet | 5.00u | 0.28u | Thin (3v3) |
 | C1 | cap_mim_2f0fF | 2u | 2u | - |
 
-### Biasing Reference (Self Referenced)
+### Biasing (Self Referenced)
 
 ![Beta Multiplier](Images/QUCS_beta_mult.png)
 
