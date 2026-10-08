@@ -285,11 +285,12 @@ The output control for the reference LDOs is provided by the above nMOS error am
 
 Prior to the preliminary design review, this design was characterized at the typical corners, as well as the slow and fast corners.  Performance is mostly hindered by lots of LO feed through due to poor local oscillator quality.  The addition of the mixer and oscillator raise many questions about the stability of the design, especially with unaccounted for electromagnetic coupling in effect.
 
+Oscillator improvements have resulted in this likely being better than the specifications below.
 
 | Description              | Minimum | Typical | Maximum | Simulation Results                                                                                |
 | ------------------------ | ------- | ------- | ------- | ------------------------------------------------------------------------------------------------- |
 | RF Frequency Range       | 300 MHz | 1.7 GHz | 2 GHz   | [Gain Test Bench](Schematic/LNB/Characterization.md#gain-test-bench) |
-| LO Frequency Range       | 300 MHz | 1.7 GHz | 2 GHz   | [Frequency Test Bench](Schematic/Oscillator/Characterization.md#frequency-test-bench) |
+| LO Frequency Range       | 400 MHz | 1.7 GHz | 2 GHz   | [Frequency Test Bench](Schematic/Oscillator/Characterization.md#frequency-test-bench) |
 | Power Gain               | -1 dB   | 5 dB    | 9 dB    | [Gain Test Bench](Schematic/LNB/Characterization.md#gain-test-bench) |
 | Noise Figure             | --      | --      | --      | This is hard to calculate, a custom python script needs to be written |
 | Input Return Loss (S11)  | -13 dB  | -15 dB  | -17 dB  | [S Parameter Test Bench](Schematic/LNB/Characterization.md#s-parameter-test-bench) |
