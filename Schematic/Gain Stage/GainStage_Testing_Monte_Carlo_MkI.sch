@@ -1,6 +1,6 @@
 <Qucs Schematic 26.1.1>
 <Properties>
-  <View=-2937,-1477,1866,1176,0.711729,1488,685>
+  <View=-539,-275,1580,1028,1.08575,145,307>
   <Grid=10,10,1>
   <DataSet=GainStage_Testing_Monte_Carlo_MkI.dat>
   <DataDisplay=GainStage_Testing_Monte_Carlo_MkI.dpl>
@@ -30,40 +30,46 @@
   <MOS_SPICE X1 1 -140 300 0 34 1 2 "X" 1 "4" 1 "pmos" 1 "pfet_03v3 L=0.5u W=0.3u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0" 0 "" 0 "" 0 "" 0 "" 0>
   <Idc I1 1 -140 470 -77 -26 0 3 "10 uA" 1>
   <GND * 1 -140 500 0 0 0 0>
-  <Vdc V2 1 330 450 18 -26 0 1 "1.7 V" 1>
+  <Vdc V2 1 350 450 18 -26 0 1 "1.7 V" 1>
   <GND * 1 0 450 0 0 0 0>
-  <GND * 1 330 480 0 0 0 0>
+  <GND * 1 350 480 0 0 0 0>
   <Vdc V3 1 0 420 18 -26 0 1 "1.7 V" 1>
-  <Vdc V4 1 360 300 -26 -56 0 2 "2.5 V" 1>
-  <GND * 1 410 320 0 0 0 0>
-  <.CUSTOMSIM CUSTOM1 1 530 -350 0 31 0 0 "let idx = 0\n\nset appendwrite\n\nset wr_vecnames\nset wr_singlescale \n\nwhile idx <= 3000\n  \n  reset\n  \n  op\n  let out = v(output)\n  wrdata '/foss/designs/LNA/MkIII/Schematic/Gain Stage/mc_data.csv' out\n  unset wr_vecnames\n  reset\n  \n  let idx = idx + 1\nend\n\nunset appendwrite\n\n" 1 "" 0 "" 0>
+  <Vdc V4 1 380 300 -26 -56 0 2 "2.5 V" 1>
+  <GND * 1 430 320 0 0 0 0>
+  <.CUSTOMSIM CUSTOM1 0 530 -350 0 31 0 0 "let idx = 0\n\nset appendwrite\n\nset wr_vecnames\nset wr_singlescale \n\nwhile idx <= 3000\n  \n  reset\n  \n  op\n  let out = v(output)\n  wrdata '/foss/designs/LNA/MkIII/Schematic/Gain Stage/mc_data.csv' out\n  unset wr_vecnames\n  reset\n  \n  let idx = idx + 1\nend\n\nunset appendwrite\n\n" 1 "" 0 "" 0>
+  <NutmegEq NutmegEq1 1 360 550 -31 16 0 0 "ALL" 1 "I_3V3_mA=-i(V1) * 1000" 1>
 </Components>
 <Wires>
   <-290 190 -290 240 "" 0 0 0 "">
-  <-290 190 -140 190 "" 0 0 0 "">
   <200 190 200 260 "" 0 0 0 "">
   <-140 330 -140 350 "" 0 0 0 "">
   <-110 300 -90 300 "" 0 0 0 "">
   <-90 300 -90 350 "" 0 0 0 "">
   <-140 350 -90 350 "" 0 0 0 "">
-  <-140 270 -140 260 "" 0 0 0 "">
-  <-140 260 -170 260 "" 0 0 0 "">
-  <-140 260 -140 190 "" 0 0 0 "">
-  <-170 300 -170 260 "" 0 0 0 "">
+  <-140 260 -140 270 "" 0 0 0 "">
+  <-170 260 -140 260 "" 0 0 0 "">
+  <-140 190 -140 260 "" 0 0 0 "">
+  <-170 260 -170 300 "" 0 0 0 "">
   <-170 300 -160 300 "" 0 0 0 "">
-  <120 300 -90 300 "" 0 0 0 "">
-  <200 190 -140 190 "" 0 0 0 "">
-  <120 350 0 350 "" 0 0 0 "">
-  <-140 440 -140 350 "" 0 0 0 "">
-  <280 400 330 400 "" 0 0 0 "">
-  <330 400 330 420 "" 0 0 0 "">
-  <0 390 0 350 "" 0 0 0 "">
-  <330 300 280 300 "" 0 0 0 "">
-  <390 300 410 300 "" 0 0 0 "">
-  <410 300 410 320 "" 0 0 0 "">
-  <280 350 350 350 "output" 360 370 50 "">
+  <-90 300 120 300 "" 0 0 0 "">
+  <-140 190 200 190 "" 0 0 0 "">
+  <0 350 120 350 "" 0 0 0 "">
+  <-140 350 -140 440 "" 0 0 0 "">
+  <350 400 350 420 "" 0 0 0 "">
+  <0 350 0 390 "" 0 0 0 "">
+  <280 300 350 300 "" 0 0 0 "">
+  <410 300 430 300 "" 0 0 0 "">
+  <430 300 430 320 "" 0 0 0 "">
+  <280 350 350 350 "" 0 0 0 "">
+  <-290 190 -140 190 "" 0 0 0 "">
+  <280 400 350 400 "" 0 0 0 "">
+  <350 350 350 350 "output" 380 370 0 "">
 </Wires>
 <Diagrams>
+  <Tab 670 589 490 289 3 #c0c0c0 1 00 1 0 1 1 1 0 1 1 1 0 1 1 315 0 225 1 0 0 "" "" "">
+	<"ngspice/v(output)" #0000ff 0 3 1 0 0>
+	<"ngspice/i_3v3_ma" #0000ff 0 3 0 0 0>
+  </Tab>
 </Diagrams>
 <Paintings>
   <Text 310 -440 20 #ff0000 10 "You need to update the file path in this \nNutmeg block to get the CSV to export!">

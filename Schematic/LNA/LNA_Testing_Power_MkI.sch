@@ -1,6 +1,6 @@
 <Qucs Schematic 26.1.1>
 <Properties>
-  <View=-982,-391,1380,929,0.667369,0,0>
+  <View=-1833,-451,1624,1496,0.807516,920,218>
   <Grid=10,10,1>
   <DataSet=LNA_Testing_Power_MkI.dat>
   <DataDisplay=LNA_Testing_Power_MkI.dpl>
@@ -35,9 +35,9 @@
   <R R1 1 620 -110 -26 15 0 0 "50 Ohm" 1 "26.85" 0 "0.0" 0 "0.0" 0 "26.85" 0 "US" 0>
   <Pac P1 1 150 -40 18 -26 0 1 "1" 1 "50 Ohm" 1 "-20 dBm" 0 "1.7 GHz" 0 "26.85" 0 "true" 0 "false" 0>
   <.TR TR1 1 -656 143 0 50 0 0 "lin" 1 "0" 1 "0.02 us" 1 "2000" 0 "Trapezoidal" 0 "2" 0 "1 ns" 0 "1e-16" 0 "150" 0 "0.001" 0 "1 pA" 0 "1 uV" 0 "26.85" 0 "1e-3" 0 "1e-6" 0 "1" 0 "CroutLU" 0 "no" 0 "yes" 0 "0" 0>
-  <NutmegEq NutmegEq1 1 -390 310 -31 16 0 0 "ALL" 1 "pow=I(V2) * -3.3" 1 "avg_pow=mean(pow)" 1>
   <SpiceLib SpiceLib5 1 -640 -311 -14 16 0 0 "/foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice" 1 "FS" 1>
   <Idc I1 1 490 -220 -77 -26 0 3 "20 uA" 1>
+  <NutmegEq NutmegEq1 1 -390 310 -31 16 0 0 "ALL" 1 "curr_mA=I(V2) * -1000" 1 "pow=I(V2) * -3.3" 1 "avg_pow=mean(pow)" 1 "avg_curr=mean(curr_mA)" 1>
 </Components>
 <Wires>
   <40 -160 40 -140 "" 0 0 0 "">
@@ -54,17 +54,21 @@
   <650 -110 700 -110 "" 0 0 0 "">
   <700 -110 700 -100 "" 0 0 0 "">
   <470 -160 490 -160 "" 0 0 0 "">
-  <490 -160 490 -190 "" 0 0 0 "">
-  <490 -250 490 -300 "" 0 0 0 "">
-  <490 -300 390 -300 "" 0 0 0 "">
+  <490 -190 490 -160 "" 0 0 0 "">
+  <490 -300 490 -250 "" 0 0 0 "">
+  <390 -300 490 -300 "" 0 0 0 "">
 </Wires>
 <Diagrams>
   <Rect -82 599 702 449 3 #c0c0c0 1 00 1 0 2e-09 2e-08 1 0.00980008 0.0005 0.0145 1 -1 0.2 1 315 0 225 1 0 0 "" "" "">
 	<"ngspice/tran.pow" #0000ff 0 3 0 0 0>
   </Rect>
-  <Tab 680 430 300 200 3 #c0c0c0 1 00 1 0 1 1 1 0 1 1 1 0 1 1 315 0 225 1 0 0 "" "" "">
+  <Tab 680 427 413 197 3 #c0c0c0 1 00 1 0 1 1 1 0 1 1 1 0 1 1 315 0 225 1 0 0 "" "" "">
 	<"ngspice/tran.avg_pow" #0000ff 0 3 1 0 0>
+	<"ngspice/tran.avg_curr" #0000ff 0 3 1 0 0>
   </Tab>
+  <Rect -82 1129 702 449 3 #c0c0c0 1 00 1 0 2e-09 2e-08 1 0.0195527 0.002 0.0331832 1 -1 0.2 1 315 0 225 1 0 0 "" "" "">
+	<"ngspice/tran.curr_ma" #ff0000 0 3 0 0 0>
+  </Rect>
 </Diagrams>
 <Paintings>
 </Paintings>

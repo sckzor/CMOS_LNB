@@ -1,6 +1,6 @@
 <Qucs Schematic 26.1.1>
 <Properties>
-  <View=-2498,-789,4149,2329,0.508224,933,71>
+  <View=-482,-547,2619,1186,0.508224,0,0>
   <Grid=10,10,1>
   <DataSet=LNA_Testing_S_Parameters_MkII.dat>
   <DataDisplay=LNA_Testing_S_Parameters_MkII.dpl>
@@ -40,6 +40,7 @@
   <GND * 1 660 -60 0 0 0 0>
   <C C2 1 590 -140 -26 17 1 2 "10 pF" 1 "" 0 "neutral" 0>
   <Vdc V2 1 330 -310 -26 18 0 0 "3.3 V" 1>
+  <NutmegEq NutmegEq4 1 1660 190 -31 16 0 0 "ALL" 1 "I_3V3_mA=-i(V2) * 1000" 1>
 </Components>
 <Wires>
   <240 -190 370 -190 "" 0 0 0 "">
@@ -90,6 +91,9 @@
 	  <Mkr 9.30462e+08 133 -156 3 0 0>
 	  <Mkr 1.7092e+09 253 -213 3 0 0>
 	  <Mkr 2.01065e+09 347 -286 3 0 0>
+  </Rect>
+  <Rect 1429 1238 580 368 3 #c0c0c0 1 00 1 0 5e+08 5e+09 1 -30.3586 100 511.01 1 -1 0.2 1 315 0 225 1 0 0 "" "" "">
+	<"ngspice/ac.i_3v3_ma" #0000ff 0 3 0 0 0>
   </Rect>
 </Diagrams>
 <Paintings>

@@ -1,0 +1,16 @@
+* Qucs 26.1.1  /foss/designs/LNA/MkIII/Schematic/Gain Stage/GainStage_LVSTest.sch
+.INCLUDE "/foss/tools/qucs-s/share/qucs-s/xspice_cmlib/include/ngspice_mathfunc.inc"
+.INCLUDE "/foss/pdks/ciel/gf180mcu/versions/026824c7969ce6f4fc9678e6ca04b0a06a596c4b/gf180mcuD/libs.tech/ngspice/design.ngspice"
+.LIB "/foss/pdks/ciel/gf180mcu/versions/026824c7969ce6f4fc9678e6ca04b0a06a596c4b/gf180mcuD/libs.tech/ngspice/sm141064.ngspice" bjt_typical
+.LIB "/foss/pdks/ciel/gf180mcu/versions/026824c7969ce6f4fc9678e6ca04b0a06a596c4b/gf180mcuD/libs.tech/ngspice/sm141064.ngspice" cap_mim
+.LIB "/foss/pdks/ciel/gf180mcu/versions/026824c7969ce6f4fc9678e6ca04b0a06a596c4b/gf180mcuD/libs.tech/ngspice/sm141064.ngspice" mimcap_typical
+.LIB "/foss/pdks/ciel/gf180mcu/versions/026824c7969ce6f4fc9678e6ca04b0a06a596c4b/gf180mcuD/libs.tech/ngspice/sm141064.ngspice" res_typical
+.LIB "/foss/pdks/ciel/gf180mcu/versions/026824c7969ce6f4fc9678e6ca04b0a06a596c4b/gf180mcuD/libs.tech/ngspice/sm141064.ngspice" typical
+.PARAM sw_stat_global = 0
+.PARAM sw_stat_mismatch = 0
+.SUBCKT GainStage Input Output VDD CBias LBias GND
+X1 Output  CBias  _net0  GND nfet_03v3 L=0.28u W=20.0u nf=10 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+X2 _net0  Input  GND  GND nfet_03v3 L=0.28u W=20.0u nf=10 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+XR1 Output  _net1  GND ppolyf_s r_width=1u r_length=10u
+X3 VDD  LBias  _net1  VDD pfet_03v3 L=0.28u W=20.0u nf=10 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0
+.ENDS

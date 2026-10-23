@@ -49,11 +49,11 @@
   <Port TBias 1 -50 -140 4 -50 0 2 "6" 1 "analog" 0>
   <GND * 1 100 390 0 0 0 0>
   <Sub SUB1 1 -170 -190 -26 78 0 0 "./Schematic/Error Amplifier/ErrorAmplifierPMOSMkII.sch" 0>
-  <MOS_SPICE X15 1 100 -190 -26 34 0 0 "X" 1 "4" 1 "pmos" 1 "pfet_03v3 L=0.28u W=20.0u nf=10 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0" 0 "" 0 "" 0 "" 0 "" 0>
-  <MOS_SPICE X13 1 100 90 -26 34 0 0 "X" 1 "4" 1 "nmos" 1 "nfet_03v3 L=0.28u W=20.0u nf=10 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0" 0 "" 0 "" 0 "" 0 "" 0>
-  <MOS_SPICE X16 1 100 250 -26 34 0 0 "X" 1 "4" 1 "nmos" 1 "nfet_03v3 L=0.28u W=20.0u nf=10 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0" 0 "" 0 "" 0 "" 0 "" 0>
   <GND * 1 50 0 0 0 0 0>
-  <R_SPICE R1 1 100 -20 15 -26 0 1 "ppolyf_s r_width=1u r_length=10u" 0 "" 0 "" 0 "" 0 "" 0 "3" 1 "X" 1>
+  <MOS_SPICE X15 1 100 -190 -26 34 0 0 "X" 1 "4" 1 "pmos" 1 "pfet_03v3 L=0.28u W=10.0u nf=5 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0" 1 "" 0 "" 0 "" 0 "" 0>
+  <MOS_SPICE X13 1 100 90 -26 34 0 0 "X" 1 "4" 1 "nmos" 1 "nfet_03v3 L=0.28u W=10.0u nf=5 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0" 1 "" 0 "" 0 "" 0 "" 0>
+  <MOS_SPICE X16 1 100 250 -26 34 0 0 "X" 1 "4" 1 "nmos" 1 "nfet_03v3 L=0.28u W=10.0u nf=5 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0" 1 "" 0 "" 0 "" 0 "" 0>
+  <R_SPICE R1 1 100 -20 15 -26 0 1 "ppolyf_s r_width=2u r_length=5u" 0 "" 0 "" 0 "" 0 "" 0 "3" 1 "X" 1>
 </Components>
 <Wires>
   <100 280 100 390 "" 0 0 0 "">
