@@ -1,6 +1,6 @@
 <Qucs Schematic 26.1.1>
 <Properties>
-  <View=-1833,-451,1624,1496,0.807516,920,218>
+  <View=-666,-665,2330,1131,0.543492,52,0>
   <Grid=10,10,1>
   <DataSet=LNA_Testing_Power_MkI.dat>
   <DataDisplay=LNA_Testing_Power_MkI.dpl>

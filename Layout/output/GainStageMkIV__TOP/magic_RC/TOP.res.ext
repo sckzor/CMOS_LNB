@@ -1,0 +1,146 @@
+scale 1000 1 0.5
+rnode "GND.t7" 0 0 -4800 -2080 0
+rnode "GND.n0" 0 0 -4800 -2080 0
+rnode "GND.t22" 0 0 1036 -10 0
+rnode "GND.t1" 0 0 3944 -10 0
+rnode "GND" 0 0 -7064 5730 0
+rnode "GND.n1" 0 0 2074 5394 0
+rnode "GND.n2" 0 0 -758 825 0
+rnode "GND.n3" 0 0 7786 5394 0
+rnode "GND.n4" 0 0 8042 5522 0
+rnode "GND.t5" 0 0 7134 380 0
+rnode "GND.n5" 0 0 -2578 2069 0
+rnode "GND.n6" 0 0 -4800 2364 0
+rnode "GND.t24" 0 0 4752 -1172 0
+rnode "GND.t36" 0 0 3758 -1146 0
+rnode "GND.t35" 0 0 3598 -1146 0
+rnode "GND.t2" 0 0 3490 254 0
+rnode "GND.t34" 0 0 3438 -1146 0
+rnode "GND.t33" 0 0 3278 -1146 0
+rnode "GND.t0" 0 0 3248 254 0
+rnode "GND.t32" 0 0 3118 -1146 0
+rnode "GND.t20" 0 0 2958 -1146 0
+rnode "GND.t19" 0 0 2798 -1146 0
+rnode "GND.t18" 0 0 2638 -1146 0
+rnode "GND.t17" 0 0 2478 -1146 0
+rnode "GND.t3" 0 0 2386 324 0
+rnode "GND.t11" 0 0 -590 -1146 0
+rnode "GND.t4" 0 0 -521 324 0
+rnode "GND.t12" 0 0 -430 -1146 0
+rnode "GND.t13" 0 0 -270 -1146 0
+rnode "GND.t14" 0 0 -110 -1146 0
+rnode "GND.t15" 0 0 50 -1146 0
+rnode "GND.t27" 0 0 210 -1146 0
+rnode "GND.t23" 0 0 340 254 0
+rnode "GND.t28" 0 0 370 -1146 0
+rnode "GND.t29" 0 0 530 -1146 0
+rnode "GND.t21" 0 0 582 254 0
+rnode "GND.t30" 0 0 690 -1146 0
+rnode "GND.t31" 0 0 850 -1146 0
+rnode "GND.t16" 0 0 2318 -1146 0
+rnode "GND.n7" 0 0 2374 574 0
+rnode "GND.t9" 0 0 4810 1650 0
+rnode "GND.n8" 0 0 5482 1374 0
+rnode "GND.t8" 0 0 8810 1528 0
+rnode "GND.n9" 0 0 7660 5294 0
+rnode "GND.n10" 0 0 -1064 -798 0
+rnode "GND.t6" 0 0 -1934 -1084 0
+rnode "GND.n11" 0 0 -2578 -1785 0
+rnode "GND.n12" 0 0 -2578 -1785 0
+rnode "GainStage2" 0 0 -1018 232 0
+resist "GND.n1" "GND" 1.37766
+resist "GND.n12" "GND.t7" 1.39092
+resist "GainStage2" "GND" 2.12906
+resist "GND.n12" "GND.n11" 1.3
+resist "GND.t7" "GND.n0" 0.0021405
+resist "GND.n4" "GND.t5" 1.90104
+resist "GND.t22" "GND.n1" 2.16213
+resist "GND.n1" "GND.t1" 2.18646
+resist "GND.n3" "GND.n9" 428.24
+resist "GND.n3" "GND.n4" 0.0290914
+resist "GND.n1" "GND.n3" 0.591529
+resist "GND" "GND.n0" 2.51125
+resist "GND" "GND.n2" 7.43721
+resist "GND.t9" "GND.n1" 7.89892
+resist "GND.n8" "GND.t9" 10.6704
+resist "GND.n7" "GND.t3" 11.1684
+resist "GND.n11" "GND.n0" 12.9273
+resist "GND.t0" "GND.t33" 27.921
+resist "GND.t28" "GND.t23" 27.921
+resist "GND.t34" "GND.t2" 48.3963
+resist "GND.t21" "GND.t29" 48.3963
+resist "GND.t4" "GND.t11" 49.1345
+resist "GND.n7" "GND.t16" 52.1191
+resist "GND.t12" "GND.t4" 64.8006
+resist "GND.t3" "GND.t17" 85.6243
+resist "GND.t8" "GND.n8" 96.1021
+resist "GND.t2" "GND.t35" 100.515
+resist "GND.t30" "GND.t21" 100.515
+resist "GND.t14" "GND.t13" 113.935
+resist "GND.t13" "GND.t12" 113.935
+resist "GND.t11" "GND.n2" 119.632
+resist "GND.t32" "GND.t0" 120.991
+resist "GND.t23" "GND.t27" 120.991
+resist "GND.t15" "GND.t14" 125.74
+resist "GND.t35" "GND.t36" 148.912
+resist "GND.t33" "GND.t34" 148.912
+resist "GND.t20" "GND.t32" 148.912
+resist "GND.t19" "GND.t20" 148.912
+resist "GND.t18" "GND.t19" 148.912
+resist "GND.t17" "GND.t18" 148.912
+resist "GND.t31" "GND.t30" 148.912
+resist "GND.t29" "GND.t28" 148.912
+resist "GND.t27" "GND.t15" 148.912
+resist "GND" "GND.n5" 1.56179
+resist "GND.t36" "GND.t1" 208.477
+resist "GND.t22" "GND.t31" 208.477
+resist "GND.n10" "GND.n2" 217.901
+resist "GND.n5" "GND.n6" 292.084
+resist "GND" "GND.n6" 298.261
+resist "GND.n12" "GND.n5" 321.167
+resist "GND.t6" "GND.n10" 363.654
+resist "GND.n10" "GND.n6" 382.177
+resist "GND.n8" "GND.t5" 620.296
+resist "GND.t1" "GND.t24" 716.638
+resist "GND.n1" "GND.n7" 777.013
+resist "GND.n11" "GND.t6" 891.334
+resist "GND.t24" "GND.t5" 968.51
+resist "GND.t16" "GND.t22" 1157.79
+resist "GND.n9" "GND.t8" 5321.52
+resist "GND.n10" "GND.n9" 12523.4
+device msubckt npn_10p00x10p00 -5980 -1038 -5979 -1037  "GND" "GainStage2" 9440 0 "Output" 0 4000000,8000 "VDD" 0 11289600,13440
+device rsubckt ppolyf_s 8096 -1870 8097 -1869  "GND.t24" "a_8096_n1870#" 568 0 "GND" -212 47058,1718 "Input" -212 47058,1718
+device msubckt nfet_03v3 5204 1590 5205 1591  "GND.t8" "a_5182_1808#" 120 0 "a_5048_1590#" 120 18720,552 "GND.t9" 120 10920,302
+device msubckt nfet_03v3 5446 1590 5447 1591  "GND.t8" "a_5182_1808#" 120 0 "GND.t9" 120 10920,302 "a_5182_1808#" 120 19440,564
+device rsubckt ppolyf_s -550 324 -549 325  "GND.t4" "a_n550_324#" 1048 0 "a_n724_1852#" -466 24138,926 "GainStage2" -466 24138,926
+device rsubckt ppolyf_s 2358 324 2359 325  "GND.t3" "a_2358_324#" 1048 0 "a_2184_1852#" -466 24138,926 "GainStage1" -466 24138,926
+device msubckt nfet_03v3 310 194 311 195  "GND.t23" "a_150_194#" 120 0 "a_150_194#" 120 19200,560 "GND.t22" 120 10920,302
+device msubckt nfet_03v3 552 194 553 195  "GND.t21" "a_150_194#" 120 0 "GND.t22" 120 10920,302 "a_n644_4164#" 120 18960,556
+device msubckt nfet_03v3 3218 194 3219 195  "GND.t0" "a_3058_194#" 120 0 "a_3058_194#" 120 19200,560 "GND.t1" 120 10920,302
+device msubckt nfet_03v3 3460 194 3461 195  "GND.t2" "a_3058_194#" 120 0 "GND.t1" 120 10920,302 "a_2264_4164#" 120 18960,556
+device rsubckt ppolyf_u_1k -2334 -1484 -2333 -1483  "GND.t6" "a_n2334_n1484#" 1600 0 "Output" 800 102400,1856 "GND.t7" 800 102400,1856
+device msubckt nfet_03v3 -618 -2146 -617 -2145  "GND.t11" "CBias" 112 0 "GainStage2" 2000 240000,4240 "a_n562_n2146#" 2000 104000,2104
+device msubckt nfet_03v3 -458 -2146 -457 -2145  "GND.t12" "CBias" 112 0 "a_n562_n2146#" 2000 104000,2104 "GainStage2" 2000 104000,2104
+device msubckt nfet_03v3 -298 -2146 -297 -2145  "GND.t13" "CBias" 112 0 "GainStage2" 2000 104000,2104 "a_n562_n2146#" 2000 104000,2104
+device msubckt nfet_03v3 -138 -2146 -137 -2145  "GND.t14" "CBias" 112 0 "a_n562_n2146#" 2000 104000,2104 "GainStage2" 2000 104000,2104
+device msubckt nfet_03v3 22 -2146 23 -2145  "GND.t15" "CBias" 112 0 "GainStage2" 2000 104000,2104 "a_n562_n2146#" 2000 104000,2104
+device msubckt nfet_03v3 182 -2146 183 -2145  "GND.t27" "GainStage1" 112 0 "a_n562_n2146#" 2000 104000,2104 "GND.t22" 2000 104000,2104
+device msubckt nfet_03v3 342 -2146 343 -2145  "GND.t28" "GainStage1" 112 0 "GND.t22" 2000 104000,2104 "a_n562_n2146#" 2000 104000,2104
+device msubckt nfet_03v3 502 -2146 503 -2145  "GND.t29" "GainStage1" 112 0 "a_n562_n2146#" 2000 104000,2104 "GND.t22" 2000 104000,2104
+device msubckt nfet_03v3 662 -2146 663 -2145  "GND.t30" "GainStage1" 112 0 "GND.t22" 2000 104000,2104 "a_n562_n2146#" 2000 104000,2104
+device msubckt nfet_03v3 822 -2146 823 -2145  "GND.t31" "GainStage1" 112 0 "a_n562_n2146#" 2000 104000,2104 "GND.t22" 2000 528000,4528
+device msubckt nfet_03v3 2290 -2146 2291 -2145  "GND.t16" "CBias" 112 0 "GainStage1" 2000 240000,4240 "a_2346_n2146#" 2000 104000,2104
+device msubckt nfet_03v3 2450 -2146 2451 -2145  "GND.t17" "CBias" 112 0 "a_2346_n2146#" 2000 104000,2104 "GainStage1" 2000 104000,2104
+device msubckt nfet_03v3 2610 -2146 2611 -2145  "GND.t18" "CBias" 112 0 "GainStage1" 2000 104000,2104 "a_2346_n2146#" 2000 104000,2104
+device msubckt nfet_03v3 2770 -2146 2771 -2145  "GND.t19" "CBias" 112 0 "a_2346_n2146#" 2000 104000,2104 "GainStage1" 2000 104000,2104
+device msubckt nfet_03v3 2930 -2146 2931 -2145  "GND.t20" "CBias" 112 0 "GainStage1" 2000 104000,2104 "a_2346_n2146#" 2000 104000,2104
+device msubckt nfet_03v3 3090 -2146 3091 -2145  "GND.t32" "InputBuffer" 112 0 "a_2346_n2146#" 2000 104000,2104 "GND.t1" 2000 104000,2104
+device msubckt nfet_03v3 3250 -2146 3251 -2145  "GND.t33" "InputBuffer" 112 0 "GND.t1" 2000 104000,2104 "a_2346_n2146#" 2000 104000,2104
+device msubckt nfet_03v3 3410 -2146 3411 -2145  "GND.t34" "InputBuffer" 112 0 "a_2346_n2146#" 2000 104000,2104 "GND.t1" 2000 104000,2104
+device msubckt nfet_03v3 3570 -2146 3571 -2145  "GND.t35" "InputBuffer" 112 0 "GND.t1" 2000 104000,2104 "a_2346_n2146#" 2000 104000,2104
+device msubckt nfet_03v3 3730 -2146 3731 -2145  "GND.t36" "InputBuffer" 112 0 "a_2346_n2146#" 2000 104000,2104 "GND.t1" 2000 528000,4528
+device msubckt nfet_03v3 6174 -620 6175 -619  "GND.t5" "CGBias" 112 0 "InputBuffer" 2000 240000,4240 "Input" 2000 104000,2104
+device msubckt nfet_03v3 6334 -620 6335 -619  "GND.t5" "CGBias" 112 0 "Input" 2000 104000,2104 "InputBuffer" 2000 104000,2104
+device msubckt nfet_03v3 6494 -620 6495 -619  "GND.t5" "CGBias" 112 0 "InputBuffer" 2000 104000,2104 "Input" 2000 104000,2104
+device msubckt nfet_03v3 6654 -620 6655 -619  "GND.t5" "CGBias" 112 0 "Input" 2000 104000,2104 "InputBuffer" 2000 104000,2104
+device msubckt nfet_03v3 6814 -620 6815 -619  "GND.t5" "CGBias" 112 0 "InputBuffer" 2000 104000,2104 "Input" 2000 220000,4220

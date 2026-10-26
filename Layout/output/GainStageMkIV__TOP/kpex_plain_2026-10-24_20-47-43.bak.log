@@ -1,0 +1,545 @@
+GDS input file passed, running in LVS mode
+No explicit top cell specified, using top cell 'TOP'
+LVS input schematic not specified (argument --schematic), using dummy schematic
+Calling MAGIC
+magic -dnull -noconsole -rcfile gf180mcuD.magicrc.custom output/GainStageMkIV__TOP/magic_RC/TOP_MAGIC_RC_Script.tcl, output file: output/GainStageMkIV__TOP/magic_RC/TOP_MAGIC_RC_Output.txt
+
+Magic 8.3 revision 681 - Compiled on Tue Aug 25 11:50:23 AM CEST 2026.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+Using NULL graphics device.
+Processing system .magicrc file
+Switching to WIRING tool.
+Switching to NETLIST tool.
+Switching to PICK tool.
+Switching to BOX tool.
+Sourcing design custom .magicrc for technology gf180mcuD ...
+10 Magic internal units = 1 Lambda
+Input style import: scaleFactor=10, multiplier=2
+The following types are not handled by extraction and will be treated as non-electrical types:
+    obsactive mvobsactive filldiff fillpoly m1hole obsm1 fillm1 obsv1 m2hole obsm2 fillm2 obsv2 m3hole obsm3 fillm3 m4hole obsm4 fillm4 m5hole obsm5 fillm5 glass fillblock lvstext obscomment 
+Scaled tech values by 10 / 1 to match internal grid scaling
+Loading gf180mcuD Device Generator Menu ...
+Loading "output/GainStageMkIV__TOP/magic_RC/TOP_MAGIC_RC_Script.tcl" from command line.
+Warning: Calma reading is not undoable!  I hope that's OK.
+Library written using GDS-II Release 6.0
+Library name: LIB
+Reading "$$$CONTEXT_INFO$$$".
+Reading "npn_10p00x10p00_0".
+Reading "npn_10p00x10p00".
+Reading "ppolyf_s_resistor".
+Reading "npn_bjt".
+Reading "ppolyf_u_high_Rs_resistor".
+Reading "GainStage".
+Reading "InputBuffer".
+Reading "OutputBuffer".
+Reading "TOP".
+Extracting TOP into /foss/designs/LNA/MkIII/Layout/output/GainStageMkIV__TOP/magic_RC/TOP.ext:
+Processing TOP
+Device has multiple lengths:  scaling all widths to length 7198
+TOP: 10 warnings
+Total of 10 warnings.
+Warning:  Ports "GND" and "VDD" are electrically shorted.
+Warning:  Ports "GND" and "Input" are electrically shorted.
+exttosim finished.
+Note:  This option has been deprecated and is unused.
+Extracting a_n724_1852#
+Extracting a_2184_1852#
+Extracting a_5182_1988#
+Extracting a_150_194#
+Extracting a_3058_194#
+Extracting a_n562_n2146#
+Extracting a_2346_n2146#
+Extracting Input
+Warning: psubdiffcont at -3694 214 smaller than extract section allows
+Extracting VDD
+Extracting GND
+Error:  Terminal tile at (-6480 -1538) not visited!
+Missing substrate connection of device at (-5980 -1038) on net GND
+Missing drain connection of device at (-5980 -1038) on net GND
+Missing substrate connection of device at (-5980 -1038) on net GND
+Missing drain connection of device at (-5980 -1038) on net GND
+Extracting GainStage2
+Error:  Terminal tile at (-6480 -1538) not visited!
+Extracting Output
+Extracting InputBuffer
+Extracting TBias
+Extracting Com
+Extracting CGBias
+Extracting GainStage1
+Extracting CBias
+Total Nets: 22
+Nets extracted: 18 (0.818182)
+Nets output: 3 (0.136364)
+exttospice finished.
+MAGIC succeeded after 0.2249s
+Report DB saved at: output/GainStageMkIV__TOP/magic_RC/TOP_MAGIC_report.rdb.gz
+SPICE netlist saved at: output/GainStageMkIV__TOP/magic_RC/TOP.pex.spice
+* NGSPICE file created from TOP.ext - technology: gf180mcuD
+
+.subckt TOP Input GainStage1 GainStage2 InputBuffer Output VDD GND Com TBias CBias
++ CGBias
+X0 InputBuffer GND.t22 GND.t24 GND.t23 pfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X1 GND.t44 a_150_194# a_150_194# GND.t43 nfet_03v3 ad=0.273p pd=1.51u as=0.48p ps=2.8u w=0.6u l=0.3u
+X2 a_2346_n2146# InputBuffer GND.t40 GND.t89 nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X3 GND.t34 CGBias InputBuffer GND.t82 nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X4 GND.t41 a_3058_194# GND.t40 GND.t39 nfet_03v3 ad=0.273p pd=1.51u as=0 ps=0 w=0.6u l=0.3u
+X5 a_2346_n2146# CBias GainStage1 GND.t53 nfet_03v3 ad=2.6p pd=10.52u as=6p ps=21.2u w=10u l=0.28u
+X6 GND.t93 InputBuffer a_2346_n2146# GND.t92 nfet_03v3 ad=13.2p pd=22.64u as=2.6p ps=10.52u w=10u l=0.28u
+X7 a_n562_n2146# CBias GainStage2 GND.t50 nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X8 GainStage1 CBias a_2346_n2146# GND.t56 nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X9 InputBuffer CGBias GND.t34 GND.t82 nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X10 a_5182_1988# InputBuffer GND.t75 GND.t73 pfet_03v3 ad=0.48p pd=2.8u as=0.27p ps=1.5u w=0.6u l=0.3u
+X11 GND.t66 TBias GND.t77 GND.t65 pfet_03v3 ad=0.48p pd=2.8u as=0 ps=0 w=0.6u l=0.3u
+X12 GND.t40 InputBuffer a_2346_n2146# GND.t88 nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X13 GND.t2 GND.t0 a_n724_1852# GND.t1 pfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X14 a_2346_n2146# InputBuffer GND.t40 GND.t91 nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X15 a_n724_1852# GND.t7 GND.t2 GND.t1 pfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X16 a_2184_1852# GND.t9 GND.t11 GND.t14 pfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X17 GND.t24 GND.t22 InputBuffer GND.t23 pfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X18 GND.t62 GainStage2 a_150_194# GND.t61 pfet_03v3 ad=0.267p pd=1.49u as=0.48p ps=2.8u w=0.6u l=0.3u
+X19 InputBuffer GND.t22 GND.t24 GND.t23 pfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X20 GND.t40 a_3058_194# a_3058_194# GND.t42 nfet_03v3 ad=0.273p pd=1.51u as=0.48p ps=2.8u w=0.6u l=0.3u
+X21 GND.t34 CGBias InputBuffer GND.t82 nfet_03v3 ad=2.6p pd=10.52u as=6p ps=21.2u w=10u l=0.28u
+X22 GND.t62 Com GND.t80 GND.t61 pfet_03v3 ad=0.267p pd=1.49u as=0 ps=0 w=0.6u l=0.3u
+X23 GND.t86 CGBias InputBuffer GND.t82 nfet_03v3 ad=12.2p pd=22.44u as=2.6p ps=10.52u w=10u l=0.28u
+X24 a_2184_1852# GainStage1 GND.t60 ppolyf_s r_width=2u r_length=5u
+X25 GND.t44 GainStage1 a_n562_n2146# GND.t69 nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X26 a_n724_1852# GainStage2 GND.t47 ppolyf_s r_width=2u r_length=5u
+X27 GND GainStage2 Output GND npn_10p00x10p00
+X28 GND.t11 GND.t9 a_2184_1852# GND.t10 pfet_03v3 ad=2.6p pd=10.52u as=5.3p ps=21.06u w=10u l=0.28u
+X29 GND.t34 GND.t34 GND.t33 ppolyf_s r_width=5.11u r_length=35.99u
+X30 GND.t62 TBias GND.t76 GND.t61 pfet_03v3 ad=0.48p pd=2.8u as=0 ps=0 w=0.6u l=0.3u
+X31 GainStage2 CBias a_n562_n2146# GND.t51 nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X32 GND.t2 GND.t0 a_n724_1852# GND.t1 pfet_03v3 ad=2.6p pd=10.52u as=5.3p ps=21.06u w=10u l=0.28u
+X33 GND.t24 GND.t22 InputBuffer GND.t23 pfet_03v3 ad=2.6p pd=10.52u as=5.3p ps=21.06u w=10u l=0.28u
+X34 Output GND.t59 GND.t58 ppolyf_u_1k r_width=4u r_length=4u
+X35 a_n562_n2146# CBias GainStage2 GND.t48 nfet_03v3 ad=2.6p pd=10.52u as=6p ps=21.2u w=10u l=0.28u
+X36 a_2346_n2146# CBias GainStage1 GND.t55 nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X37 GND.t21 GND.t18 a_2184_1852# GND.t20 pfet_03v3 ad=12.9p pd=22.58u as=2.6p ps=10.52u w=10u l=0.28u
+X38 GND.t75 TBias GND.t74 GND.t73 pfet_03v3 ad=0.9p pd=4.2u as=0 ps=0 w=0.6u l=0.3u
+X39 GND.t66 GainStage1 a_3058_194# GND.t65 pfet_03v3 ad=0.267p pd=1.49u as=0.48p ps=2.8u w=0.6u l=0.3u
+X40 GND.t66 Com GND.t81 GND.t65 pfet_03v3 ad=0.267p pd=1.49u as=0 ps=0 w=0.6u l=0.3u
+X41 a_n562_n2146# GainStage1 GND.t44 GND.t68 nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X42 GND.t32 GND.t22 InputBuffer GND.t23 pfet_03v3 ad=12.9p pd=22.58u as=2.6p ps=10.52u w=10u l=0.28u
+X43 GND.t46 a_150_194# GND.t44 GND.t45 nfet_03v3 ad=0.273p pd=1.51u as=0 ps=0 w=0.6u l=0.3u
+X44 GND.t72 GainStage1 a_n562_n2146# GND.t71 nfet_03v3 ad=13.2p pd=22.64u as=2.6p ps=10.52u w=10u l=0.28u
+X45 InputBuffer CGBias GND.t34 GND.t82 nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X46 a_5182_1988# a_5182_1988# GND.t37 GND.t38 nfet_03v3 ad=0.48p pd=2.8u as=0.273p ps=1.51u w=0.6u l=0.3u
+X47 GND.t75 Com GND.t79 GND.t78 pfet_03v3 ad=0.9p pd=4.2u as=0 ps=0 w=0.6u l=0.3u
+X48 GND.t40 InputBuffer a_2346_n2146# GND.t90 nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X49 a_n562_n2146# CBias GainStage2 GND.t52 nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X50 GND.t13 GND.t7 a_n724_1852# GND.t1 pfet_03v3 ad=12.9p pd=22.58u as=2.6p ps=10.52u w=10u l=0.28u
+X51 GainStage2 CBias a_n562_n2146# GND.t49 nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X52 GainStage1 CBias a_2346_n2146# GND.t54 nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X53 a_2346_n2146# CBias GainStage1 GND.t57 nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X54 GND.t44 GainStage1 a_n562_n2146# GND.t67 nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X55 a_n724_1852# GND.t0 GND.t2 GND.t1 pfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X56 a_2184_1852# GND.t18 GND.t11 GND.t19 pfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X57 GND.t37 a_5182_1988# GND.t36 GND.t35 nfet_03v3 ad=0.894p pd=4.18u as=0 ps=0 w=0.6u l=0.3u
+X58 a_n562_n2146# GainStage1 GND.t44 GND.t70 nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X59 GND.t11 GND.t9 a_2184_1852# GND.t16 pfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+C0 GainStage2 Output 3.14029f
+C1 Com a_150_194# 0.01431f
+C2 a_n562_n2146# GainStage1 0.76533f
+C3 InputBuffer TBias 0.01355f
+C4 TBias GainStage1 0.01068f
+C5 GainStage2 a_150_194# 0.20177f
+C6 InputBuffer a_5182_1988# 0.10297f
+C7 CGBias Output 0.06009f
+C8 a_n562_n2146# CBias 0.82217f
+C9 GainStage2 a_n724_1852# 0.01606f
+C10 InputBuffer a_2346_n2146# 0.76461f
+C11 a_3058_194# GainStage1 0.20175f
+C12 a_2346_n2146# GainStage1 2.86857f
+C13 CGBias InputBuffer 0.56342f
+C14 GainStage2 CBias 0.50596f
+C15 CGBias GainStage1 0.02357f
+C16 GainStage2 Com 0.01878f
+C17 TBias Com 7.07298f
+C18 GainStage2 a_n562_n2146# 2.85729f
+C19 GainStage1 a_2184_1852# 0.01606f
+C20 Output CBias 0.56963f
+C21 Com a_5182_1988# 0.01173f
+C22 a_2346_n2146# CBias 0.82217f
+C23 CGBias CBias 3.03691f
+C24 Com a_3058_194# 0.01431f
+C25 GainStage2 TBias 0.01066f
+C26 InputBuffer CBias 0.35117f
+C27 a_n562_n2146# Output 0.01144f
+C28 GainStage1 CBias 0.80658f
+C29 InputBuffer Com 0.02077f
+C30 Com GainStage1 0.02087f
+R0 GND.n32 GND.n31 12523.4
+R1 GND.n31 GND.t38 5321.52
+R2 GND.n16 GND.n36 2273.85
+R3 GND.n69 GND.t35 1456.87
+R4 GND.t53 GND.n30 1157.79
+R5 GND.t82 GND.t33 968.51
+R6 GND.n37 GND.t58 891.335
+R7 GND.n1 GND.n33 777.014
+R8 GND.t33 GND.n73 716.639
+R9 GND.t82 GND.t38 716.399
+R10 GND.t23 GND.t73 622.912
+R11 GND.n53 GND.t10 555.644
+R12 GND.n67 GND.n66 472.462
+R13 GND.n35 GND.n32 382.178
+R14 GND.n16 GND.n15 0.232465
+R15 GND.t58 GND.n32 363.654
+R16 GND.n38 GND.n34 321.168
+R17 GND.n16 GND.n35 298.262
+R18 GND.t35 GND.t38 297.918
+R19 GND.n35 GND.n34 292.084
+R20 GND.t1 GND.n53 258.348
+R21 GND.n66 GND.n65 258.348
+R22 GND.t65 GND.n19 238.806
+R23 GND.n52 GND.t61 238.806
+R24 GND.n48 GND.n32 217.901
+R25 GND.t71 GND.n30 208.477
+R26 GND.n73 GND.t92 208.477
+R27 GND.n14 GND.n38 206.25
+R28 GND.n47 GND.n34 206.25
+R29 GND.n21 GND.t23 157.149
+R30 GND.t67 GND.t52 148.912
+R31 GND.t69 GND.t68 148.912
+R32 GND.t71 GND.t70 148.912
+R33 GND.t54 GND.t55 148.912
+R34 GND.t55 GND.t56 148.912
+R35 GND.t56 GND.t57 148.912
+R36 GND.t57 GND.t88 148.912
+R37 GND.t89 GND.t90 148.912
+R38 GND.t91 GND.t92 148.912
+R39 GND.t52 GND.t51 125.74
+R40 GND.t43 GND.t67 120.992
+R41 GND.t88 GND.t42 120.992
+R42 GND.t48 GND.n48 119.632
+R43 GND.n67 GND.n18 117.995
+R44 GND.t73 GND.t78 117.995
+R45 GND.t50 GND.t49 113.936
+R46 GND.t51 GND.t50 113.936
+R47 GND.t70 GND.t45 100.516
+R48 GND.t39 GND.t91 100.516
+R49 GND.n65 GND.t20 87.4409
+R50 GND.t60 GND.t54 85.6248
+R51 GND.n66 GND.n19 65.299
+R52 GND.n53 GND.n52 65.299
+R53 GND.t49 GND.t47 64.8011
+R54 GND.t10 GND.t14 63.5935
+R55 GND.t14 GND.t16 63.5935
+R56 GND.t16 GND.t19 63.5935
+R57 GND.t19 GND.t20 63.5935
+R58 GND.n33 GND.t53 52.1196
+R59 GND.t47 GND.t48 49.135
+R60 GND.t45 GND.t69 48.3968
+R61 GND.t90 GND.t39 48.3968
+R62 GND.t68 GND.t43 27.9215
+R63 GND.t42 GND.t89 27.9215
+R64 GND.t78 GND.n18 14.7498
+R65 GND.n1 GND.t37 12.2805
+R66 GND.t77 GND.n61 12.121
+R67 GND.n51 GND.t76 12.121
+R68 GND.n68 GND.t74 12.0953
+R69 GND.n37 GND.n36 11.4442
+R70 GND.n33 GND.t60 11.1689
+R71 GND.n60 GND.n59 10.5024
+R72 GND.n50 GND.n27 10.5024
+R73 GND.t37 GND.n69 9.7005
+R74 GND.n61 GND.t81 8.63383
+R75 GND.n51 GND.t80 8.63383
+R76 GND.t79 GND.n68 8.63383
+R77 GND.t41 GND.n17 8.4355
+R78 GND.t46 GND.n49 8.4355
+R79 GND.n69 GND.t36 8.4355
+R80 GND.n48 GND.n1 7.43771
+R81 GND.n60 GND.t41 7.24175
+R82 GND.n50 GND.t46 7.24175
+R83 GND.t36 GND.t22 7.24175
+R84 GND.n61 GND.n19 6.3005
+R85 GND.t66 GND.t65 6.3005
+R86 GND.n62 GND.t66 6.3005
+R87 GND.t75 GND.n18 6.3005
+R88 GND.n22 GND.t75 6.3005
+R89 GND.n68 GND.n67 6.3005
+R90 GND.t61 GND.t62 6.3005
+R91 GND.t62 GND.n3 6.3005
+R92 GND.n52 GND.n51 6.3005
+R93 GND.n70 GND.n17 5.47761
+R94 GND.n49 GND.n5 5.47761
+R95 GND.n49 GND.t71 5.2005
+R96 GND.n17 GND.t92 5.2005
+R97 GND.t81 GND.n60 5.2005
+R98 GND.t80 GND.n50 5.2005
+R99 GND.t22 GND.t79 5.2005
+R100 GND.n40 GND.n15 4.71693
+R101 GND.n1 GND.n6 0.592029
+R102 GND.n62 GND.t77 4.5005
+R103 GND.n10 GND.n9 0.00867538
+R104 GND.n4 GND.n26 4.5005
+R105 GND.n4 GND.n55 4.5005
+R106 GND.n12 GND.n9 0.00867538
+R107 GND.n57 GND.n12 2.24716
+R108 GND.t2 VDD 0.858627
+R109 GND.t76 GND.n3 4.5005
+R110 GND.n22 GND.t74 4.5005
+R111 GND.n23 GND.n22 3.85233
+R112 GainStage2 GND.n41 2.95101
+R113 GND.n13 GND.n15 2.38895
+R114 GND.n40 GND.n39 2.34269
+R115 GND.n6 GND.n7 0.0295914
+R116 GND.n31 GND.n6 428.24
+R117 GND.n25 GND.n11 0.0301624
+R118 GND.n9 GND.n11 1.1173
+R119 GND.n56 GND.n24 2.24382
+R120 GND.n54 GND.n9 2.24382
+R121 GND.n56 GND.n25 2.24382
+R122 GND.n4 GND.n20 2.24382
+R123 GainStage2 GND.n42 1.84825
+R124 GainStage2 GND.n43 1.68445
+R125 GND.n74 GND.n7 1.63427
+R126 GND.n0 GND.n34 1.57428
+R127 GND.t34 GND.t86 1.54234
+R128 GND.t40 GND.t93 1.54234
+R129 GND.t44 GND.t72 1.54234
+R130 GND.t11 GND.t21 1.48734
+R131 GND.t32 GND.t24 1.48734
+R132 GND.t13 GND.n2 0.304797
+R133 GND.t59 GND.n36 1.48621
+R134 GND.n38 GND.n37 1.3005
+R135 GND.n39 GND.n38 1.3005
+R136 GND.n16 GainStage2 2.11292
+R137 GND.n70 GND.n1 1.44677
+R138 GND.n1 GND.n5 1.44573
+R139 GND.n63 GND.n62 0.904811
+R140 GND.t2 GND.n3 0.904811
+R141 Input GND.t34 0.80505
+R142 GND.n8 GND.n21 0.5009
+R143 GND.n72 GND.n71 0.488714
+R144 GND.n29 GND.n28 0.488714
+R145 GND.t86 GND.n74 0.4716
+R146 GND.n72 GND.t93 0.4716
+R147 GND.n29 GND.t72 0.4716
+R148 GND.n1 GND 0.478494
+R149 GND.n64 GND.t21 0.4632
+R150 GND.n21 GND.t32 0.4632
+R151 GND.t1 GND.n2 0.380362
+R152 GND.n65 GND.n64 0.3155
+R153 GND.n64 GND.n63 0.3155
+R154 GND.t2 GND.n2 0.207821
+R155 GND.t7 GND.n27 0.315106
+R156 GND.t18 GND.n59 0.315106
+R157 GND.n74 GND.t82 0.2605
+R158 GND.n30 GND.n29 0.2605
+R159 GND.n73 GND.n72 0.2605
+R160 GND.n63 GND.n58 0.2561
+R161 GND.n23 GND.n8 0.541813
+R162 GND.n56 GND.n23 0.196025
+R163 GND.t9 GND.n59 0.191426
+R164 GND.t0 GND.n27 0.191426
+R165 GND.n45 GND.n46 0.1643
+R166 GND.n43 GND.n44 0.1643
+R167 GND.n16 GND.n14 0.119815
+R168 GND.n47 GND.n16 0.116483
+R169 GND.n13 GND.n47 0.116056
+R170 GND.n14 GND.n40 0.116056
+R171 GND.n58 GND.n57 0.10985
+R172 GND.n39 GND.t59 0.0997466
+R173 GND.n71 GND.n70 0.0574893
+R174 GND.n28 GND.n5 0.0574893
+R175 GND.n0 GND.n13 0.0505316
+R176 GND.n71 GND.t40 0.0482
+R177 GND.n28 GND.t44 0.0482
+R178 GND.n58 GND.t11 0.0464
+R179 GND.n20 GND.n11 0.0301624
+R180 GND.n8 GND.t24 0.02345
+R181 GND.n10 GND.n4 0.00867538
+R182 GND.n56 GND.n12 0.00867538
+R183 GND.n54 GND.n26 0.0153541
+R184 GND.n26 GND.n24 0.0153541
+R185 GND.n57 GND.n20 0.0153541
+R186 GND.n55 GND.n25 0.0153541
+R187 GND.n55 GND.n54 0.0153541
+R188 GND.n10 GND.n24 2.26202
+R189 GainStage2 GND.n45 1.84564
+R190 GND.n1 GND.n0 1.11232
+R191 GND.t2 GND.n4 1.01137
+R192 VDD.n21 VDD.n39 12523.4
+R193 VDD.n41 VDD.n21 6596.38
+R194 VDD.n53 VDD.n27 4976.18
+R195 VDD.n24 VDD.n54 2273.85
+R196 VDD.n39 VDD.n27 2020.52
+R197 VDD.n53 VDD.n52 1941.51
+R198 VDD.n43 VDD.n42 1754.78
+R199 VDD.n42 VDD.n41 1298.98
+R200 VDD.n48 VDD.n47 1288.09
+R201 VDD.n55 VDD.n53 1254.99
+R202 VDD.n48 VDD.n28 1209.91
+R203 VDD.n24 VDD.n53 1195.23
+R204 VDD.n42 VDD.n30 1109.18
+R205 VDD.n35 VDD.n29 1007.02
+R206 VDD.n12 VDD.n11 913.29
+R207 VDD.n39 VDD.n26 887.324
+R208 VDD.n17 VDD.n48 777.015
+R209 VDD.n24 VDD.n26 692.494
+R210 VDD.n37 VDD.n36 472.462
+R211 VDD.n24 VDD.n23 0.232465
+R212 VDD.n56 VDD.n25 321.168
+R213 VDD.n36 VDD.n35 258.348
+R214 VDD.n52 VDD.n28 208.477
+R215 VDD.n47 VDD.n30 208.477
+R216 VDD.n22 VDD.n56 206.25
+R217 VDD.n59 VDD.n25 206.25
+R218 VDD.n36 VDD.n31 191.113
+R219 VDD.n37 VDD.n11 117.995
+R220 VDD.n26 VDD.n25 70.6587
+R221 VDD.n51 VDD.n29 45.2962
+R222 VDD.n46 VDD.n31 44.6243
+R223 VDD.n43 VDD.n38 29.5101
+R224 VDD.n44 VDD.n43 21.9805
+R225 VDD.n38 VDD.n32 16.5953
+R226 VDD.n11 VDD.n32 12.6005
+R227 VDD.n55 VDD.n54 11.4442
+R228 VDD.n49 VDD.n27 7.43771
+R229 VDD.n38 VDD.n37 6.3005
+R230 VDD.n46 VDD.n45 5.47761
+R231 VDD.n51 VDD.n50 5.47761
+R232 VDD.n47 VDD.n46 5.2005
+R233 VDD.n52 VDD.n51 5.2005
+R234 VDD.n58 VDD.n23 4.71693
+R235 VDD.n16 VDD.n12 4.5005
+R236 VDD.n13 VDD.n16 2.24597
+R237 VDD.n13 VDD.n14 0.011057
+R238 VDD.n16 VDD.n9 0.0113834
+R239 VDD.n10 VDD.n7 1.49463
+R240 VDD.n16 VDD.n10 1.50083
+R241 VDD.n50 VDD.n4 1.44497
+R242 VDD.n17 VDD.n4 0.0996815
+R243 VDD.n44 VDD.n6 0.595166
+R244 VDD.n33 VDD.n32 3.85233
+R245 VDD.n40 Input 2.81799
+R246 VDD.n18 VDD.n23 2.38895
+R247 VDD.n58 VDD.n57 2.34269
+R248 VDD.n21 VDD.n6 428.236
+R249 VDD.n3 VDD.n12 1.12032
+R250 VDD.n10 VDD.n2 2.25083
+R251 VDD.n2 VDD.n3 0.00865643
+R252 VDD.n9 VDD.n8 1.49569
+R253 VDD.n2 VDD.n14 1.4959
+R254 VDD.n9 VDD.n15 1.49564
+R255 VDD.n0 VDD.n1 0.336706
+R256 VDD.n1 VDD.n33 0.209627
+R257 GainStage2 VDD.n24 0.908725
+R258 VDD.n40 VDD.n6 1.66693
+R259 VDD.n34 VDD.n31 1.58692
+R260 VDD.n57 VDD.n54 1.58546
+R261 VDD.n19 VDD.n25 1.57428
+R262 VDD.n56 VDD.n55 1.3005
+R263 VDD.n57 VDD.n56 1.3005
+R264 VDD.n20 VDD.n19 0.244845
+R265 VDD.n45 VDD.n30 0.71219
+R266 VDD.n50 VDD.n28 0.71219
+R267 VDD.n0 VDD 0.859533
+R268 VDD.n35 VDD.n34 0.560955
+R269 GND VDD.n20 0.478494
+R270 VDD.n41 VDD.n40 0.2605
+R271 VDD.n4 VDD.n49 0.236481
+R272 VDD.n17 VDD.n5 0.246982
+R273 VDD.n33 VDD.n2 0.213125
+R274 VDD.n49 VDD.n20 0.22482
+R275 VDD.n24 VDD.n22 0.119815
+R276 VDD.n59 VDD.n24 0.116483
+R277 VDD.n18 VDD.n59 0.116056
+R278 VDD.n22 VDD.n58 0.116056
+R279 VDD.n19 VDD.n18 0.0505316
+R280 VDD.n12 VDD.n8 0.0307387
+R281 VDD.n15 VDD.n10 0.0257842
+R282 VDD.n34 VDD.n1 0.597184
+R283 VDD.n5 VDD.n45 1.44626
+R284 VDD.n44 VDD.n5 0.0679422
+R285 VDD.n9 VDD.n7 0.0225238
+R286 VDD.n15 VDD.n14 0.0206591
+R287 VDD.n3 VDD.n7 0.0086605
+R288 VDD.n13 VDD.n8 0.011057
+R289 VDD.n0 VDD.n29 1.50718
+R290 Input.n37 Input.n36 12523.4
+R291 Input.n36 Input.n35 6596.38
+R292 Input.n2 Input.n14 4976.18
+R293 Input.n12 Input.n15 2273.85
+R294 Input.n37 Input.n2 2020.52
+R295 Input.n28 Input.n14 1941.51
+R296 Input.n34 Input.n20 1754.78
+R297 Input.n35 Input.n20 1298.98
+R298 Input.n26 Input.n25 1288.09
+R299 Input.n16 Input.n14 1254.99
+R300 Input.n27 Input.n26 1209.91
+R301 Input.n12 Input.n14 1195.23
+R302 Input.n22 Input.n20 1109.18
+R303 Input.n32 Input.n30 1007.02
+R304 Input.n9 Input.n33 477.82
+R305 Input.n38 Input.n37 887.324
+R306 Input.n26 Input.n0 777.014
+R307 Input.n12 Input.n38 692.494
+R308 Input.n12 Input.n11 0.232465
+R309 Input.n17 Input.n13 321.168
+R310 Input.n33 Input.n32 258.348
+R311 Input.n28 Input.n27 208.477
+R312 Input.n25 Input.n22 208.477
+R313 Input.n10 Input.n17 206.25
+R314 Input.n1 Input.n13 1.55566
+R315 Input.n33 Input.n21 191.113
+R316 Input.n38 Input.n13 70.6587
+R317 Input.n30 Input.n29 45.2962
+R318 Input.n24 Input.n21 44.6243
+R319 Input.n34 Input.n9 30.1946
+R320 Input.n8 Input.n34 21.9805
+R321 Input.n16 Input.n15 11.4442
+R322 GainStage2 Input.n12 0.908725
+R323 Input.n0 Input.n2 7.43771
+R324 Input.n24 Input.n23 5.47761
+R325 Input.n29 Input.n3 5.47761
+R326 Input.n25 Input.n24 5.2005
+R327 Input.n29 Input.n28 5.2005
+R328 Input.n19 Input.n11 4.71693
+R329 Input.n7 Input.n8 0.360151
+R330 Input.n36 Input.n7 428.229
+R331 VDD Input.n5 0.860811
+R332 Input.n0 Input.n11 2.38895
+R333 Input.n19 Input.n18 2.34269
+R334 Input Input.n7 1.65023
+R335 Input.n5 Input.n6 0.336706
+R336 Input.n6 Input.n9 18.1502
+R337 Input.n31 Input.n21 1.58692
+R338 Input.n18 Input.n15 1.58546
+R339 Input.n0 Input.n1 0.00825506
+R340 Input.n17 Input.n16 1.3005
+R341 Input.n18 Input.n17 1.3005
+R342 Input.n23 Input.n4 1.44573
+R343 Input.n0 Input.n3 1.44672
+R344 Input.n27 Input.n3 0.71319
+R345 Input.n23 Input.n22 0.71219
+R346 Input.n32 Input.n31 0.560955
+R347 GND Input.n0 0.478494
+R348 Input.n35 Input 0.2605
+R349 Input.n4 Input.n0 0.247541
+R350 Input.n12 Input.n10 0.119815
+R351 Input.n1 Input.n12 1.06779
+R352 Input.n10 Input.n19 0.116056
+R353 Input.n8 Input.n4 0.0683713
+R354 Input.n31 Input.n6 0.597184
+R355 Input.n5 Input.n30 1.50718
+C31 CBias GND 5.79709f
+C32 GainStage1 GND 5.1921f
+C33 CGBias GND 7.54644f
+C34 Com GND 14.0612f
+C35 TBias GND 11.5537f
+C36 InputBuffer GND 12.5796f
+C37 Output GND 3.83187f
+C38 GainStage2 GND 5.97089f
+C39 a_2346_n2146# GND 3.15739f ; **FLOATING
+C40 a_n562_n2146# GND 3.15618f ; **FLOATING
+C41 a_3058_194# GND 0.91696f ; **FLOATING
+C42 a_150_194# GND 0.91686f ; **FLOATING
+C43 a_5182_1988# GND 0.8182f ; **FLOATING
+C44 a_2184_1852# GND 4.62096f ; **FLOATING
+C45 a_n724_1852# GND 4.62106f ; **FLOATING
+.ends
+

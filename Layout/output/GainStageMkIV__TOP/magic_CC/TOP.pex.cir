@@ -1,0 +1,113 @@
+* NGSPICE file created from TOP.ext - technology: gf180mcuD
+
+.option scale=5n
+
+.subckt TOP VDD Com TBias Output CBias CGBias
+X0 a_3064_n2566# a_5506_1770# VDD VDD pfet_03v3 ad=0.104u pd=2.104m as=0.104u ps=2.104m w=2000 l=56
+X1 a_370_194# VDD a_n644_4164# VDD nfet_03v3 ad=10.92n pd=0.302m as=19.2n ps=0.56m w=120 l=60
+X2 VDD a_3064_n2566# VDD VDD nfet_03v3 ad=0.104u pd=2.104m as=6.06117u ps=0.1178 w=2000 l=56
+X3 VDD a_6148_n1240# a_3064_n2566# VDD nfet_03v3 ad=0.104u pd=2.104m as=0.104u ps=2.104m w=2000 l=56
+X4 VDD VDD a_3278_194# VDD nfet_03v3 ad=35.76n pd=0.836m as=10.92n ps=0.302m w=120 l=60
+X5 VDD a_n644_n2566# a_156_n2566# VDD nfet_03v3 ad=0.104u pd=2.104m as=0.24u ps=4.24m w=2000 l=56
+X6 VDD a_3064_n2566# VDD VDD nfet_03v3 ad=0.104u pd=2.104m as=0 ps=0 w=2000 l=56
+X7 VDD a_n644_n2566# OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B VDD nfet_03v3 ad=0.104u pd=2.104m as=0.104u ps=2.104m w=2000 l=56
+X8 a_156_n2566# a_n644_n2566# VDD VDD nfet_03v3 ad=0.104u pd=2.104m as=0.104u ps=2.104m w=2000 l=56
+X9 a_3064_n2566# a_6148_n1240# VDD VDD nfet_03v3 ad=0.104u pd=2.104m as=0.104u ps=2.104m w=2000 l=56
+X10 a_5506_1770# a_3064_n2566# VDD VDD pfet_03v3 ad=19.2n pd=0.56m as=10.8n ps=0.3m w=120 l=60
+X11 VDD a_268_1472# VDD VDD pfet_03v3 ad=19.2n pd=0.56m as=4.63616u ps=0.10189 w=120 l=60
+X12 VDD a_3064_n2566# VDD VDD nfet_03v3 ad=0.104u pd=2.104m as=0 ps=0 w=2000 l=56
+X13 VDD a_n644_4164# a_n724_1852# VDD pfet_03v3 ad=0.104u pd=2.104m as=0.104u ps=2.104m w=2000 l=56
+X14 VDD a_3064_n2566# VDD VDD nfet_03v3 ad=0.104u pd=2.104m as=0 ps=0 w=2000 l=56
+X15 a_n724_1852# a_n644_4164# VDD VDD pfet_03v3 ad=0.104u pd=2.104m as=0.104u ps=2.104m w=2000 l=56
+X16 a_2184_1852# a_2264_4164# VDD VDD pfet_03v3 ad=0.104u pd=2.104m as=0.104u ps=2.104m w=2000 l=56
+X17 VDD a_5506_1770# a_3064_n2566# VDD pfet_03v3 ad=0.104u pd=2.104m as=0.104u ps=2.104m w=2000 l=56
+X18 VDD OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B a_n644_4164# VDD pfet_03v3 ad=10.68n pd=0.298m as=19.2n ps=0.56m w=120 l=60
+X19 a_3064_n2566# a_5506_1770# VDD VDD pfet_03v3 ad=0.104u pd=2.104m as=0.104u ps=2.104m w=2000 l=56
+X20 a_3278_194# VDD a_2264_4164# VDD nfet_03v3 ad=10.92n pd=0.302m as=19.2n ps=0.56m w=120 l=60
+X21 VDD a_6148_n1240# a_3064_n2566# VDD nfet_03v3 ad=0.104u pd=2.104m as=0.24u ps=4.24m w=2000 l=56
+X22 VDD a_522_942# VDD VDD pfet_03v3 ad=10.68n pd=0.298m as=0 ps=0 w=120 l=60
+X23 VDD a_6148_n1240# a_3064_n2566# VDD nfet_03v3 ad=0.488u pd=4.488m as=0.104u ps=2.104m w=2000 l=56
+X24 a_2184_1852# a_156_n2566# VDD ppolyf_s r_width=400 r_length=1000
+X25 VDD a_156_n2566# VDD VDD nfet_03v3 ad=0.104u pd=2.104m as=0 ps=0 w=2000 l=56
+X26 a_n724_1852# OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B VDD ppolyf_s r_width=400 r_length=1000
+X27 VDD OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B Output VDD npn_10p00x10p00
+X28 VDD a_2264_4164# a_2184_1852# VDD pfet_03v3 ad=0.104u pd=2.104m as=0.212u ps=4.212m w=2000 l=56
+X29 VDD VDD VDD ppolyf_s r_width=1022 r_length=7198
+X30 VDD a_268_1472# VDD VDD pfet_03v3 ad=19.2n pd=0.56m as=0 ps=0 w=120 l=60
+X31 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B a_n644_n2566# VDD VDD nfet_03v3 ad=0.104u pd=2.104m as=0.104u ps=2.104m w=2000 l=56
+X32 VDD a_n644_4164# a_n724_1852# VDD pfet_03v3 ad=0.104u pd=2.104m as=0.212u ps=4.212m w=2000 l=56
+X33 VDD a_5506_1770# a_3064_n2566# VDD pfet_03v3 ad=0.104u pd=2.104m as=0.212u ps=4.212m w=2000 l=56
+X34 Output VDD VDD ppolyf_u_1k r_width=800 r_length=800
+X35 VDD a_n644_n2566# OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B VDD nfet_03v3 ad=0.104u pd=2.104m as=0.24u ps=4.24m w=2000 l=56
+X36 VDD a_n644_n2566# a_156_n2566# VDD nfet_03v3 ad=0.104u pd=2.104m as=0.104u ps=2.104m w=2000 l=56
+X37 VDD a_2264_4164# a_2184_1852# VDD pfet_03v3 ad=0.516u pd=4.516m as=0.104u ps=2.104m w=2000 l=56
+X38 VDD a_268_1472# VDD VDD pfet_03v3 ad=36n pd=0.84m as=0 ps=0 w=120 l=60
+X39 VDD a_156_n2566# a_2264_4164# VDD pfet_03v3 ad=10.68n pd=0.298m as=19.2n ps=0.56m w=120 l=60
+X40 VDD a_522_942# VDD VDD pfet_03v3 ad=10.68n pd=0.298m as=0 ps=0 w=120 l=60
+X41 VDD a_156_n2566# VDD VDD nfet_03v3 ad=0.104u pd=2.104m as=0 ps=0 w=2000 l=56
+X42 VDD a_5506_1770# a_3064_n2566# VDD pfet_03v3 ad=0.516u pd=4.516m as=0.104u ps=2.104m w=2000 l=56
+X43 VDD VDD a_370_194# VDD nfet_03v3 ad=35.76n pd=0.836m as=10.92n ps=0.302m w=120 l=60
+X44 VDD a_156_n2566# VDD VDD nfet_03v3 ad=0.104u pd=2.104m as=0 ps=0 w=2000 l=56
+X45 a_3064_n2566# a_6148_n1240# VDD VDD nfet_03v3 ad=0.104u pd=2.104m as=0.104u ps=2.104m w=2000 l=56
+X46 a_5506_1770# VDD a_5264_1770# VDD nfet_03v3 ad=19.2n pd=0.56m as=10.92n ps=0.302m w=120 l=60
+X47 VDD a_522_942# VDD VDD pfet_03v3 ad=36n pd=0.84m as=0 ps=0 w=120 l=60
+X48 VDD a_3064_n2566# VDD VDD nfet_03v3 ad=0.104u pd=2.104m as=0 ps=0 w=2000 l=56
+X49 VDD a_n644_n2566# OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B VDD nfet_03v3 ad=0.104u pd=2.104m as=0.104u ps=2.104m w=2000 l=56
+X50 VDD a_n644_4164# a_n724_1852# VDD pfet_03v3 ad=0.516u pd=4.516m as=0.104u ps=2.104m w=2000 l=56
+X51 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B a_n644_n2566# VDD VDD nfet_03v3 ad=0.104u pd=2.104m as=0.104u ps=2.104m w=2000 l=56
+X52 a_156_n2566# a_n644_n2566# VDD VDD nfet_03v3 ad=0.104u pd=2.104m as=0.104u ps=2.104m w=2000 l=56
+X53 VDD a_n644_n2566# a_156_n2566# VDD nfet_03v3 ad=0.104u pd=2.104m as=0.104u ps=2.104m w=2000 l=56
+X54 VDD a_156_n2566# VDD VDD nfet_03v3 ad=0.104u pd=2.104m as=0 ps=0 w=2000 l=56
+X55 a_n724_1852# a_n644_4164# VDD VDD pfet_03v3 ad=0.104u pd=2.104m as=0.104u ps=2.104m w=2000 l=56
+X56 a_2184_1852# a_2264_4164# VDD VDD pfet_03v3 ad=0.104u pd=2.104m as=0.104u ps=2.104m w=2000 l=56
+X57 a_5264_1770# VDD VDD VDD nfet_03v3 ad=10.92n pd=0.302m as=35.76n ps=0.836m w=120 l=60
+X58 VDD a_156_n2566# VDD VDD nfet_03v3 ad=0.104u pd=2.104m as=0 ps=0 w=2000 l=56
+X59 VDD a_2264_4164# a_2184_1852# VDD pfet_03v3 ad=0.104u pd=2.104m as=0.104u ps=2.104m w=2000 l=56
+C0 a_n644_n2566# Output 0.56963f
+C1 a_n724_1852# a_n644_4164# 0.50497f
+C2 a_5506_1770# a_3064_n2566# 0.82732f
+C3 a_6148_n1240# a_156_n2566# 0.02357f
+C4 a_522_942# a_n644_4164# 0.07232f
+C5 a_n644_4164# a_370_194# 0.01515f
+C6 a_n644_4164# a_268_1472# 1.26336f
+C7 a_2184_1852# a_156_n2566# 0.01606f
+C8 a_5264_1770# a_5506_1770# 0.01409f
+C9 a_522_942# a_156_n2566# 0.0209f
+C10 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B Output 3.14029f
+C11 a_156_n2566# a_2264_4164# 0.21459f
+C12 a_n644_n2566# a_156_n2566# 0.80502f
+C13 a_3278_194# a_2264_4164# 0.01515f
+C14 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B a_n644_4164# 0.21459f
+C15 a_6148_n1240# a_n644_n2566# 3.03691f
+C16 a_2184_1852# a_2264_4164# 0.50497f
+C17 a_6148_n1240# a_3064_n2566# 0.56342f
+C18 a_522_942# a_268_1472# 7.05376f
+C19 a_522_942# a_2264_4164# 0.07295f
+C20 a_268_1472# a_2264_4164# 1.26363f
+C21 a_522_942# a_3064_n2566# 0.02102f
+C22 a_3064_n2566# a_268_1472# 0.01358f
+C23 a_6148_n1240# a_5506_1770# 0.01126f
+C24 a_6148_n1240# Output 0.06009f
+C25 a_n644_n2566# a_3064_n2566# 0.34962f
+C26 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B a_n724_1852# 0.01606f
+C27 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B a_522_942# 0.01878f
+C28 a_5264_1770# a_3064_n2566# 0.01416f
+C29 a_5506_1770# a_268_1472# 0.1264f
+C30 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B a_n644_n2566# 0.50596f
+C31 Output VDD 3.84331f
+C32 a_n644_n2566# VDD 7.4503f ; **FLOATING
+C33 a_3278_194# VDD 0.06037f ; **FLOATING
+C34 a_370_194# VDD 0.06037f ; **FLOATING
+C35 a_156_n2566# VDD 8.93663f ; **FLOATING
+C36 a_6148_n1240# VDD 7.53598f ; **FLOATING
+C37 a_5264_1770# VDD 0.04395f ; **FLOATING
+C38 a_522_942# VDD 13.765f ; **FLOATING
+C39 a_268_1472# VDD 9.09236f ; **FLOATING
+C40 a_3064_n2566# VDD 12.6936f ; **FLOATING
+C41 a_2184_1852# VDD 4.11599f ; **FLOATING
+C42 a_n724_1852# VDD 4.11609f ; **FLOATING
+C43 a_5506_1770# VDD 4.05522f ; **FLOATING
+C44 a_2264_4164# VDD 5.39983f ; **FLOATING
+C45 a_n644_4164# VDD 5.40118f ; **FLOATING
+C46 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B VDD 8.83133f ; **FLOATING
+.ends

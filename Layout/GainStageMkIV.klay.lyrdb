@@ -3,7 +3,7 @@
  <description/>
  <original-file/>
  <generator>drc: script='/foss/pdks/ciel/gf180mcu/versions/026824c7969ce6f4fc9678e6ca04b0a06a596c4b/gf180mcuD/libs.tech/klayout/tech/drc/gf180mcu.drc'</generator>
- <top-cell>TOP</top-cell>
+ <top-cell>InputBuffer</top-cell>
  <tags>
  </tags>
  <categories>
@@ -1592,9 +1592,10 @@
    </categories>
   </category>
   <category>
-   <name>PL.8</name>
-   <description>PL.8 : Poly2 coverage over the entire die shall be 14%.
-                  Dummy poly2 lines must be added to meet the minimum poly2 density requirement. : 14%</description>
+   <name>M1.4</name>
+   <description>M1.4 : Metal1 coverage over the entire die shall be &gt;30%
+                  (Refer to section 13.0 for Dummy Metal fill guidelines.
+                   Customer needs to ensure enough dummy metal to satisfy Metal1 coverage) : 30%</description>
    <categories>
    </categories>
   </category>
@@ -4757,7 +4758,7 @@
  </categories>
  <cells>
   <cell>
-   <name>TOP</name>
+   <name>InputBuffer</name>
    <variant/>
    <layout-name/>
    <references>
@@ -4768,85 +4769,85 @@
   <item>
    <tags/>
    <category>'DCF.1b'</category>
-   <cell>TOP</cell>
+   <cell>InputBuffer</cell>
    <visited>false</visited>
    <multiplicity>1</multiplicity>
    <comment/>
    <image/>
    <values>
-    <value>polygon: (-39.13,-14.59;-39.13,32.13;49.8,32.13;49.8,-14.59)</value>
+    <value>polygon: (-21.5,-14.53;-21.5,32.19;4.54,32.19;4.54,-14.53)</value>
    </values>
   </item>
   <item>
    <tags/>
-   <category>'PL.8'</category>
-   <cell>TOP</cell>
+   <category>'M1.4'</category>
+   <cell>InputBuffer</cell>
    <visited>false</visited>
    <multiplicity>1</multiplicity>
    <comment/>
    <image/>
    <values>
-    <value>polygon: (-39.13,-14.59;-39.13,32.13;49.8,32.13;49.8,-14.59)</value>
+    <value>polygon: (-21.5,-14.53;-21.5,32.19;4.54,32.19;4.54,-14.53)</value>
    </values>
   </item>
   <item>
    <tags/>
    <category>'M2.4'</category>
-   <cell>TOP</cell>
+   <cell>InputBuffer</cell>
    <visited>false</visited>
    <multiplicity>1</multiplicity>
    <comment/>
    <image/>
    <values>
-    <value>polygon: (-39.13,-14.59;-39.13,32.13;49.8,32.13;49.8,-14.59)</value>
+    <value>polygon: (-21.5,-14.53;-21.5,32.19;4.54,32.19;4.54,-14.53)</value>
    </values>
   </item>
   <item>
    <tags/>
    <category>'M3.4'</category>
-   <cell>TOP</cell>
+   <cell>InputBuffer</cell>
    <visited>false</visited>
    <multiplicity>1</multiplicity>
    <comment/>
    <image/>
    <values>
-    <value>polygon: (-39.13,-14.59;-39.13,32.13;49.8,32.13;49.8,-14.59)</value>
+    <value>polygon: (-21.5,-14.53;-21.5,32.19;4.54,32.19;4.54,-14.53)</value>
    </values>
   </item>
   <item>
    <tags/>
    <category>'M4.4'</category>
-   <cell>TOP</cell>
+   <cell>InputBuffer</cell>
    <visited>false</visited>
    <multiplicity>1</multiplicity>
    <comment/>
    <image/>
    <values>
-    <value>polygon: (-39.13,-14.59;-39.13,32.13;49.8,32.13;49.8,-14.59)</value>
+    <value>polygon: (-21.5,-14.53;-21.5,32.19;4.54,32.19;4.54,-14.53)</value>
    </values>
   </item>
   <item>
    <tags/>
    <category>'M5.4'</category>
-   <cell>TOP</cell>
+   <cell>InputBuffer</cell>
    <visited>false</visited>
    <multiplicity>1</multiplicity>
    <comment/>
    <image/>
    <values>
-    <value>polygon: (-39.13,-14.59;-39.13,32.13;49.8,32.13;49.8,-14.59)</value>
+    <value>polygon: (-21.5,-14.53;-21.5,32.19;4.54,32.19;4.54,-14.53)</value>
    </values>
   </item>
   <item>
    <tags/>
    <category>'MT.3'</category>
-   <cell>TOP</cell>
+   <cell>InputBuffer</cell>
    <visited>false</visited>
    <multiplicity>1</multiplicity>
    <comment/>
    <image/>
    <values>
-    <value>polygon: (-39.13,-14.59;-39.13,32.13;49.8,32.13;49.8,-14.59)</value>
+    <value>polygon: (-21.5,-14.53;-21.5,32.19;4.54,32.19;4.54,-14.53)</value>
    </values>
   </item>
  </items>

@@ -1,0 +1,71 @@
+
+Magic 8.3 revision 681 - Compiled on Tue Aug 25 11:50:23 AM CEST 2026.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+Using NULL graphics device.
+Processing system .magicrc file
+Switching to WIRING tool.
+Switching to NETLIST tool.
+Switching to PICK tool.
+Switching to BOX tool.
+Sourcing design custom .magicrc for technology gf180mcuD ...
+10 Magic internal units = 1 Lambda
+"gf180mcuD" is not one of the extraction styles Magic knows.
+The current style is "default".
+The extraction styles are: default.
+Input style import: scaleFactor=10, multiplier=2
+The following types are not handled by extraction and will be treated as non-electrical types:
+    obsactive mvobsactive filldiff fillpoly m1hole obsm1 fillm1 obsv1 m2hole obsm2 fillm2 obsv2 m3hole obsm3 fillm3 m4hole obsm4 fillm4 m5hole obsm5 fillm5 glass fillblock lvstext obscomment 
+Scaled tech values by 10 / 1 to match internal grid scaling
+Loading gf180mcuD Device Generator Menu ...
+Loading "output/GainStageMkIV__TOP/magic_RC/TOP_MAGIC_RC_Script.tcl" from command line.
+Warning: Calma reading is not undoable!  I hope that's OK.
+Library written using GDS-II Release 6.0
+Library name: LIB
+Reading "$$$CONTEXT_INFO$$$".
+Reading "npn_10p00x10p00_0".
+Reading "npn_10p00x10p00".
+Reading "ppolyf_s_resistor".
+Reading "npn_bjt".
+Reading "ppolyf_u_high_Rs_resistor".
+Reading "GainStage".
+Reading "InputBuffer".
+Reading "OutputBuffer".
+Reading "TOP".
+Extracting TOP into /foss/designs/LNA/MkIII/Layout/output/GainStageMkIV__TOP/magic_RC/TOP.ext:
+Processing TOP
+exttosim finished.
+Note:  This option has been deprecated and is unused.
+Extracting a_n644_4164#
+Extracting a_2264_4164#
+Extracting a_5048_1590#
+Extracting a_n724_1852#
+Extracting a_2184_1852#
+Extracting a_5266_2300#
+Extracting a_5182_1808#
+Extracting a_134_1254#
+Extracting a_150_194#
+Extracting a_3042_1254#
+Extracting a_3058_194#
+Extracting a_n562_n2146#
+Extracting a_2346_n2146#
+Extracting GND
+Warning: psubdiffcont at -3694 214 smaller than extract section allows
+Missing substrate connection of device at (-5980 -1038) on net GND
+Missing terminal connection of device at (8096 -1870) on net GND
+Missing terminal connection of device at (8096 -1870) on net GND
+Extracting VDD
+Error:  Terminal tile at (-6480 -1538) not visited!
+Extracting GainStage2
+Extracting Output
+Extracting InputBuffer
+Extracting TBias
+Extracting Com
+Extracting CGBias
+Extracting GainStage1
+Extracting CBias
+Extracting Input
+Total Nets: 28
+Nets extracted: 24 (0.857143)
+Nets output: 1 (0.035714)
+exttospice finished.

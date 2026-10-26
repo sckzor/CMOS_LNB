@@ -1,0 +1,93 @@
+* Extracted by KLayout with GF180MCU LVS runset on : 24/10/2026 03:19
+
+* cell TOP
+* pin CBias
+* pin CGBias
+* pin Com
+* pin GND
+* pin GainStage1
+* pin GainStage2
+* pin Input
+* pin InputBuffer
+* pin Output
+* pin TBias
+* pin VDD
+.SUBCKT TOP CBias CGBias Com GND GainStage1 GainStage2 Input InputBuffer Output
++ TBias VDD
+* device instance $1 r0 *1 16.16,6.57 pfet_03v3
+XM$1 \$I17 TBias VDD VDD pfet_03v3 L=0.3U W=0.6U AS=0.48P AD=0.54P PS=2.8U PD=3U
+* device instance $2 r0 *1 11.59,14.26 pfet_03v3
+XM$2 VDD \$I19 \$I18 VDD pfet_03v3 L=0.28U W=50U AS=15.7P AD=16.1P PS=63.14U
++ PD=63.22U
+* device instance $7 r0 *1 16.24,3.92 pfet_03v3
+XM$7 \$I17 GainStage1 \$I16 VDD pfet_03v3 L=0.3U W=0.6U AS=0.48P AD=0.267P
++ PS=2.8U PD=1.49U
+* device instance $8 r0 *1 17.43,3.92 pfet_03v3
+XM$8 \$I19 Com \$I17 VDD pfet_03v3 L=0.3U W=0.6U AS=0.267P AD=0.546P PS=1.49U
++ PD=3.02U
+* device instance $9 r0 *1 16.24,1.27 nfet_03v3
+XM$9 GND \$I16 \$I16 GND nfet_03v3 L=0.3U W=0.6U AS=0.48P AD=0.273P PS=2.8U
++ PD=1.51U
+* device instance $10 r0 *1 17.45,1.27 nfet_03v3
+XM$10 \$I19 \$I16 GND GND nfet_03v3 L=0.3U W=0.6U AS=0.273P AD=0.534P PS=1.51U
++ PD=2.98U
+* device instance $11 r0 *1 11.59,-5.73 nfet_03v3
+XM$11 \$I15 CBias GainStage1 GND nfet_03v3 L=0.28U W=50U AS=16.4P AD=13P
++ PS=63.28U PD=52.6U
+* device instance $16 r0 *1 15.59,-5.73 nfet_03v3
+XM$16 GND InputBuffer \$I15 GND nfet_03v3 L=0.28U W=50U AS=13P AD=17.7P PS=52.6U
++ PD=63.54U
+* device instance $21 r0 *1 12.79,4.12 ppolyf_s
+XR$21 GainStage1 \$I18 GND ppolyf_s R_LENGTH=5U R_WIDTH=2U
+* device instance $22 r0 *1 1.62,6.57 pfet_03v3
+XM$22 \$I22 TBias VDD VDD pfet_03v3 L=0.3U W=0.6U AS=0.48P AD=0.54P PS=2.8U PD=3U
+* device instance $23 r0 *1 -2.95,14.26 pfet_03v3
+XM$23 VDD \$I24 \$I23 VDD pfet_03v3 L=0.28U W=50U AS=15.7P AD=16.1P PS=63.14U
++ PD=63.22U
+* device instance $28 r0 *1 1.7,3.92 pfet_03v3
+XM$28 \$I22 GainStage2 \$I21 VDD pfet_03v3 L=0.3U W=0.6U AS=0.48P AD=0.267P
++ PS=2.8U PD=1.49U
+* device instance $29 r0 *1 2.89,3.92 pfet_03v3
+XM$29 \$I24 Com \$I22 VDD pfet_03v3 L=0.3U W=0.6U AS=0.267P AD=0.546P PS=1.49U
++ PD=3.02U
+* device instance $30 r0 *1 1.7,1.27 nfet_03v3
+XM$30 GND \$I21 \$I21 GND nfet_03v3 L=0.3U W=0.6U AS=0.48P AD=0.273P PS=2.8U
++ PD=1.51U
+* device instance $31 r0 *1 2.91,1.27 nfet_03v3
+XM$31 \$I24 \$I21 GND GND nfet_03v3 L=0.3U W=0.6U AS=0.273P AD=0.534P PS=1.51U
++ PD=2.98U
+* device instance $32 r0 *1 -2.95,-5.73 nfet_03v3
+XM$32 \$I20 CBias GainStage2 GND nfet_03v3 L=0.28U W=50U AS=16.4P AD=13P
++ PS=63.28U PD=52.6U
+* device instance $37 r0 *1 1.05,-5.73 nfet_03v3
+XM$37 GND GainStage1 \$I20 GND nfet_03v3 L=0.28U W=50U AS=13P AD=17.7P PS=52.6U
++ PD=63.54U
+* device instance $42 r0 *1 -1.75,4.12 ppolyf_s
+XR$42 GainStage2 \$I23 GND ppolyf_s R_LENGTH=5U R_WIDTH=2U
+* device instance $43 r0 *1 31.01,13.26 pfet_03v3
+XM$43 VDD \$I25 InputBuffer VDD pfet_03v3 L=0.28U W=50U AS=15.7P AD=16.1P
++ PS=63.14U PD=63.22U
+* device instance $48 r0 *1 27.38,14.45 pfet_03v3
+XM$48 VDD TBias \$I27 VDD pfet_03v3 L=0.3U W=0.6U AS=0.54P AD=0.48P PS=3U PD=2.8U
+* device instance $49 r0 *1 26.18,11.8 pfet_03v3
+XM$49 \$I27 Com \$I25 VDD pfet_03v3 L=0.3U W=0.6U AS=0.54P AD=0.27P PS=3U PD=1.5U
+* device instance $50 r0 *1 27.38,11.8 pfet_03v3
+XM$50 \$I26 InputBuffer \$I27 VDD pfet_03v3 L=0.3U W=0.6U AS=0.27P AD=0.48P
++ PS=1.5U PD=2.8U
+* device instance $51 r0 *1 26.17,9.15 nfet_03v3
+XM$51 GND \$I26 \$I25 GND nfet_03v3 L=0.3U W=0.6U AS=0.534P AD=0.273P PS=2.98U
++ PD=1.51U
+* device instance $52 r0 *1 27.38,9.15 nfet_03v3
+XM$52 \$I26 \$I26 GND GND nfet_03v3 L=0.3U W=0.6U AS=0.273P AD=0.48P PS=1.51U
++ PD=2.8U
+* device instance $53 r0 *1 31.01,1.9 nfet_03v3
+XM$53 Input CGBias InputBuffer GND nfet_03v3 L=0.28U W=50U AS=16.4P AD=17.7P
++ PS=63.28U PD=63.54U
+* device instance $58 r90 *1 -9.67,-5.42 ppolyf_u_1k
+XR$58 GND Output GND ppolyf_u_1k R_LENGTH=4U R_WIDTH=4U
+* device instance $59 m135 *1 42.48,8.65 ppolyf_s
+XR$59 GND Input GND ppolyf_s R_LENGTH=36U R_WIDTH=4U
+* device instance $60 m135 *1 -24,0.71 npn_10p00x10p00
+XQ$60 VDD GainStage2 Output GND npn_10p00x10p00 AE=100P PE=40U AB=131.7904P
++ PB=45.92U AC=131.7904P PC=45.92U NE=1
+.ENDS TOP

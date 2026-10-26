@@ -1,6 +1,6 @@
 <Qucs Schematic 26.1.1>
 <Properties>
-  <View=-100,62,1048,705,1.37227,0,0>
+  <View=5,62,1395,839,1.13411,0,0>
   <Grid=10,10,1>
   <DataSet=ErrorAmplifierPMOSMkII.dat>
   <DataDisplay=ErrorAmplifierPMOSMkII.dpl>
