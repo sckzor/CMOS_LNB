@@ -72,8 +72,8 @@ The input buffer is a common gate amplifier that provides a high quality impedan
 
 |Name|Type|Width|Length|Oxide Thickness|
 |-------|-----|-------|--------|-------------------|
-| M1 | pfet | 20.0u | 0.28u | Thin (3v3) |
-| M2 | nfet | 20.00u | 0.28u | Thin (3v3) |
+| M1 | pfet | 50.0u | 0.28u | Thin (3v3) |
+| M2 | nfet | 50.00u | 0.28u | Thin (3v3) |
 | R2 | ppolyf_s | 1u | 9u | - |
 
 
@@ -87,9 +87,9 @@ The CMOS gain stage increases the voltage level of the input signal.  A net powe
 
 |Name|Type|Width|Length|Oxide Thickness|
 |-------|-----|-------|--------|-------------------|
-| M15 | pfet | 20.0u | 0.28u | Thin (3v3) |
-| M13 | nfet | 20.0u | 0.28u | Thin (3v3) |
-| M16 | nfet | 20.0u | 0.28u | Thin (3v3) |
+| M15 | pfet | 50.0u | 0.28u | Thin (3v3) |
+| M13 | nfet | 50.0u | 0.28u | Thin (3v3) |
+| M16 | nfet | 50.0u | 0.28u | Thin (3v3) |
 | R1 | ppolyf_s | 1u | 10u | - |
 
 #### Error Amplifier
