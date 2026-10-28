@@ -73,7 +73,7 @@ The input buffer is a common gate amplifier that provides a high quality impedan
 |Name|Type|Width|Length|Oxide Thickness|
 |-------|-----|-------|--------|-------------------|
 | M1 | pfet | 50.0u | 0.28u | Thin (3v3) |
-| M2 | nfet | 50.00u | 0.28u | Thin (3v3) |
+| M2 | nfet | 50.0u | 0.28u | Thin (3v3) |
 | R2 | ppolyf_s | 1u | 9u | - |
 
 
