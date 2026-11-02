@@ -1,0 +1,99 @@
+GDS input file passed, running in LVS mode
+No explicit top cell specified, using top cell 'TOP'
+LVS input schematic not specified (argument --schematic), using dummy schematic
+Calling MAGIC
+magic -dnull -noconsole -rcfile /foss/pdks/gf180mcuD/libs.tech/magic/gf180mcuD.magicrc output/custom_pad__TOP/magic_CC/TOP_MAGIC_CC_Script.tcl, output file: output/custom_pad__TOP/magic_CC/TOP_MAGIC_CC_Output.txt
+
+Magic 8.3 revision 681 - Compiled on Tue Aug 25 11:50:23 AM CEST 2026.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+Using NULL graphics device.
+Processing system .magicrc file
+Switching to WIRING tool.
+Switching to NETLIST tool.
+Switching to PICK tool.
+Switching to BOX tool.
+Sourcing design .magicrc for technology gf180mcuD ...
+10 Magic internal units = 1 Lambda
+Input style import: scaleFactor=10, multiplier=2
+The following types are not handled by extraction and will be treated as non-electrical types:
+    obsactive mvobsactive filldiff fillpoly m1hole obsm1 fillm1 obsv1 m2hole obsm2 fillm2 obsv2 m3hole obsm3 fillm3 m4hole obsm4 fillm4 m5hole obsm5 fillm5 glass fillblock lvstext obscomment 
+Scaled tech values by 10 / 1 to match internal grid scaling
+Loading gf180mcuD Device Generator Menu ...
+Loading "output/custom_pad__TOP/magic_CC/TOP_MAGIC_CC_Script.tcl" from command line.
+Warning: Calma reading is not undoable!  I hope that's OK.
+Library written using GDS-II Release 6.0
+Library name: LIB
+Reading "$$$CONTEXT_INFO$$$".
+Reading "TOP".
+Extracting TOP into /foss/designs/LNA/MkIII/Layout/Pad/output/custom_pad__TOP/magic_CC/TOP.ext:
+Processing TOP
+exttospice finished.
+MAGIC succeeded after 2.772s
+Report DB saved at: output/custom_pad__TOP/magic_CC/TOP_MAGIC_report.rdb.gz
+SPICE netlist saved at: output/custom_pad__TOP/magic_CC/TOP.pex.spice
+* NGSPICE file created from TOP.ext - technology: gf180mcuD
+
+.option scale=5n
+
+.subckt TOP DVSS VSS VDD DVDD
+X0 DVDD DVSS cap_nmos_06v0 c_width=3000 c_length=3000
+X1 DVDD DVSS cap_nmos_06v0 c_width=3000 c_length=3000
+X2 DVDD DVSS cap_nmos_06v0 c_width=3000 c_length=3000
+D0 DVSS a_2500_14681# diode_nd2ps_06v0 pj=21200 area=6e+06
+X3 DVDD DVSS cap_nmos_06v0 c_width=3000 c_length=3000
+X4 DVDD DVSS cap_nmos_06v0 c_width=3000 c_length=3000
+X5 DVDD DVSS cap_nmos_06v0 c_width=3000 c_length=3000
+X6 DVDD DVSS cap_nmos_06v0 c_width=3000 c_length=3000
+X7 DVDD DVSS cap_nmos_06v0 c_width=3000 c_length=3000
+X8 DVDD DVSS cap_nmos_06v0 c_width=3000 c_length=3000
+X9 DVDD DVSS cap_nmos_06v0 c_width=3000 c_length=3000
+D1 DVSS a_2500_14681# diode_nd2ps_06v0 pj=21200 area=6e+06
+D2 a_2500_14681# DVDD diode_pd2nw_06v0 pj=21200 area=6e+06
+X10 DVDD DVSS cap_nmos_06v0 c_width=3000 c_length=3000
+X11 DVDD DVSS cap_nmos_06v0 c_width=3000 c_length=3000
+X12 DVDD DVSS cap_nmos_06v0 c_width=3000 c_length=3000
+X13 DVDD DVSS cap_nmos_06v0 c_width=3000 c_length=3000
+X14 DVDD DVSS cap_nmos_06v0 c_width=3000 c_length=3000
+X15 DVDD DVSS cap_nmos_06v0 c_width=3000 c_length=3000
+X16 DVDD DVSS cap_nmos_06v0 c_width=3000 c_length=3000
+D3 a_2500_14681# DVDD diode_pd2nw_06v0 pj=21200 area=6e+06
+X17 DVDD DVSS cap_nmos_06v0 c_width=3000 c_length=3000
+X18 DVDD DVSS cap_nmos_06v0 c_width=3000 c_length=3000
+X19 DVDD DVSS cap_nmos_06v0 c_width=3000 c_length=3000
+D4 DVSS a_2500_14681# diode_nd2ps_06v0 pj=21200 area=6e+06
+X20 DVDD DVSS cap_nmos_06v0 c_width=3000 c_length=3000
+X21 DVDD DVSS cap_nmos_06v0 c_width=3000 c_length=3000
+D5 a_2500_14681# DVDD diode_pd2nw_06v0 pj=21200 area=6e+06
+X22 DVDD DVSS cap_nmos_06v0 c_width=3000 c_length=3000
+X23 DVDD DVSS cap_nmos_06v0 c_width=3000 c_length=3000
+D6 DVSS DVDD diode_nd2ps_06v0 pj=16400 area=1.6e+06
+X24 DVDD DVSS cap_nmos_06v0 c_width=3000 c_length=3000
+X25 DVDD DVSS cap_nmos_06v0 c_width=3000 c_length=3000
+D7 DVSS DVDD diode_nd2ps_06v0 pj=16400 area=1.6e+06
+X26 DVDD DVSS cap_nmos_06v0 c_width=3000 c_length=3000
+D8 DVSS a_2500_14681# diode_nd2ps_06v0 pj=21200 area=6e+06
+X27 DVDD DVSS cap_nmos_06v0 c_width=3000 c_length=3000
+X28 DVDD DVSS cap_nmos_06v0 c_width=3000 c_length=3000
+D9 DVSS DVDD diode_nd2ps_06v0 pj=16400 area=1.6e+06
+D10 a_2500_14681# DVDD diode_pd2nw_06v0 pj=21200 area=6e+06
+X29 DVDD DVSS cap_nmos_06v0 c_width=3000 c_length=3000
+X30 DVDD DVSS cap_nmos_06v0 c_width=3000 c_length=3000
+D11 DVSS DVDD diode_nd2ps_06v0 pj=16400 area=1.6e+06
+X31 DVDD DVSS cap_nmos_06v0 c_width=3000 c_length=3000
+X32 DVDD DVSS cap_nmos_06v0 c_width=3000 c_length=3000
+X33 DVDD DVSS cap_nmos_06v0 c_width=3000 c_length=3000
+X34 DVDD DVSS cap_nmos_06v0 c_width=3000 c_length=3000
+X35 DVDD DVSS cap_nmos_06v0 c_width=3000 c_length=3000
+C0 a_2500_14681# VDD 21.911f
+C1 DVSS VDD 40.4107f
+C2 DVDD VDD 38.4152f
+C3 DVSS a_2500_14681# 0.38031p
+C4 DVDD a_2500_14681# 0.52229p
+C5 DVSS DVDD 1.18867p
+C6 VDD VSS 20.3592f
+C7 DVDD VSS 0.4195p
+C8 DVSS VSS 0.33421p
+C9 a_2500_14681# VSS 0.16635p ; **FLOATING
+.ends
+

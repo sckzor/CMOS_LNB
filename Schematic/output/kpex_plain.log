@@ -1,0 +1,6 @@
+Invalid magicrc: File does not exist at gf180mcuD.magicrc.custom
+GDS input file passed, running in LVS mode
+Can't read GDS file (LVS input) at path GainStageMkIV.klay.gds
+Invalid magicrc: File does not exist at ../gf180mcuD.magicrc.custom
+GDS input file passed, running in LVS mode
+Can't read GDS file (LVS input) at path GainStageMkIV.klay.gds

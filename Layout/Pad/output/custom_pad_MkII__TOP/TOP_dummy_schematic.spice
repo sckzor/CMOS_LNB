@@ -1,0 +1,3 @@
+.subckt TOP VDD VSS
+.ends
+.end

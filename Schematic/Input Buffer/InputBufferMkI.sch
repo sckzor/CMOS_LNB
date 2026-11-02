@@ -1,6 +1,6 @@
 <Qucs Schematic 26.1.1>
 <Properties>
-  <View=-562,-232,1041,664,0.983227,0,0>
+  <View=-588,-258,507,355,1.43954,0,0>
   <Grid=10,10,1>
   <DataSet=InputBufferMkI.dat>
   <DataDisplay=InputBufferMkI.dpl>
@@ -51,7 +51,7 @@
   <Port Com 1 -270 -20 -23 12 0 0 "4" 1 "analog" 0>
   <Port TBias 1 150 -20 4 -50 0 2 "5" 1 "analog" 0>
   <Port Output 1 150 60 4 -50 0 2 "6" 1 "analog" 0>
-  <R_SPICE R2 1 80 260 15 -26 0 1 "ppolyf_s r_width=1u r_length=9u" 0 "" 0 "" 0 "" 0 "" 0 "3" 1 "X" 1>
+  <R_SPICE R2 1 80 260 15 -26 0 1 "ppolyf_s r_width=4u r_length=36u" 0 "" 0 "" 0 "" 0 "" 0 "3" 1 "X" 1>
 </Components>
 <Wires>
   <80 -150 130 -150 "" 0 0 0 "">

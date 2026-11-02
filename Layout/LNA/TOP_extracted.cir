@@ -1,0 +1,185 @@
+* Extracted by KLayout with GF180MCU LVS runset on : 01/11/2026 18:31
+
+* cell TOP
+.SUBCKT TOP
+* cell instance $1 r0 *1 0.96,-0.06
+X$1 CGBias CBias GainStage1 GainStage2 Com TBias VDD GND GainStage
+* cell instance $2 r0 *1 -23,-10.81
+X$2 CGBias Output CBias GainStage2 VDD TBias Com GND OutputBuffer
+* cell instance $3 r0 *1 45.26,-0.06
+X$3 CGBias CBias Input InputBuffer VDD Com TBias GND InputBuffer
+* cell instance $4 r0 *1 15.5,-0.06
+X$4 CGBias CBias InputBuffer GainStage1 Com TBias VDD GND GainStage
+.ENDS TOP
+
+* cell OutputBuffer
+* pin 
+* pin 
+* pin 
+* pin 
+* pin 
+* pin 
+* pin 
+* pin SUB
+.SUBCKT OutputBuffer \$1 \$2 \$3 \$5 \$6 \$7 \$8 SUB
+* cell instance $1 m135 *1 8.86,26.63
+X$1 SUB \$6 \$5 \$2 npn_bjt
+* cell instance $2 r90 *1 13.59,6.9
+X$2 SUB \$2 SUB ppolyf_u_high_Rs_resistor
+.ENDS OutputBuffer
+
+* cell GainStage
+* pin 
+* pin 
+* pin 
+* pin 
+* pin 
+* pin 
+* pin 
+* pin SUB
+.SUBCKT GainStage \$1 \$2 \$3 \$5 \$9 \$11 \$12 SUB
+* device instance $1 r0 *1 -3.91,14.32 pfet_03v3
+M$1 \$12 \$13 \$10 \$12 pfet_03v3 L=0.28U W=10U AS=5.3P AD=2.6P PS=21.06U
++ PD=10.52U
+* device instance $2 r0 *1 -3.11,14.32 pfet_03v3
+M$2 \$10 \$13 \$12 \$12 pfet_03v3 L=0.28U W=10U AS=2.6P AD=2.6P PS=10.52U
++ PD=10.52U
+* device instance $3 r0 *1 -2.31,14.32 pfet_03v3
+M$3 \$12 \$13 \$10 \$12 pfet_03v3 L=0.28U W=10U AS=2.6P AD=2.6P PS=10.52U
++ PD=10.52U
+* device instance $4 r0 *1 -1.51,14.32 pfet_03v3
+M$4 \$10 \$13 \$12 \$12 pfet_03v3 L=0.28U W=10U AS=2.6P AD=2.6P PS=10.52U
++ PD=10.52U
+* device instance $5 r0 *1 -0.71,14.32 pfet_03v3
+M$5 \$12 \$13 \$10 \$12 pfet_03v3 L=0.28U W=10U AS=2.6P AD=5.7P PS=10.52U
++ PD=21.14U
+* device instance $6 r0 *1 0.66,6.63 pfet_03v3
+M$6 \$12 \$11 \$8 \$12 pfet_03v3 L=0.3U W=0.6U AS=0.48P AD=0.54P PS=2.8U PD=3U
+* device instance $7 r0 *1 0.74,3.98 pfet_03v3
+M$7 \$8 \$5 \$7 \$12 pfet_03v3 L=0.3U W=0.6U AS=0.48P AD=0.267P PS=2.8U PD=1.49U
+* device instance $8 r0 *1 1.93,3.98 pfet_03v3
+M$8 \$13 \$9 \$8 \$12 pfet_03v3 L=0.3U W=0.6U AS=0.267P AD=0.486P PS=1.49U
++ PD=2.82U
+* device instance $9 r0 *1 0.74,1.33 nfet_03v3
+M$9 SUB \$7 \$7 SUB nfet_03v3 L=0.3U W=0.6U AS=0.48P AD=0.273P PS=2.8U PD=1.51U
+* device instance $10 r0 *1 1.95,1.33 nfet_03v3
+M$10 \$13 \$7 SUB SUB nfet_03v3 L=0.3U W=0.6U AS=0.273P AD=0.474P PS=1.51U
++ PD=2.78U
+* device instance $11 r0 *1 -3.91,-5.67 nfet_03v3
+M$11 \$4 \$2 \$5 SUB nfet_03v3 L=0.28U W=10U AS=6P AD=2.6P PS=21.2U PD=10.52U
+* device instance $12 r0 *1 -3.11,-5.67 nfet_03v3
+M$12 \$5 \$2 \$4 SUB nfet_03v3 L=0.28U W=10U AS=2.6P AD=2.6P PS=10.52U PD=10.52U
+* device instance $13 r0 *1 -2.31,-5.67 nfet_03v3
+M$13 \$4 \$2 \$5 SUB nfet_03v3 L=0.28U W=10U AS=2.6P AD=2.6P PS=10.52U PD=10.52U
+* device instance $14 r0 *1 -1.51,-5.67 nfet_03v3
+M$14 \$5 \$2 \$4 SUB nfet_03v3 L=0.28U W=10U AS=2.6P AD=2.6P PS=10.52U PD=10.52U
+* device instance $15 r0 *1 -0.71,-5.67 nfet_03v3
+M$15 \$4 \$2 \$5 SUB nfet_03v3 L=0.28U W=10U AS=2.6P AD=2.6P PS=10.52U PD=10.52U
+* device instance $16 r0 *1 0.09,-5.67 nfet_03v3
+M$16 SUB \$3 \$4 SUB nfet_03v3 L=0.28U W=10U AS=2.6P AD=2.6P PS=10.52U PD=10.52U
+* device instance $17 r0 *1 0.89,-5.67 nfet_03v3
+M$17 \$4 \$3 SUB SUB nfet_03v3 L=0.28U W=10U AS=2.6P AD=2.6P PS=10.52U PD=10.52U
+* device instance $18 r0 *1 1.69,-5.67 nfet_03v3
+M$18 SUB \$3 \$4 SUB nfet_03v3 L=0.28U W=10U AS=2.6P AD=2.6P PS=10.52U PD=10.52U
+* device instance $19 r0 *1 2.49,-5.67 nfet_03v3
+M$19 \$4 \$3 SUB SUB nfet_03v3 L=0.28U W=10U AS=2.6P AD=2.6P PS=10.52U PD=10.52U
+* device instance $20 r0 *1 3.29,-5.67 nfet_03v3
+M$20 SUB \$3 \$4 SUB nfet_03v3 L=0.28U W=10U AS=2.6P AD=7.3P PS=10.52U PD=21.46U
+* device instance $21 r0 *1 -2.71,4.18 ppolyf_s
+R$21 \$5 \$10 SUB 18.25 ppolyf_s L=5U W=2U
+.ENDS GainStage
+
+* cell InputBuffer
+* pin 
+* pin 
+* pin 
+* pin 
+* pin 
+* pin 
+* pin 
+* pin SUB
+.SUBCKT InputBuffer \$1 \$2 \$3 \$5 \$8 \$10 \$11 SUB
+* cell instance $1 m135 *1 -0.78,26.71
+X$1 SUB \$3 SUB ppolyf_s_resistor
+* device instance $1 r0 *1 -14.25,13.32 pfet_03v3
+M$1 \$8 \$6 \$5 \$8 pfet_03v3 L=0.28U W=10U AS=5.3P AD=2.6P PS=21.06U PD=10.52U
+* device instance $2 r0 *1 -13.45,13.32 pfet_03v3
+M$2 \$5 \$6 \$8 \$8 pfet_03v3 L=0.28U W=10U AS=2.6P AD=2.6P PS=10.52U PD=10.52U
+* device instance $3 r0 *1 -12.65,13.32 pfet_03v3
+M$3 \$8 \$6 \$5 \$8 pfet_03v3 L=0.28U W=10U AS=2.6P AD=2.6P PS=10.52U PD=10.52U
+* device instance $4 r0 *1 -11.85,13.32 pfet_03v3
+M$4 \$5 \$6 \$8 \$8 pfet_03v3 L=0.28U W=10U AS=2.6P AD=2.6P PS=10.52U PD=10.52U
+* device instance $5 r0 *1 -11.05,13.32 pfet_03v3
+M$5 \$8 \$6 \$5 \$8 pfet_03v3 L=0.28U W=10U AS=2.6P AD=5.7P PS=10.52U PD=21.14U
+* device instance $6 r0 *1 -17.88,14.51 pfet_03v3
+M$6 \$9 \$11 \$8 \$8 pfet_03v3 L=0.3U W=0.6U AS=0.54P AD=0.48P PS=3U PD=2.8U
+* device instance $7 r0 *1 -19.08,11.86 pfet_03v3
+M$7 \$9 \$10 \$6 \$8 pfet_03v3 L=0.3U W=0.6U AS=0.474P AD=0.27P PS=2.78U PD=1.5U
+* device instance $8 r0 *1 -17.88,11.86 pfet_03v3
+M$8 \$7 \$5 \$9 \$8 pfet_03v3 L=0.3U W=0.6U AS=0.27P AD=0.486P PS=1.5U PD=2.82U
+* device instance $9 r0 *1 -19.09,8.31 nfet_03v3
+M$9 SUB \$7 \$6 SUB nfet_03v3 L=0.3U W=0.6U AS=0.468P AD=0.273P PS=2.76U
++ PD=1.51U
+* device instance $10 r0 *1 -17.88,8.31 nfet_03v3
+M$10 \$7 \$7 SUB SUB nfet_03v3 L=0.3U W=0.6U AS=0.273P AD=0.486P PS=1.51U
++ PD=2.82U
+* device instance $11 r0 *1 -14.25,1.96 nfet_03v3
+M$11 \$3 \$1 \$5 SUB nfet_03v3 L=0.28U W=10U AS=6P AD=2.6P PS=21.2U PD=10.52U
+* device instance $12 r0 *1 -13.45,1.96 nfet_03v3
+M$12 \$5 \$1 \$3 SUB nfet_03v3 L=0.28U W=10U AS=2.6P AD=2.6P PS=10.52U PD=10.52U
+* device instance $13 r0 *1 -12.65,1.96 nfet_03v3
+M$13 \$3 \$1 \$5 SUB nfet_03v3 L=0.28U W=10U AS=2.6P AD=2.6P PS=10.52U PD=10.52U
+* device instance $14 r0 *1 -11.85,1.96 nfet_03v3
+M$14 \$5 \$1 \$3 SUB nfet_03v3 L=0.28U W=10U AS=2.6P AD=2.6P PS=10.52U PD=10.52U
+* device instance $15 r0 *1 -11.05,1.96 nfet_03v3
+M$15 \$3 \$1 \$5 SUB nfet_03v3 L=0.28U W=10U AS=2.6P AD=5.5P PS=10.52U PD=21.1U
+.ENDS InputBuffer
+
+* cell ppolyf_u_high_Rs_resistor
+* pin 
+* pin 
+* pin SUB
+.SUBCKT ppolyf_u_high_Rs_resistor \$2 \$3 SUB
+* device instance $1 r0 *1 2,2 ppolyf_u_1k
+R$1 \$2 \$3 SUB 1000 ppolyf_u_1k L=4U W=4U
+.ENDS ppolyf_u_high_Rs_resistor
+
+* cell npn_bjt
+* pin SUB
+* pin 
+* pin 
+* pin 
+.SUBCKT npn_bjt SUB \$I3 \$I2 \$I1
+* cell instance $1 r0 *1 0,0
+X$1 \$I1 \$I3 \$I2 SUB npn_10p00x10p00
+.ENDS npn_bjt
+
+* cell ppolyf_s_resistor
+* pin 
+* pin 
+* pin SUB
+.SUBCKT ppolyf_s_resistor \$2 \$3 SUB
+* device instance $1 r0 *1 18,2 ppolyf_s
+R$1 \$2 \$3 SUB 65.7 ppolyf_s L=36U W=4U
+.ENDS ppolyf_s_resistor
+
+* cell npn_10p00x10p00
+* pin I1_default_E
+* pin I1_default_C
+* pin I1_default_B
+* pin I1_default_S
+.SUBCKT npn_10p00x10p00 I1_default_E I1_default_C I1_default_B I1_default_S
+* cell instance $1 r0 *1 6.6,6.6
+X$1 I1_default_C I1_default_B I1_default_E I1_default_S npn_10p00x10p00_0
+.ENDS npn_10p00x10p00
+
+* cell npn_10p00x10p00_0
+* pin 
+* pin 
+* pin 
+* pin SUB
+.SUBCKT npn_10p00x10p00_0 \$2 \$3 \$4 SUB
+* device instance $1 r0 *1 5,5 npn_10p00x10p00
+Q$1 \$2 \$3 \$4 SUB npn_10p00x10p00 AE=100P PE=40U AB=131.7904P PB=45.92U
++ AC=131.7904P PC=45.92U NE=1
+.ENDS npn_10p00x10p00_0

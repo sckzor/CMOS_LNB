@@ -1,6 +1,6 @@
 <Qucs Schematic 26.1.1>
 <Properties>
-  <View=-542,-329,2077,1104,0.614951,0,0>
+  <View=-1777,-1254,2996,2088,0.559808,642,448>
   <Grid=10,10,1>
   <DataSet=LNA_Layout_Testing_S_Parameters_MkII.dat>
   <DataDisplay=LNA_Layout_Testing_S_Parameters_MkII.dpl>
@@ -17,56 +17,90 @@
 </Symbol>
 <Components>
   <.TR TR1 0 -666 143 0 50 0 0 "lin" 1 "0" 1 "0.02 us" 1 "2000" 0 "Trapezoidal" 0 "2" 0 "1 ns" 0 "1e-16" 0 "150" 0 "0.001" 0 "1 pA" 0 "1 uV" 0 "26.85" 0 "1e-3" 0 "1e-6" 0 "1" 0 "CroutLU" 0 "no" 0 "yes" 0 "0" 0>
-  <SpiceInclude SpiceInclude1 1 -616 -397 -37 16 0 0 "/foss/pdks/gf180mcuD/libs.tech/ngspice/design.ngspice" 1 "" 0 "" 0 "" 0 "" 0>
+  <SpiceInclude SpiceInclude1 1 -616 -647 -37 16 0 0 "/foss/pdks/gf180mcuD/libs.tech/ngspice/design.ngspice" 1 "" 0 "" 0 "" 0 "" 0>
   <.FFT FFT1 0 -526 143 0 50 0 0 "10GHz" 1 "1MHz" 1 "hanning" 1 "2" 0 "0" 0 "yes" 0>
-  <SpiceLib SpiceLib1 1 -640 -221 -14 16 0 0 "/foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice" 1 "bjt_typical" 1>
-  <SpiceLib SpiceLib2 1 -640 -131 -14 16 0 0 "/foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice" 1 "cap_mim" 1>
-  <SpiceLib SpiceLib3 1 -640 -41 -14 16 0 0 "/foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice" 1 "mimcap_typical" 1>
-  <SpiceLib SpiceLib4 1 -640 49 -14 16 0 0 "/foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice" 1 "res_typical" 1>
+  <SpiceLib SpiceLib1 1 -640 -471 -14 16 0 0 "/foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice" 1 "bjt_typical" 1>
+  <SpiceLib SpiceLib2 1 -640 -381 -14 16 0 0 "/foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice" 1 "cap_mim" 1>
+  <SpiceLib SpiceLib3 1 -640 -291 -14 16 0 0 "/foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice" 1 "mimcap_typical" 1>
+  <SpiceLib SpiceLib4 1 -640 -201 -14 16 0 0 "/foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice" 1 "res_typical" 1>
   <.SP SP1 1 -356 143 0 50 0 0 "lin" 1 "1 MHz" 1 "5 GHz" 1 "200" 1 "yes" 0 "1" 0 "2" 0 "no" 0 "no" 0>
   <NutmegEq NutmegEq3 1 514 153 -31 16 0 0 "ALL" 1 "delta=(s_1_1 * s_2_2) - (s_1_2 * s_2_1)" 1 "rollett=(1 - (abs(s_1_1) ^ 2) - (abs(s_2_2) ^ 2) + (abs(delta) ^ 2))  / max((2 * abs(s_1_2 * s_2_1)), 0.000000001)" 1 "mu=(1 - (abs(s_1_1) ^ 2))  / ( abs((s_2_2 - (delta * conj(s_1_1)))) + abs(s_1_2 * s_2_1) )" 1>
   <SpicePar SpicePar1 1 -156 163 -29 16 0 0 "sw_stat_global=0" 1 "sw_stat_mismatch=0" 1 "fnoicor=1" 1>
-  <SpiceLib SpiceLib5 1 -640 -311 -14 16 0 0 "/foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice" 1 "FF" 1>
-  <GND * 1 690 -130 0 0 0 0>
-  <C C1 1 760 -210 -26 17 0 0 "10 pF" 1 "" 0 "neutral" 0>
+  <SpiceLib SpiceLib5 1 -640 -561 -14 16 0 0 "/foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice" 1 "FF" 1>
+  <GND * 1 430 -130 0 0 0 0>
+  <C C1 1 500 -210 -26 17 0 0 "10 pF" 1 "" 0 "neutral" 0>
   <Pac P2 1 1480 -160 18 -26 0 1 "2" 1 "50 Ohm" 1 "0 dBm" 0 "1 MHz" 0 "26.85" 0 "true" 0 "false" 0>
   <GND * 1 1480 -130 0 0 0 0>
   <C C2 1 1410 -210 -26 17 1 2 "10 pF" 1 "" 0 "neutral" 0>
   <GND * 1 1230 -60 0 0 0 0>
-  <GND * 1 550 -180 0 0 0 0>
+  <GND * 1 290 -180 0 0 0 0>
   <GND * 1 1580 -180 0 0 0 0>
   <Vdc V2 1 1580 -210 18 -26 0 1 "2.5 V" 1>
-  <Vdc V3 1 840 130 18 -26 0 1 "1.7 V" 1>
   <GND * 1 840 160 0 0 0 0>
   <GND * 1 890 30 0 0 0 0>
   <Vdc V4 1 890 0 18 -26 0 1 "3.3 V" 1>
-  <Pac P1 1 690 -160 -106 -26 1 1 "1" 1 "50 Ohm" 1 "0 dBm" 0 "1 MHz" 0 "26.85" 0 "true" 0 "false" 0>
+  <Pac P1 1 430 -160 -106 -26 1 1 "1" 1 "50 Ohm" 1 "0 dBm" 0 "1 MHz" 0 "26.85" 0 "true" 0 "false" 0>
   <Vdc V5 1 1300 130 18 -26 0 1 "1.7 V" 1>
   <GND * 1 1300 160 0 0 0 0>
   <GND * 1 1080 60 0 0 0 0>
-  <Vdc V1 1 550 -210 18 -26 0 1 "1 V" 1>
-  <SPICE X1 1 1080 -120 -26 -209 0 0 "/foss/designs/LNA/MkIII/Layout/output/GainStageMkIV__TOP/magic_RC/TOP.pex.spice" 1 "_netTBias,_netCBias,_netInput,_netOutput,_netCGBias,_netCom,_netVDD,_netGND,_netGainStage1,_netGainStage2,_netInputBuffer" 0 "yes" 0 "none" 0 "" 0>
+  <Vdc V1 1 290 -210 18 -26 0 1 "1 V" 1>
   <NutmegEq NutmegEq2 1 64 163 -31 16 0 0 "SP1" 1 "s11_db=dB(s_1_1)" 1 "s21_db=dB(s_2_1)" 1 "s12_db=dB(s_1_2)" 1 "s22_db=dB(s_2_2)" 1 "nf_db=log( cy_2_2 / ( boltz * 10 * (y_2_1 ^ 2) )) / 10" 1>
+  <GND * 1 1070 -390 0 0 0 0>
+  <SpiceLib SpiceLib6 1 -640 -101 -14 16 0 0 "/foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice" 1 "diode_typical" 1>
+  <SPICE X1 1 1080 -120 -26 -209 0 0 "/foss/designs/LNA/MkIII/Layout/LNA/output/GainStageMkIV__TOP/magic_RC/TOP.pex.spice" 1 "_netTBias,_netCBias,_netInput,_netOutput,_netCGBias,_netCom,_netVDD,_netGND,_netGainStage1,_netGainStage2,_netInputBuffer" 0 "yes" 0 "none" 0 "" 0>
+  <SpiceLib SpiceLib7 1 -640 -1 -14 16 0 0 "/foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice" 1 "moscap_typical" 1>
+  <GND * 1 1000 -460 0 0 0 0>
+  <GND * 1 1330 -340 0 0 0 0>
+  <GND * 1 1260 -410 0 0 0 0>
+  <SPICE X2 1 1330 -430 -26 -119 0 0 "/foss/designs/LNA/MkIII/Layout/Pad/output/custom_pad_MkII__TOP/magic_CC/TOP.pex.spice" 1 "_netDVSS,_netVSS,_netVDD,_netDVDD,_netInput" 0 "yes" 0 "none" 0 "" 0>
+  <SPICE X3 1 1070 -480 -26 -119 0 0 "/foss/designs/LNA/MkIII/Layout/Pad/output/custom_pad_MkII__TOP/magic_CC/TOP.pex.spice" 1 "_netDVSS,_netVSS,_netVDD,_netDVDD,_netInput" 0 "yes" 0 "none" 0 "" 0>
+  <Vdc V3 1 840 130 18 -26 0 1 "2.5 V" 1>
 </Components>
 <Wires>
-  <690 -210 690 -190 "" 0 0 0 "">
-  <690 -210 730 -210 "" 0 0 0 "">
+  <430 -210 430 -190 "" 0 0 0 "">
+  <430 -210 470 -210 "" 0 0 0 "">
   <1480 -210 1480 -190 "" 0 0 0 "">
   <1440 -210 1480 -210 "" 0 0 0 "">
   <1110 -270 1580 -270 "" 0 0 0 "">
-  <790 -210 1050 -210 "" 0 0 0 "">
   <1230 -90 1230 -60 "" 0 0 0 "">
   <1110 -90 1230 -90 "" 0 0 0 "">
-  <1110 -210 1380 -210 "" 0 0 0 "">
   <1580 -270 1580 -240 "" 0 0 0 "">
-  <550 -270 550 -240 "" 0 0 0 "">
+  <290 -270 290 -240 "" 0 0 0 "">
   <890 -90 890 -30 "" 0 0 0 "">
   <840 -150 840 100 "" 0 0 0 "">
   <1300 -150 1300 100 "" 0 0 0 "">
   <1110 -150 1300 -150 "" 0 0 0 "">
   <840 -150 1050 -150 "" 0 0 0 "">
-  <550 -270 1050 -270 "" 0 0 0 "">
+  <290 -270 1050 -270 "" 0 0 0 "">
+  <530 -210 1000 -210 "" 0 0 0 "">
   <890 -90 1050 -90 "" 0 0 0 "">
+  <1110 -210 1260 -210 "" 0 0 0 "">
+  <1000 -480 1040 -480 "" 0 0 0 "">
+  <1000 -480 1000 -460 "" 0 0 0 "">
+  <1000 -540 1040 -540 "" 0 0 0 "">
+  <1000 -540 1000 -480 "" 0 0 0 "">
+  <1100 -480 1130 -480 "" 0 0 0 "">
+  <1130 -540 1130 -480 "" 0 0 0 "">
+  <1000 -590 1130 -590 "" 0 0 0 "">
+  <1000 -590 1000 -540 "" 0 0 0 "">
+  <1130 -590 1130 -540 "" 0 0 0 "">
+  <1100 -540 1130 -540 "" 0 0 0 "">
+  <1260 -430 1300 -430 "" 0 0 0 "">
+  <1260 -430 1260 -410 "" 0 0 0 "">
+  <1260 -490 1300 -490 "" 0 0 0 "">
+  <1260 -490 1260 -430 "" 0 0 0 "">
+  <1360 -430 1390 -430 "" 0 0 0 "">
+  <1390 -490 1390 -430 "" 0 0 0 "">
+  <1260 -540 1390 -540 "" 0 0 0 "">
+  <1260 -540 1260 -490 "" 0 0 0 "">
+  <1390 -540 1390 -490 "" 0 0 0 "">
+  <1360 -490 1390 -490 "" 0 0 0 "">
+  <1000 -420 1040 -420 "" 0 0 0 "">
+  <1000 -210 1050 -210 "" 0 0 0 "">
+  <1000 -420 1000 -210 "" 0 0 0 "">
+  <1260 -370 1300 -370 "" 0 0 0 "">
+  <1260 -210 1380 -210 "" 0 0 0 "">
+  <1260 -370 1260 -210 "" 0 0 0 "">
 </Wires>
 <Diagrams>
   <Rect -260 785 585 365 3 #c0c0c0 1 00 1 0 5e+08 5e+09 1 -21.713 5 1.96421 1 -1 0.2 1 315 0 225 1 0 0 "" "" "">

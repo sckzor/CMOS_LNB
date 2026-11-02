@@ -1,0 +1,96 @@
+[2026-10-28 16:06:44,477] [INFO]    GDS input file passed, running in LVS mode
+[2026-10-28 16:06:44,499] [INFO]    No explicit top cell specified, using top cell 'TOP'
+[2026-10-28 16:06:44,500] [INFO]    LVS input schematic not specified (argument --schematic), using dummy schematic
+[2026-10-28 16:06:44,565] [INFO]    Calling MAGIC
+[2026-10-28 16:06:44,565] [SUBPROCESS]    magic -dnull -noconsole -rcfile ../gf180mcuD.magicrc.custom output/custom_pad_MkII__TOP/magic_CC/TOP_MAGIC_CC_Script.tcl, output file: output/custom_pad_MkII__TOP/magic_CC/TOP_MAGIC_CC_Output.txt
+[2026-10-28 16:06:44,580] [SUBPROCESS]    
+[2026-10-28 16:06:44,581] [SUBPROCESS]    Magic 8.3 revision 681 - Compiled on Tue Aug 25 11:50:23 AM CEST 2026.
+[2026-10-28 16:06:44,581] [SUBPROCESS]    Starting magic under Tcl interpreter
+[2026-10-28 16:06:44,582] [SUBPROCESS]    Using the terminal as the console.
+[2026-10-28 16:06:44,582] [SUBPROCESS]    Using NULL graphics device.
+[2026-10-28 16:06:44,604] [SUBPROCESS]    Processing system .magicrc file
+[2026-10-28 16:06:44,609] [SUBPROCESS]    Switching to WIRING tool.
+[2026-10-28 16:06:44,610] [SUBPROCESS]    Switching to NETLIST tool.
+[2026-10-28 16:06:44,610] [SUBPROCESS]    Switching to PICK tool.
+[2026-10-28 16:06:44,611] [SUBPROCESS]    Switching to BOX tool.
+[2026-10-28 16:06:44,611] [SUBPROCESS]    Sourcing design custom .magicrc for technology gf180mcuD ...
+[2026-10-28 16:06:44,611] [SUBPROCESS]    10 Magic internal units = 1 Lambda
+[2026-10-28 16:06:44,612] [SUBPROCESS]    "gf180mcuD" is not one of the extraction styles Magic knows.
+[2026-10-28 16:06:44,612] [SUBPROCESS]    The current style is "default".
+[2026-10-28 16:06:44,613] [SUBPROCESS]    The extraction styles are: default.
+[2026-10-28 16:06:44,633] [SUBPROCESS]    Input style import: scaleFactor=10, multiplier=2
+[2026-10-28 16:06:44,728] [SUBPROCESS]    The following types are not handled by extraction and will be treated as non-electrical types:
+[2026-10-28 16:06:44,730] [SUBPROCESS]        obsactive mvobsactive filldiff fillpoly m1hole obsm1 fillm1 obsv1 m2hole obsm2 fillm2 obsv2 m3hole obsm3 fillm3 m4hole obsm4 fillm4 m5hole obsm5 fillm5 glass fillblock lvstext obscomment 
+[2026-10-28 16:06:44,733] [SUBPROCESS]    Scaled tech values by 10 / 1 to match internal grid scaling
+[2026-10-28 16:06:44,734] [SUBPROCESS]    Loading gf180mcuD Device Generator Menu ...
+[2026-10-28 16:06:44,735] [SUBPROCESS]    Loading "output/custom_pad_MkII__TOP/magic_CC/TOP_MAGIC_CC_Script.tcl" from command line.
+[2026-10-28 16:06:44,735] [SUBPROCESS]    Warning: Calma reading is not undoable!  I hope that's OK.
+[2026-10-28 16:06:44,736] [SUBPROCESS]    Library written using GDS-II Release 6.0
+[2026-10-28 16:06:44,736] [SUBPROCESS]    Library name: LIB
+[2026-10-28 16:06:44,737] [SUBPROCESS]    Reading "$$$CONTEXT_INFO$$$".
+[2026-10-28 16:06:44,737] [SUBPROCESS]    Reading "TOP".
+[2026-10-28 16:06:45,402] [SUBPROCESS]    Extracting TOP into /foss/designs/LNA/MkIII/Layout/Pad/output/custom_pad_MkII__TOP/magic_CC/TOP.ext:
+[2026-10-28 16:06:45,403] [SUBPROCESS]    Processing TOP
+[2026-10-28 16:06:46,958] [SUBPROCESS]    exttospice finished.
+[2026-10-28 16:06:46,962] [INFO]    MAGIC succeeded after 2.395s
+[2026-10-28 16:06:46,967] [SUBPROCESS]    Report DB saved at: output/custom_pad_MkII__TOP/magic_CC/TOP_MAGIC_report.rdb.gz
+[2026-10-28 16:06:46,968] [SUBPROCESS]    SPICE netlist saved at: output/custom_pad_MkII__TOP/magic_CC/TOP.pex.spice
+[2026-10-28 16:06:46,970] [SUBPROCESS]    * NGSPICE file created from TOP.ext - technology: gf180mcuD
+
+.subckt TOP DVSS VSS VDD DVDD Input
+X0 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+X1 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+X2 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+X3 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+X4 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+X5 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+X6 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+X7 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+X8 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+X9 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+D0 Input DVDD diode_pd2nw_06v0 pj=0.106n area=0.15n
+X10 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+X11 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+X12 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+X13 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+X14 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+X15 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+X16 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+D1 Input DVDD diode_pd2nw_06v0 pj=0.106n area=0.15n
+X17 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+X18 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+X19 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+X20 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+X21 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+D2 Input DVDD diode_pd2nw_06v0 pj=0.106n area=0.15n
+X22 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+X23 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+D3 DVSS DVDD diode_nd2ps_06v0 pj=82p area=40p
+X24 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+X25 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+D4 DVSS DVDD diode_nd2ps_06v0 pj=82p area=40p
+X26 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+X27 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+X28 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+D5 DVSS DVDD diode_nd2ps_06v0 pj=82p area=40p
+D6 Input DVDD diode_pd2nw_06v0 pj=0.106n area=0.15n
+X29 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+X30 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+D7 DVSS DVDD diode_nd2ps_06v0 pj=82p area=40p
+X31 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+X32 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+X33 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+X34 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+X35 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+C0 Input VDD 21.911f
+C1 DVDD Input 0.50306p
+C2 DVSS VDD 40.4107f
+C3 DVDD DVSS 1.15112p
+C4 DVDD VDD 38.4152f
+C5 Input DVSS 0.34303p
+C6 VDD VSS 20.3592f
+C7 Input VSS 0.16963p
+C8 DVDD VSS 0.35203p
+C9 DVSS VSS 0.32476p
+.ends
+
