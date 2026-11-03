@@ -1,6 +1,6 @@
 <Qucs Schematic 26.1.1>
 <Properties>
-  <View=-734,-223,1023,759,1.0854,101,18>
+  <View=-587,-178,561,465,1.37227,0,0>
   <Grid=10,10,1>
   <DataSet=ReferenceMkI.dat>
   <DataDisplay=ReferenceMkI.dpl>
@@ -36,10 +36,7 @@
   <Text 30 30 12 #000000 0 "1V7\n">
 </Symbol>
 <Components>
-  <GND * 1 530 170 0 0 0 0>
-  <GND * 1 570 90 0 0 0 0>
   <GND * 1 220 400 0 0 0 0>
-  <MOS_SPICE X2 1 530 50 -26 34 0 0 "X" 1 "4" 1 "nmos" 1 "nfet_06v0 L=4u W=10u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)' ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0" 0 "" 0 "" 0 "" 0 "" 0>
   <GND * 1 -230 400 0 0 0 0>
   <Sub SUB1 1 110 150 -26 78 0 0 "./Schematic/LDO/LDOMkI.sch" 0>
   <Sub SUB2 1 -340 150 -26 78 0 0 "./Schematic/LDO/LDOMkI.sch" 0>
@@ -47,27 +44,20 @@
   <Port 2V5 1 350 140 12 -23 1 3 "2" 1 "analog" 0>
   <Port VDD 1 -340 -110 -72 -23 0 3 "3" 1 "analog" 0>
   <Port BandGap 1 -450 -10 -73 -23 0 3 "4" 1 "analog" 0>
-  <Port TBias 1 530 -80 -72 -23 0 3 "5" 1 "analog" 0>
+  <Port TBias 1 490 -80 -72 -23 0 3 "5" 1 "analog" 0>
   <C_SPICE C2 1 -100 240 17 -26 0 1 "cap_mim_2f0fF c_width=11u c_length=22u" 0 "" 0 "" 0 "" 0 "" 0 "2" 1 "X" 1>
   <C_SPICE C3 1 350 240 17 -26 0 1 "cap_mim_2f0fF c_width=11u c_length=22u" 0 "" 0 "" 0 "" 0 "" 0 "2" 1 "X" 1>
   <GND * 1 -280 400 0 0 0 0>
   <GND * 1 170 400 0 0 0 0>
-  <R_SPICE R5 1 -230 270 15 -26 0 1 "ppolyf_u_1k r_width=1u r_length=10u" 0 "" 0 "" 0 "" 0 "" 0 "3" 1 "X" 1>
-  <R_SPICE R7 1 -230 350 15 -26 0 1 "ppolyf_u_1k r_width=1u r_length=24u" 0 "" 0 "" 0 "" 0 "" 0 "3" 1 "X" 1>
   <R_SPICE R8 1 220 270 15 -26 0 1 "ppolyf_u_1k r_width=1u r_length=15u" 0 "" 0 "" 0 "" 0 "" 0 "3" 1 "X" 1>
   <R_SPICE R6 1 220 350 15 -26 0 1 "ppolyf_u_1k r_width=1u r_length=14u" 0 "" 0 "" 0 "" 0 "" 0 "3" 1 "X" 1>
+  <R_SPICE R5 1 -230 270 15 -26 0 1 "ppolyf_u_1k r_width=1u r_length=10u" 0 "" 0 "" 0 "" 0 "" 0 "3" 1 "X" 1>
+  <R_SPICE R7 1 -230 350 15 -26 0 1 "ppolyf_u_1k r_width=1u r_length=24u" 0 "" 0 "" 0 "" 0 "" 0 "3" 1 "X" 1>
 </Components>
 <Wires>
-  <530 -80 530 10 "" 0 0 0 "">
-  <530 80 530 170 "" 0 0 0 "">
-  <550 50 570 50 "" 0 0 0 "">
-  <570 50 570 90 "" 0 0 0 "">
+  <490 -80 490 10 "" 0 0 0 "">
   <220 310 220 320 "" 0 0 0 "">
   <350 270 350 310 "" 0 0 0 "">
-  <530 10 530 20 "" 0 0 0 "">
-  <490 10 530 10 "" 0 0 0 "">
-  <490 50 500 50 "" 0 0 0 "">
-  <490 10 490 50 "" 0 0 0 "">
   <220 300 220 310 "" 0 0 0 "">
   <0 190 0 310 "" 0 0 0 "">
   <0 190 20 190 "" 0 0 0 "">
