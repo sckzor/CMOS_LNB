@@ -1,0 +1,4 @@
+[2026-11-03 03:09:52,013] [ERROR]    Invalid magicrc: File does not exist at ../gf180mcuD.magicrc.custo
+[2026-11-03 03:09:52,014] [INFO]    GDS input file passed, running in LVS mode
+[2026-11-03 03:09:52,015] [INFO]    No explicit top cell specified, using top cell 'TOP'
+[2026-11-03 03:09:52,015] [INFO]    LVS input schematic not specified (argument --schematic), using dummy schematic
