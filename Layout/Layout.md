@@ -1,4 +1,5 @@
 # Low Noise Amplifier Layout
+![LNA Layout](/Images/LNA_Layout.png)
 
 ## Input Buffer
 ![Input Buffer Layout](/Images/InputBuffer_Layout.png)
