@@ -1,0 +1,112 @@
+[2026-10-24 21:10:27,058] [INFO]    GDS input file passed, running in LVS mode
+[2026-10-24 21:10:27,061] [INFO]    No explicit top cell specified, using top cell 'TOP'
+[2026-10-24 21:10:27,063] [INFO]    LVS input schematic not specified (argument --schematic), using dummy schematic
+[2026-10-24 21:10:27,071] [INFO]    Calling MAGIC
+[2026-10-24 21:10:27,072] [SUBPROCESS]    magic -dnull -noconsole -rcfile gf180mcuD.magicrc.custom output/GainStageMkIV__TOP/magic_CC/TOP_MAGIC_CC_Script.tcl, output file: output/GainStageMkIV__TOP/magic_CC/TOP_MAGIC_CC_Output.txt
+[2026-10-24 21:10:27,081] [SUBPROCESS]    
+[2026-10-24 21:10:27,082] [SUBPROCESS]    Magic 8.3 revision 681 - Compiled on Tue Aug 25 11:50:23 AM CEST 2026.
+[2026-10-24 21:10:27,083] [SUBPROCESS]    Starting magic under Tcl interpreter
+[2026-10-24 21:10:27,083] [SUBPROCESS]    Using the terminal as the console.
+[2026-10-24 21:10:27,083] [SUBPROCESS]    Using NULL graphics device.
+[2026-10-24 21:10:27,100] [SUBPROCESS]    Processing system .magicrc file
+[2026-10-24 21:10:27,105] [SUBPROCESS]    Switching to WIRING tool.
+[2026-10-24 21:10:27,105] [SUBPROCESS]    Switching to NETLIST tool.
+[2026-10-24 21:10:27,106] [SUBPROCESS]    Switching to PICK tool.
+[2026-10-24 21:10:27,106] [SUBPROCESS]    Switching to BOX tool.
+[2026-10-24 21:10:27,106] [SUBPROCESS]    Sourcing design custom .magicrc for technology gf180mcuD ...
+[2026-10-24 21:10:27,106] [SUBPROCESS]    10 Magic internal units = 1 Lambda
+[2026-10-24 21:10:27,127] [SUBPROCESS]    Input style import: scaleFactor=10, multiplier=2
+[2026-10-24 21:10:27,218] [SUBPROCESS]    The following types are not handled by extraction and will be treated as non-electrical types:
+[2026-10-24 21:10:27,219] [SUBPROCESS]        obsactive mvobsactive filldiff fillpoly m1hole obsm1 fillm1 obsv1 m2hole obsm2 fillm2 obsv2 m3hole obsm3 fillm3 m4hole obsm4 fillm4 m5hole obsm5 fillm5 glass fillblock lvstext obscomment 
+[2026-10-24 21:10:27,224] [SUBPROCESS]    Scaled tech values by 10 / 1 to match internal grid scaling
+[2026-10-24 21:10:27,225] [SUBPROCESS]    Loading gf180mcuD Device Generator Menu ...
+[2026-10-24 21:10:27,226] [SUBPROCESS]    Loading "output/GainStageMkIV__TOP/magic_CC/TOP_MAGIC_CC_Script.tcl" from command line.
+[2026-10-24 21:10:27,227] [SUBPROCESS]    Warning: Calma reading is not undoable!  I hope that's OK.
+[2026-10-24 21:10:27,227] [SUBPROCESS]    Library written using GDS-II Release 6.0
+[2026-10-24 21:10:27,227] [SUBPROCESS]    Library name: LIB
+[2026-10-24 21:10:27,227] [SUBPROCESS]    Reading "$$$CONTEXT_INFO$$$".
+[2026-10-24 21:10:27,228] [SUBPROCESS]    Reading "npn_10p00x10p00_0".
+[2026-10-24 21:10:27,234] [SUBPROCESS]    Reading "npn_10p00x10p00".
+[2026-10-24 21:10:27,235] [SUBPROCESS]    Reading "ppolyf_s_resistor".
+[2026-10-24 21:10:27,235] [SUBPROCESS]    Reading "npn_bjt".
+[2026-10-24 21:10:27,236] [SUBPROCESS]    Reading "ppolyf_u_high_Rs_resistor".
+[2026-10-24 21:10:27,236] [SUBPROCESS]    Reading "GainStage".
+[2026-10-24 21:10:27,243] [SUBPROCESS]    Reading "InputBuffer".
+[2026-10-24 21:10:27,247] [SUBPROCESS]    Reading "OutputBuffer".
+[2026-10-24 21:10:27,247] [SUBPROCESS]    Reading "TOP".
+[2026-10-24 21:10:27,251] [SUBPROCESS]    Extracting TOP into /foss/designs/LNA/MkIII/Layout/output/GainStageMkIV__TOP/magic_CC/TOP.ext:
+[2026-10-24 21:10:27,252] [SUBPROCESS]    Processing TOP
+[2026-10-24 21:10:27,255] [SUBPROCESS]    Device has multiple lengths:  scaling all widths to length 7198
+[2026-10-24 21:10:27,256] [SUBPROCESS]    TOP: 10 warnings
+[2026-10-24 21:10:27,256] [SUBPROCESS]    Total of 10 warnings.
+[2026-10-24 21:10:27,257] [SUBPROCESS]    Warning:  Ports "GND" and "VDD" are electrically shorted.
+[2026-10-24 21:10:27,257] [SUBPROCESS]    Warning:  Ports "GND" and "Input" are electrically shorted.
+[2026-10-24 21:10:27,257] [SUBPROCESS]    exttospice finished.
+[2026-10-24 21:10:27,260] [INFO]    MAGIC succeeded after 0.1865s
+[2026-10-24 21:10:27,265] [SUBPROCESS]    Report DB saved at: output/GainStageMkIV__TOP/magic_CC/TOP_MAGIC_report.rdb.gz
+[2026-10-24 21:10:27,265] [SUBPROCESS]    SPICE netlist saved at: output/GainStageMkIV__TOP/magic_CC/TOP.pex.spice
+[2026-10-24 21:10:27,266] [SUBPROCESS]    * NGSPICE file created from TOP.ext - technology: gf180mcuD
+
+.subckt TOP GainStage1 GainStage2 InputBuffer Output VDD Com TBias CBias CGBias
+X0 InputBuffer VDD VDD VDD pfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X1 VDD a_150_194# a_150_194# VDD nfet_03v3 ad=0.273p pd=1.51u as=0.48p ps=2.8u w=0.6u l=0.3u
+X2 a_2346_n2146# InputBuffer VDD VDD nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X3 VDD CGBias InputBuffer VDD nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X4 VDD a_3058_194# VDD VDD nfet_03v3 ad=0.273p pd=1.51u as=0.10117n ps=0.38766m w=0.6u l=0.3u
+X5 a_2346_n2146# CBias GainStage1 VDD nfet_03v3 ad=2.6p pd=10.52u as=6p ps=21.2u w=10u l=0.28u
+X6 VDD InputBuffer a_2346_n2146# VDD nfet_03v3 ad=13.2p pd=22.64u as=2.6p ps=10.52u w=10u l=0.28u
+X7 a_n562_n2146# CBias GainStage2 VDD nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X8 GainStage1 CBias a_2346_n2146# VDD nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X9 InputBuffer CGBias VDD VDD nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X10 a_5182_1988# InputBuffer VDD VDD pfet_03v3 ad=0.48p pd=2.8u as=0.27p ps=1.5u w=0.6u l=0.3u
+X11 VDD TBias VDD VDD pfet_03v3 ad=0.48p pd=2.8u as=0.1159n ps=0.50944m w=0.6u l=0.3u
+X12 VDD InputBuffer a_2346_n2146# VDD nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X13 VDD VDD a_n724_1852# VDD pfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X14 a_2346_n2146# InputBuffer VDD VDD nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X15 a_n724_1852# VDD VDD VDD pfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X16 a_2184_1852# VDD VDD VDD pfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X17 VDD VDD InputBuffer VDD pfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X18 VDD GainStage2 a_150_194# VDD pfet_03v3 ad=0.267p pd=1.49u as=0.48p ps=2.8u w=0.6u l=0.3u
+X19 InputBuffer VDD VDD VDD pfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X20 VDD a_3058_194# a_3058_194# VDD nfet_03v3 ad=0.273p pd=1.51u as=0.48p ps=2.8u w=0.6u l=0.3u
+X21 VDD CGBias InputBuffer VDD nfet_03v3 ad=2.6p pd=10.52u as=6p ps=21.2u w=10u l=0.28u
+X22 VDD Com VDD VDD pfet_03v3 ad=0.267p pd=1.49u as=0 ps=0 w=0.6u l=0.3u
+X23 VDD CGBias InputBuffer VDD nfet_03v3 ad=12.2p pd=22.44u as=2.6p ps=10.52u w=10u l=0.28u
+X24 a_2184_1852# GainStage1 VDD ppolyf_s r_width=2u r_length=5u
+X25 VDD GainStage1 a_n562_n2146# VDD nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X26 a_n724_1852# GainStage2 VDD ppolyf_s r_width=2u r_length=5u
+X27 VDD GainStage2 Output VDD npn_10p00x10p00
+X28 VDD VDD a_2184_1852# VDD pfet_03v3 ad=2.6p pd=10.52u as=5.3p ps=21.06u w=10u l=0.28u
+X29 VDD VDD VDD ppolyf_s r_width=5.11u r_length=35.99u
+X30 VDD TBias VDD VDD pfet_03v3 ad=0.48p pd=2.8u as=0 ps=0 w=0.6u l=0.3u
+X31 GainStage2 CBias a_n562_n2146# VDD nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X32 VDD VDD a_n724_1852# VDD pfet_03v3 ad=2.6p pd=10.52u as=5.3p ps=21.06u w=10u l=0.28u
+X33 VDD VDD InputBuffer VDD pfet_03v3 ad=2.6p pd=10.52u as=5.3p ps=21.06u w=10u l=0.28u
+X34 Output VDD VDD ppolyf_u_1k r_width=4u r_length=4u
+X35 a_n562_n2146# CBias GainStage2 VDD nfet_03v3 ad=2.6p pd=10.52u as=6p ps=21.2u w=10u l=0.28u
+X36 a_2346_n2146# CBias GainStage1 VDD nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X37 VDD VDD a_2184_1852# VDD pfet_03v3 ad=12.9p pd=22.58u as=2.6p ps=10.52u w=10u l=0.28u
+X38 VDD TBias VDD VDD pfet_03v3 ad=0.9p pd=4.2u as=0 ps=0 w=0.6u l=0.3u
+X39 VDD GainStage1 a_3058_194# VDD pfet_03v3 ad=0.267p pd=1.49u as=0.48p ps=2.8u w=0.6u l=0.3u
+X40 VDD Com VDD VDD pfet_03v3 ad=0.267p pd=1.49u as=0 ps=0 w=0.6u l=0.3u
+X41 a_n562_n2146# GainStage1 VDD VDD nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X42 VDD VDD InputBuffer VDD pfet_03v3 ad=12.9p pd=22.58u as=2.6p ps=10.52u w=10u l=0.28u
+X43 VDD a_150_194# VDD VDD nfet_03v3 ad=0.273p pd=1.51u as=0 ps=0 w=0.6u l=0.3u
+X44 VDD GainStage1 a_n562_n2146# VDD nfet_03v3 ad=13.2p pd=22.64u as=2.6p ps=10.52u w=10u l=0.28u
+X45 InputBuffer CGBias VDD VDD nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X46 a_5182_1988# a_5182_1988# VDD VDD nfet_03v3 ad=0.48p pd=2.8u as=0.273p ps=1.51u w=0.6u l=0.3u
+X47 VDD Com VDD VDD pfet_03v3 ad=0.9p pd=4.2u as=0 ps=0 w=0.6u l=0.3u
+X48 VDD InputBuffer a_2346_n2146# VDD nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X49 a_n562_n2146# CBias GainStage2 VDD nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X50 VDD VDD a_n724_1852# VDD pfet_03v3 ad=12.9p pd=22.58u as=2.6p ps=10.52u w=10u l=0.28u
+X51 GainStage2 CBias a_n562_n2146# VDD nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X52 GainStage1 CBias a_2346_n2146# VDD nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X53 a_2346_n2146# CBias GainStage1 VDD nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X54 VDD GainStage1 a_n562_n2146# VDD nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X55 a_n724_1852# VDD VDD VDD pfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X56 a_2184_1852# VDD VDD VDD pfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X57 VDD a_5182_1988# VDD VDD nfet_03v3 ad=0.894p pd=4.18u as=0 ps=0 w=0.6u l=0.3u
+X58 a_n562_n2146# GainStage1 VDD VDD nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X59 VDD VDD a_2184_1852# VDD pfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+.ends
+

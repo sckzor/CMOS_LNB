@@ -1,0 +1,765 @@
+* NGSPICE file created from TOP.ext - technology: gf180mcuD
+
+.subckt TOP iDAC Input Output BandGap vDAC VDD GND
+X0 a_n9884_6770.t0 iDAC OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t41 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t40 nfet_06v0 ad=7.3p pd=21.46u as=2.6p ps=10.52u w=10u l=4u
+X1 a_3064_n2566.t0 a_5048_1590.t0 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t53 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t52 pfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X2 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t32 a_150_194.t0 a_150_194.t0 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t31 nfet_03v3 ad=0.273p pd=1.51u as=0.48p ps=2.8u w=0.6u l=0.3u
+X3 a_2346_n2146# a_3064_n2566.t0 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t24 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t23 nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X4 Input a_n4608_7484.t0 a_3064_n2566.t0 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t42 nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X5 a_n6608_7424.t0 a_5194_10442.t0 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t13 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t12 pfet_06v0 ad=7.7p pd=21.54u as=2.6p ps=10.52u w=10u l=4u
+X6 a_2264_4164.t0 a_3058_194.t0 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t3 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t2 nfet_03v3 ad=0.474p pd=2.78u as=0.273p ps=1.51u w=0.6u l=0.3u
+X7 a_2346_n2146# vDAC.t0 a_156_n2566.t0 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t11 nfet_03v3 ad=2.6p pd=10.52u as=6p ps=21.2u w=10u l=0.28u
+X8 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t30 a_3064_n2566.t0 a_2346_n2146# OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t29 nfet_03v3 ad=13.2p pd=22.64u as=2.6p ps=10.52u w=10u l=0.28u
+X9 a_n562_n2146# vDAC.t1 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.t1 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t8 nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X10 a_156_n2566.t0 vDAC.t0 a_2346_n2146# OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t14 nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X11 a_3064_n2566.t0 a_n4608_7484.t0 Input OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t42 nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X12 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t39 iDAC iDAC OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t38 nfet_06v0 ad=2.6p pd=10.52u as=7.3p ps=21.46u w=10u l=4u
+X13 a_5182_1808.t0 a_3064_n2566.t0 a_5266_2300.t0 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t14 pfet_03v3 ad=0.486p pd=2.82u as=0.27p ps=1.5u w=0.6u l=0.3u
+X14 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t3 a_n6608_7424.t0 a_n4608_7484.t0 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t2 pfet_06v0 ad=5.2p pd=20.52u as=5.2p ps=20.52u w=20u l=10u
+X15 a_4652_7498# a_n2470_12372# a_5194_10442.t0 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t46 nfet_06v0 ad=2.6p pd=10.52u as=7.3p ps=21.46u w=10u l=4u
+X16 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t34 a_n9884_6770.t0 a_3042_1254.t0 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t33 pfet_03v3 ad=0.9p pd=4.2u as=0.48p ps=2.8u w=0.6u l=0.3u
+X17 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t22 a_3064_n2566.t0 a_2346_n2146# OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t21 nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X18 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t40 a_n644_4164.t2 a_n724_1852# OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t39 pfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X19 a_2346_n2146# a_3064_n2566.t0 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t28 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t27 nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X20 a_n724_1852# a_n644_4164.t2 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t42 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t41 pfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X21 a_2184_1852# a_2264_4164.t2 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t21 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t20 pfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X22 a_n6608_7424.t0 BandGap a_4652_7498# OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t49 nfet_06v0 ad=7.3p pd=21.46u as=2.6p ps=10.52u w=10u l=4u
+X23 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t51 a_5048_1590.t0 a_3064_n2566.t0 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t50 pfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X24 a_4652_7498# iDAC OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t37 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t36 nfet_06v0 ad=7.3p pd=21.46u as=7.3p ps=21.46u w=10u l=4u
+X25 a_134_1254.t0 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.t4 a_150_194.t0 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t9 pfet_03v3 ad=0.267p pd=1.49u as=0.48p ps=2.8u w=0.6u l=0.3u
+X26 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t7 a_n6608_7424.t0 a_n4608_7484.t0 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t6 pfet_06v0 ad=15.4p pd=41.54u as=5.2p ps=20.52u w=20u l=10u
+X27 a_3064_n2566.t0 a_5048_1590.t0 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t49 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t48 pfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X28 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t1 a_3058_194.t0 a_3058_194.t0 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t0 nfet_03v3 ad=0.273p pd=1.51u as=0.48p ps=2.8u w=0.6u l=0.3u
+X29 Input a_n4608_7484.t0 a_3064_n2566.t0 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t42 nfet_03v3 ad=2.6p pd=10.52u as=6p ps=21.2u w=10u l=0.28u
+X30 a_n644_4164.t0 a_n4608_7484.t0 a_134_1254.t0 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t16 pfet_03v3 ad=0.486p pd=2.82u as=0.267p ps=1.49u w=0.6u l=0.3u
+X31 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t11 a_5194_10442.t0 a_5194_10442.t0 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t10 pfet_06v0 ad=2.6p pd=10.52u as=7.7p ps=21.54u w=10u l=4u
+X32 Input a_n4608_7484.t0 a_3064_n2566.t0 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t42 nfet_03v3 ad=5.5p pd=21.1u as=2.6p ps=10.52u w=10u l=0.28u
+X33 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S Output OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S npn_10p00x10p00
+X34 a_n2470_12372# a_n2470_12372# OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t60 ppolyf_u_1k_6p0 r_width=0.5u r_length=18.85u
+X35 a_2184_1852# a_156_n2566.t0 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t35 ppolyf_s r_width=2u r_length=5u
+X36 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t55 a_156_n2566.t0 a_n562_n2146# OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t54 nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X37 a_n724_1852# OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.t3 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t61 ppolyf_s r_width=2u r_length=5u
+X38 Output OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t5 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t4 ppolyf_u_1k r_width=4u r_length=4u
+X39 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t19 a_2264_4164.t2 a_2184_1852# OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t18 pfet_03v3 ad=2.6p pd=10.52u as=5.3p ps=21.06u w=10u l=0.28u
+X40 a_n4608_7484.t0 a_n6608_7424.t0 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t5 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t4 pfet_06v0 ad=5.2p pd=20.52u as=5.2p ps=20.52u w=20u l=10u
+X41 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S Input OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t43 ppolyf_s r_width=4u r_length=36u
+X42 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t32 a_n9884_6770.t0 a_134_1254.t0 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t31 pfet_03v3 ad=0.9p pd=4.2u as=0.48p ps=2.8u w=0.6u l=0.3u
+X43 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.t2 vDAC.t1 a_n562_n2146# OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t9 nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X44 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t36 a_n644_4164.t2 a_n724_1852# OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t35 pfet_03v3 ad=2.6p pd=10.52u as=5.3p ps=21.06u w=10u l=0.28u
+X45 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t47 a_5048_1590.t0 a_3064_n2566.t0 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t46 pfet_03v3 ad=2.6p pd=10.52u as=5.3p ps=21.06u w=10u l=0.28u
+X46 a_n562_n2146# vDAC.t1 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.t0 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t6 nfet_03v3 ad=2.6p pd=10.52u as=6p ps=21.2u w=10u l=0.28u
+X47 a_2346_n2146# vDAC.t0 a_156_n2566.t0 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t13 nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X48 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t27 a_2264_4164.t2 a_2184_1852# OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t26 pfet_03v3 ad=12.9p pd=22.58u as=2.6p ps=10.52u w=10u l=0.28u
+X49 a_5266_2300.t0 a_n9884_6770.t0 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t28 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t14 pfet_03v3 ad=0.48p pd=2.8u as=0.9p ps=4.2u w=0.6u l=0.3u
+X50 a_3042_1254.t0 a_156_n2566.t0 a_3058_194.t0 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t45 pfet_03v3 ad=0.267p pd=1.49u as=0.48p ps=2.8u w=0.6u l=0.3u
+X51 a_2264_4164.t1 a_n4608_7484.t0 a_3042_1254.t0 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t17 pfet_03v3 ad=0.486p pd=2.82u as=0.267p ps=1.49u w=0.6u l=0.3u
+X52 a_n562_n2146# a_156_n2566.t0 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t53 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t52 nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X53 a_n4608_7484.t0 a_n6608_7424.t0 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t1 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t0 pfet_06v0 ad=5.2p pd=20.52u as=15.4p ps=41.54u w=20u l=10u
+X54 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t55 a_5048_1590.t0 a_3064_n2566.t0 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t54 pfet_03v3 ad=12.9p pd=22.58u as=2.6p ps=10.52u w=10u l=0.28u
+X55 a_n644_4164.t1 a_150_194.t0 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t34 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t33 nfet_03v3 ad=0.474p pd=2.78u as=0.273p ps=1.51u w=0.6u l=0.3u
+X56 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t59 a_156_n2566.t0 a_n562_n2146# OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t58 nfet_03v3 ad=13.2p pd=22.64u as=2.6p ps=10.52u w=10u l=0.28u
+X57 a_3064_n2566.t0 a_n4608_7484.t0 Input OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t42 nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X58 a_5182_1808.t0 a_5182_1808.t0 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t18 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t17 nfet_03v3 ad=0.486p pd=2.82u as=0.273p ps=1.51u w=0.6u l=0.3u
+X59 a_n4608_7484.t0 a_n2470_12372# cap_mim_2f0_m4m5_noshield c_width=22u c_length=11u
+X60 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t48 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t48 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t47 ppolyf_u_1k r_width=0.5u r_length=6.15u
+X61 a_5266_2300.t0 a_n4608_7484.t0 a_5048_1590.t0 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t15 pfet_03v3 ad=0.27p pd=1.5u as=0.474p ps=2.78u w=0.6u l=0.3u
+X62 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t26 a_3064_n2566.t0 a_2346_n2146# OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t25 nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X63 a_n562_n2146# vDAC.t1 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.t2 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t10 nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X64 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t44 a_n644_4164.t2 a_n724_1852# OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t43 pfet_03v3 ad=12.9p pd=22.58u as=2.6p ps=10.52u w=10u l=0.28u
+X65 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.t1 vDAC.t1 a_n562_n2146# OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t7 nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X66 a_156_n2566.t0 vDAC.t0 a_2346_n2146# OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t12 nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X67 a_2346_n2146# vDAC.t0 a_156_n2566.t0 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t15 nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X68 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t51 a_156_n2566.t0 a_n562_n2146# OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t50 nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X69 a_n4608_7484.t0 a_n2470_12372# OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t16 ppolyf_u_1k_6p0 r_width=1u r_length=10u
+X70 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t30 a_n9884_6770.t0 a_n9884_6770.t0 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t29 pfet_03v3 ad=0.828p pd=3.96u as=0.39p ps=2.5u w=0.6u l=0.3u
+X71 a_n724_1852# a_n644_4164.t2 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t38 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t37 pfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X72 a_2184_1852# a_2264_4164.t2 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t25 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t24 pfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X73 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t20 a_5182_1808.t0 a_5048_1590.t0 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t19 nfet_03v3 ad=0.273p pd=1.51u as=0.468p ps=2.76u w=0.6u l=0.3u
+X74 a_n562_n2146# a_156_n2566.t0 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t57 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t56 nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X75 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t23 a_2264_4164.t2 a_2184_1852# OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t22 pfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+R0 vDAC.t1 vDAC.t0 4.08939
+R1 vDAC vDAC.t1 8.04976
+R2 a_2264_4164.t0 a_2264_4164.t1 11.6517
+R3 a_2264_4164.t1 a_2264_4164.t2 10.5024
+R4 a_n644_4164.t1 a_n644_4164.t2 10.5024
+R5 a_n644_4164.t0 a_n644_4164.t1 10.3338
+R6 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n10 45246.1
+R7 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n34 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n33 6351.09
+R8 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n4 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n53 4915.22
+R9 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n1 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n39 1287.24
+R10 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n24 1209.54
+R11 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n54 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n22 1085.23
+R12 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n35 872.721
+R13 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n3 1071.13
+R14 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n11 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n10 701.38
+R15 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n38 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S 582.428
+R16 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n53 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n10 557.803
+R17 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n2 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n1 1.16224
+R18 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n6 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n7 0.465451
+R19 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n54 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n4 166.631
+R20 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n28 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n22 119.632
+R21 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n31 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n30 113.936
+R22 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n32 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n31 113.936
+R23 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n3 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n27 90.6438
+R24 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n27 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n24 90.6438
+R25 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n11 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n0 2.50409
+R26 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n34 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n32 75.4825
+R27 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n30 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n29 64.8011
+R28 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n39 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n38 56.1109
+R29 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n35 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n34 50.2582
+R30 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n29 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n28 49.135
+R31 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n23 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.t4 41.7767
+R32 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n4 139.071
+R33 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n37 13.51
+R34 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n7 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n39 2.81488
+R35 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n37 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n36 9.7005
+R36 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n47 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n12 4.48301
+R37 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n9 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n45 4.48301
+R38 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n45 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n13 4.48301
+R39 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n25 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n24 7.86063
+R40 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n14 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n51 4.48301
+R41 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n15 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n50 4.48301
+R42 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n16 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n49 4.48301
+R43 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n48 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n17 7.83746
+R44 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n18 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n43 4.48301
+R45 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n19 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n42 4.48301
+R46 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n20 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n41 4.48301
+R47 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n21 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n40 4.48301
+R48 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n22 7.43771
+R49 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n36 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n26 7.23383
+R50 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n27 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n26 5.2005
+R51 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n36 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n3 5.2005
+R52 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n2 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n52 7.27908
+R53 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n14 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n8 1.4837
+R54 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n8 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n15 1.4837
+R55 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n16 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n8 1.4837
+R56 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n48 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n8 5.2005
+R57 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n5 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n17 5.2005
+R58 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n5 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n12 1.47754
+R59 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n46 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n12 4.48301
+R60 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n5 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n9 1.47754
+R61 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n5 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n13 1.47754
+R62 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n44 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n13 4.48301
+R63 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n5 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n18 1.4837
+R64 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n19 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n5 1.4837
+R65 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n6 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n20 1.4837
+R66 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n21 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n6 1.4837
+R67 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n37 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n25 3.71445
+R68 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n23 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.t3 2.95101
+R69 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n26 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n25 2.62097
+R70 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n0 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n1 2.76871
+R71 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n6 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n11 2.38732
+R72 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n52 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n14 4.48301
+R73 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n51 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n15 4.48301
+R74 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n16 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n50 4.48301
+R75 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n49 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n48 2.24791
+R76 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n19 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n43 4.48301
+R77 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n42 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n20 4.48301
+R78 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n21 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n41 4.48301
+R79 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n40 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n7 5.56038
+R80 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n47 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n17 2.23559
+R81 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n46 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n9 4.48301
+R82 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n44 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n18 4.47069
+R83 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n23 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.t0 1.84825
+R84 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n23 2.75953
+R85 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n54 1.48621
+R86 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n47 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n38 1.4837
+R87 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n46 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n38 1.4837
+R88 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n45 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n38 1.4837
+R89 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n44 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n38 1.4837
+R90 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n0 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n53 0.352726
+R91 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n1 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S 1.99588
+R92 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n23 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.t2 1.68445
+R93 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n23 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.t1 1.63504
+R94 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B 1.56513
+R95 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n52 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n38 1.47754
+R96 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n51 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n38 1.47754
+R97 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n50 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n38 1.47754
+R98 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n49 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n38 1.47754
+R99 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n43 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n38 1.47754
+R100 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n42 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n38 1.47754
+R101 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n41 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n38 1.47754
+R102 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n40 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n38 1.47754
+R103 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n8 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n5 1.31626
+R104 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S 1.27448
+R105 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n2 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n8 0.0327576
+R106 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n6 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n5 1.19085
+R107 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B 1.17693
+R108 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t35 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n55 2479.33
+R109 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n52 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n51 569.928
+R110 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n43 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n42 562.947
+R111 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t18 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n65 555.644
+R112 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n80 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t29 448.039
+R113 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t2 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t0 416.139
+R114 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t4 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t6 416.139
+R115 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t48 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t46 406.091
+R116 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t50 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t48 406.091
+R117 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t52 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t50 406.091
+R118 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n52 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n34 304.104
+R119 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n65 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n54 304.104
+R120 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t0 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n82 285.608
+R121 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n100 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t10 278.012
+R122 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t6 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n76 266.416
+R123 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n65 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n64 258.348
+R124 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n66 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n52 258.348
+R125 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n42 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t54 251.269
+R126 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t12 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n98 243.056
+R127 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n84 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n78 232.786
+R128 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t17 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t45 222.016
+R129 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t16 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t9 222.016
+R130 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n99 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t12 209.029
+R131 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n79 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t4 208.071
+R132 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n83 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t2 184.335
+R133 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n107 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n75 163.59
+R134 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n100 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n88 162.293
+R135 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n100 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n89 162.293
+R136 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n81 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n75 162.05
+R137 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n84 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n77 161.77
+R138 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n42 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t52 154.822
+R139 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n42 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n41 142.726
+R140 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t10 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n99 104.862
+R141 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n97 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n91 93.6788
+R142 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n21 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n19 92.7183
+R143 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n22 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n21 92.7183
+R144 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n92 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n89 89.1592
+R145 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n97 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n88 89.1592
+R146 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n64 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t43 87.4409
+R147 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n66 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t26 87.4409
+R148 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n106 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n14 0.447286
+R149 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n52 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n31 70.8511
+R150 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n65 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n53 70.8511
+R151 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t37 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t35 63.5935
+R152 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t39 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t37 63.5935
+R153 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t41 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t39 63.5935
+R154 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t43 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t41 63.5935
+R155 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t20 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t18 63.5935
+R156 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t22 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t20 63.5935
+R157 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t24 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t22 63.5935
+R158 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t26 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t24 63.5935
+R159 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n44 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t15 54.4648
+R160 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n44 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t14 52.6791
+R161 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n21 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n20 46.4905
+R162 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n91 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n90 25.0487
+R163 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n106 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n77 23.8705
+R164 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n83 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n79 23.7347
+R165 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n15 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n76 19.1856
+R166 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t45 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t33 14.9259
+R167 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n34 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t17 14.9259
+R168 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t9 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t31 14.9259
+R169 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n54 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t16 14.9259
+R170 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n51 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n35 12.5005
+R171 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n48 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n47 11.2114
+R172 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n47 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n46 10.8005
+R173 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n32 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n31 9.90943
+R174 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n48 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n36 9.90943
+R175 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n59 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n53 9.90943
+R176 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n43 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n37 8.82301
+R177 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n33 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n32 8.4005
+R178 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n50 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n36 8.4005
+R179 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n60 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n59 8.4005
+R180 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n103 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n102 7.096
+R181 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n80 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t30 7.07505
+R182 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n46 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n45 6.5105
+R183 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n34 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n33 6.3005
+R184 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n33 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n30 6.3005
+R185 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n51 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n50 6.3005
+R186 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n50 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n49 6.3005
+R187 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n45 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n44 6.3005
+R188 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n46 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n35 6.3005
+R189 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n60 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n54 6.3005
+R190 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n61 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n60 6.3005
+R191 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n32 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t34 5.2505
+R192 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n36 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t28 5.2505
+R193 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n59 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t32 5.2505
+R194 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n31 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n30 4.5005
+R195 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n10 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n9 0.00867538
+R196 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n73 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n23 4.5005
+R197 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n73 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n25 4.5005
+R198 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n12 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n9 0.00867538
+R199 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n12 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n70 2.24716
+R200 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n6 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n1 0.739786
+R201 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n1 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n4 0.0306006
+R202 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n4 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n7 0.03072
+R203 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n8 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n73 0.313307
+R204 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n49 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n48 4.5005
+R205 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n61 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n53 4.5005
+R206 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n47 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n37 4.33182
+R207 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n49 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n3 3.85233
+R208 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n85 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n16 3.326
+R209 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n81 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n18 3.1505
+R210 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n82 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n81 3.02936
+R211 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n17 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t1 2.91857
+R212 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n109 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t7 2.91857
+R213 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n74 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t5 2.72957
+R214 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t14 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n43 2.67907
+R215 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n45 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n37 2.48918
+R216 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n18 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n80 2.41029
+R217 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n101 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n87 2.31898
+R218 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n103 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n85 2.29
+R219 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n27 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n11 0.0301624
+R220 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n9 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n11 1.1173
+R221 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n0 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n2 0.633756
+R222 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n7 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n6 1.49516
+R223 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n58 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n8 0.396746
+R224 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n4 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n2 0.559966
+R225 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n72 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n71 2.24382
+R226 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n9 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n26 2.24382
+R227 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n71 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n27 2.24382
+R228 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n73 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n24 2.24382
+R229 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n6 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n8 0.252272
+R230 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n17 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n74 2.1325
+R231 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n77 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n76 2.1005
+R232 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n104 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n77 2.1005
+R233 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n108 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n107 2.1005
+R234 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n93 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n92 2.1005
+R235 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n98 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n97 2.1005
+R236 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n97 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n96 2.1005
+R237 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n107 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n15 2.02086
+R238 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n102 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n86 1.92767
+R239 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n95 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t13 1.84261
+R240 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n5 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n109 1.7125
+R241 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n28 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t21 1.63134
+R242 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n56 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t38 1.63134
+R243 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n38 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t49 1.55934
+R244 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n92 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n90 1.50577
+R245 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t27 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n29 1.48734
+R246 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n28 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t25 1.48734
+R247 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n39 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t55 1.48734
+R248 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n38 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t53 1.48734
+R249 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n57 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t44 1.48734
+R250 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n56 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t42 1.48734
+R251 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n110 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n22 1.34514
+R252 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n19 1.34407
+R253 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n94 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n93 1.33876
+R254 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n96 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n94 1.33876
+R255 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n19 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C 1.33657
+R256 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n22 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C 1.30443
+R257 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n20 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C 1.30121
+R258 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n20 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C 1.29907
+R259 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n93 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n87 1.2742
+R260 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n96 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n95 1.12746
+R261 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n105 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n13 1.1115
+R262 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n68 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n30 0.904811
+R263 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n62 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n61 0.904811
+R264 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t15 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n35 0.893357
+R265 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n108 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n13 0.828
+R266 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n98 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n90 0.562497
+R267 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n41 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n40 0.5009
+R268 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n67 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t27 0.4632
+R269 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n41 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t55 0.4632
+R270 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n63 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t44 0.4632
+R271 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n15 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n14 0.00213182
+R272 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n106 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n105 0.4505
+R273 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n18 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n16 0.414443
+R274 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n102 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n101 0.391804
+R275 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n105 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n104 0.3415
+R276 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n64 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n63 0.3155
+R277 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n63 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n62 0.3155
+R278 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n67 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n66 0.3155
+R279 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n68 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n67 0.3155
+R280 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n7 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n5 0.311
+R281 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n99 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n89 0.263
+R282 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n89 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n87 0.263
+R283 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n99 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n88 0.263
+R284 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n88 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n86 0.263
+R285 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n69 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n68 0.2561
+R286 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n62 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n58 0.2561
+R287 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n101 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n100 0.233833
+R288 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n94 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n91 0.233833
+R289 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n40 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n3 0.53425
+R290 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n109 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n108 0.2055
+R291 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n14 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n13 0.393478
+R292 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n71 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n3 0.196025
+R293 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t25 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t23 0.1825
+R294 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t21 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t19 0.1825
+R295 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t53 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t51 0.1825
+R296 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t49 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t47 0.1825
+R297 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t42 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t40 0.1825
+R298 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t38 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t36 0.1825
+R299 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t13 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t11 0.1825
+R300 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n95 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n86 0.147239
+R301 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n29 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n28 0.1445
+R302 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n57 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n56 0.1445
+R303 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n78 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n16 0.13175
+R304 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n18 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n17 0.13037
+R305 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n82 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n78 0.127182
+R306 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n5 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n74 0.1205
+R307 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n70 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n69 0.10985
+R308 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t5 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.t3 0.0915
+R309 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n39 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n38 0.0725
+R310 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n84 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n83 0.066125
+R311 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n85 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n84 0.066125
+R312 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n79 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n75 0.0647857
+R313 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n75 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n74 0.0647857
+R314 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n69 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n29 0.0464
+R315 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n58 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n57 0.0464
+R316 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n110 0.0390714
+R317 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n24 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n11 0.0301624
+R318 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n40 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n39 0.02345
+R319 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n104 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n103 0.0225
+R320 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n73 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n10 0.00867538
+R321 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n71 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n12 0.00867538
+R322 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n26 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n23 0.0153541
+R323 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n72 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n23 0.0153541
+R324 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n70 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n24 0.0153541
+R325 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n27 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n25 0.0153541
+R326 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n26 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n25 0.0153541
+R327 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n10 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n72 2.26202
+R328 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n2 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n6 0.0413446
+R329 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n0 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n1 0.0349768
+R330 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n110 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_C.n0 1.33801
+R331 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t16 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n19 17343.6
+R332 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t60 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t16 13317.5
+R333 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n50 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n49 10036.7
+R334 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n20 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t60 8304.31
+R335 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n19 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n18 8019.59
+R336 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n185 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n184 4915.22
+R337 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n68 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n38 3894.69
+R338 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t38 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n18 3789.76
+R339 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n21 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n20 3173.42
+R340 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n38 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t17 1542.51
+R341 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n4 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n185 262.149
+R342 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n56 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t11 1157.79
+R343 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t4 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n1 1085.23
+R344 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t42 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n65 968.51
+R345 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n0 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n48 777.015
+R346 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n0 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n5 161.169
+R347 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n65 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n64 716.639
+R348 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n20 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t47 661.207
+R349 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t42 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n40 620.297
+R350 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n174 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n68 580.908
+R351 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n184 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n21 557.803
+R352 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t46 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t49 497.293
+R353 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t40 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t38 462.24
+R354 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n38 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t19 453.68
+R355 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n65 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t43 434.957
+R356 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n129 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t46 410.377
+R357 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t49 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n74 379.57
+R358 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t36 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n21 375.17
+R359 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n19 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t40 343.613
+R360 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n130 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t36 326.211
+R361 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n4 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n60 321.197
+R362 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n185 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n5 292.976
+R363 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n4 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n0 1.31795
+R364 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n60 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n5 0.28337
+R365 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n182 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n34 190.142
+R366 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n176 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n34 190.142
+R367 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n131 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n83 189.685
+R368 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n0 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n7 0.466944
+R369 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n0 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n3 0.187432
+R370 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n0 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n18 178.805
+R371 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n131 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n128 178.5
+R372 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t4 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n185 166.631
+R373 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t50 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t10 148.912
+R374 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t54 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t52 148.912
+R375 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t58 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t56 148.912
+R376 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t12 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t13 148.912
+R377 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t13 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t14 148.912
+R378 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t14 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t15 148.912
+R379 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t15 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t21 148.912
+R380 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t23 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t25 148.912
+R381 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t27 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t29 148.912
+R382 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t31 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t50 120.992
+R383 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t21 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t0 120.992
+R384 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t6 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n1 119.632
+R385 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n51 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t58 117.269
+R386 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t29 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n41 117.269
+R387 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t8 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t7 113.936
+R388 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t9 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t8 113.936
+R389 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t56 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t33 100.516
+R390 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t2 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t27 100.516
+R391 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n40 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n38 96.1026
+R392 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n56 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n51 91.209
+R393 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n64 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n41 91.209
+R394 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t35 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t12 85.6248
+R395 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n130 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n129 84.166
+R396 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n50 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t9 75.4825
+R397 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t7 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t61 64.8011
+R398 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n174 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n74 56.1109
+R399 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t11 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n48 52.1196
+R400 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t10 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n50 50.2582
+R401 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t61 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t6 49.135
+R402 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t33 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t54 48.3968
+R403 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t25 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t2 48.3968
+R404 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t52 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t31 27.9215
+R405 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t0 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t23 27.9215
+R406 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n84 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t48 23.37
+R407 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n47 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n46 16.1459
+R408 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n172 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n83 12.0983
+R409 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n48 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t35 11.1689
+R410 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n47 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n40 10.6599
+R411 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n61 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n41 10.5284
+R412 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n59 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n51 10.5284
+R413 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n101 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n100 7.91354
+R414 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n105 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n104 7.91354
+R415 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n109 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n108 7.91354
+R416 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n139 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n72 7.91354
+R417 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n141 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n76 7.91354
+R418 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n148 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n147 7.91354
+R419 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n152 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n151 7.91354
+R420 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n156 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n155 7.91354
+R421 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n165 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n69 7.91354
+R422 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n167 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n81 7.91354
+R423 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n0 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n47 7.89942
+R424 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n89 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n88 7.83746
+R425 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n93 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n92 7.83746
+R426 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n97 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n96 7.83746
+R427 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n113 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n112 7.83746
+R428 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n117 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n116 7.83746
+R429 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n121 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n120 7.83746
+R430 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n125 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n124 7.83746
+R431 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n85 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n33 7.83746
+R432 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n134 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n37 7.83746
+R433 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n136 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n72 7.83746
+R434 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n144 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n76 7.83746
+R435 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n160 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n159 7.83746
+R436 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n162 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n69 7.83746
+R437 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n82 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n81 7.83746
+R438 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n17 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n16 7.83383
+R439 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n0 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n1 7.43771
+R440 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n43 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n42 6.49471
+R441 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n53 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n52 6.49471
+R442 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n128 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n127 5.2005
+R443 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n126 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n125 5.2005
+R444 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n124 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n123 5.2005
+R445 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n122 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n121 5.2005
+R446 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n120 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n119 5.2005
+R447 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n118 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n117 5.2005
+R448 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n116 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n115 5.2005
+R449 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n114 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n113 5.2005
+R450 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n112 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n111 5.2005
+R451 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n110 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n109 5.2005
+R452 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n108 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n107 5.2005
+R453 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n106 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n105 5.2005
+R454 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n104 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n103 5.2005
+R455 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n102 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n101 5.2005
+R456 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n100 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n99 5.2005
+R457 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n98 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n97 5.2005
+R458 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n96 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n95 5.2005
+R459 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n94 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n93 5.2005
+R460 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n92 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n91 5.2005
+R461 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n90 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n89 5.2005
+R462 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n88 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n87 5.2005
+R463 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n86 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n85 5.2005
+R464 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n35 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n33 5.2005
+R465 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n182 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n181 5.2005
+R466 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n177 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n176 5.2005
+R467 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n37 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n36 5.2005
+R468 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n135 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n134 5.2005
+R469 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n137 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n136 5.2005
+R470 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n174 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n72 5.2005
+R471 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n138 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n72 5.2005
+R472 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n140 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n139 5.2005
+R473 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n142 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n141 5.2005
+R474 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n174 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n76 5.2005
+R475 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n143 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n76 5.2005
+R476 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n145 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n144 5.2005
+R477 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n147 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n146 5.2005
+R478 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n149 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n148 5.2005
+R479 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n151 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n150 5.2005
+R480 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n153 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n152 5.2005
+R481 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n155 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n154 5.2005
+R482 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n157 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n156 5.2005
+R483 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n159 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n158 5.2005
+R484 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n161 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n160 5.2005
+R485 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n163 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n162 5.2005
+R486 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n174 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n69 5.2005
+R487 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n164 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n69 5.2005
+R488 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n166 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n165 5.2005
+R489 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n168 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n167 5.2005
+R490 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n174 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n81 5.2005
+R491 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n169 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n81 5.2005
+R492 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n170 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n82 5.2005
+R493 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n172 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n171 5.2005
+R494 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n16 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B 5.2005
+R495 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n17 5.2005
+R496 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n46 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t20 4.8305
+R497 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n42 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t3 4.8305
+R498 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n52 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t34 4.8305
+R499 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n46 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t18 4.7255
+R500 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n42 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t1 4.7255
+R501 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n52 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t32 4.7255
+R502 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n0 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t41 3.43075
+R503 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n15 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n8 2.96496
+R504 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n133 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n132 2.4393
+R505 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n128 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n22 2.24791
+R506 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n124 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n23 2.24791
+R507 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n120 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n24 2.24791
+R508 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n116 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n25 2.24791
+R509 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n96 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n30 2.24791
+R510 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n92 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n31 2.24791
+R511 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n88 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n32 2.24791
+R512 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n183 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n33 2.24791
+R513 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n176 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n175 2.24791
+R514 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n136 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n73 2.24791
+R515 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n162 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n70 2.24791
+R516 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n173 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n82 2.24791
+R517 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n89 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n31 2.24791
+R518 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n93 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n30 2.24791
+R519 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n113 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n25 2.24791
+R520 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n117 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n24 2.24791
+R521 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n121 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n23 2.24791
+R522 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n125 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n22 2.24791
+R523 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n183 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n182 2.24791
+R524 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n85 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n32 2.24791
+R525 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n175 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n37 2.24791
+R526 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n134 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n73 2.24791
+R527 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n160 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n70 2.24791
+R528 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n173 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n172 2.24791
+R529 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n0 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n178 0.384333
+R530 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n112 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n26 2.23559
+R531 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n108 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n27 2.23559
+R532 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n104 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n28 2.23559
+R533 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n100 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n29 2.23559
+R534 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n141 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n75 2.23559
+R535 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n144 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n77 2.23559
+R536 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n148 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n78 2.23559
+R537 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n155 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n71 2.23559
+R538 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n156 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n79 2.23559
+R539 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n167 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n80 2.23559
+R540 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n97 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n29 2.23559
+R541 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n101 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n28 2.23559
+R542 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n105 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n27 2.23559
+R543 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n109 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n26 2.23559
+R544 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n139 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n75 2.23559
+R545 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n147 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n77 2.23559
+R546 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n151 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n78 2.23559
+R547 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n152 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n71 2.23559
+R548 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n159 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n79 2.23559
+R549 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n165 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n80 2.23559
+R550 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n6 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n0 0.817564
+R551 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n17 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n2 3.31733
+R552 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n180 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t37 2.17547
+R553 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t5 1.98286
+R554 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n66 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t42 1.93822
+R555 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n14 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n9 1.84825
+R556 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n15 1.7978
+R557 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n83 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n74 1.73383
+R558 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n133 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n83 1.73383
+R559 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n14 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n10 1.68445
+R560 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n132 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n84 1.66257
+R561 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n43 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t24 1.61884
+R562 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n53 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t53 1.61884
+R563 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n14 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n12 1.55089
+R564 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n45 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t30 1.54234
+R565 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n44 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t28 1.54234
+R566 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t59 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n55 1.54234
+R567 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n54 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t57 1.54234
+R568 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n68 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n67 1.48621
+R569 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t4 1.48621
+R570 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n6 3.94438
+R571 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n6 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n16 2.73622
+R572 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n184 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n26 1.4837
+R573 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n184 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n27 1.4837
+R574 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n184 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n28 1.4837
+R575 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n184 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n29 1.4837
+R576 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n174 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n75 1.4837
+R577 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n174 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n77 1.4837
+R578 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n174 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n78 1.4837
+R579 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n174 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n71 1.4837
+R580 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n174 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n79 1.4837
+R581 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n174 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n80 1.4837
+R582 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n184 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n22 1.47754
+R583 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n184 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n23 1.47754
+R584 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n184 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n24 1.47754
+R585 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n184 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n25 1.47754
+R586 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n184 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n30 1.47754
+R587 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n184 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n31 1.47754
+R588 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n184 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n32 1.47754
+R589 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n184 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n183 1.47754
+R590 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n175 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n174 1.47754
+R591 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n174 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n73 1.47754
+R592 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n174 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n70 1.47754
+R593 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n174 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n173 1.47754
+R594 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n2 1.46853
+R595 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n67 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n39 1.37315
+R596 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n60 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S 1.3005
+R597 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n180 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n179 1.22333
+R598 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n181 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n180 1.22235
+R599 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n178 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n177 1.20083
+R600 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n7 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B 1.1855
+R601 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n3 1.33301
+R602 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n7 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B 1.178
+R603 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n3 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B 0.487533
+R604 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n179 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n178 0.657891
+R605 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n127 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n84 0.633435
+R606 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n63 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n62 0.488714
+R607 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n58 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n57 0.488714
+R608 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n63 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t30 0.4716
+R609 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n57 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t59 0.4716
+R610 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n0 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S 0.510092
+R611 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n57 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n56 0.2605
+R612 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n64 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n63 0.2605
+R613 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n12 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n13 0.1643
+R614 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n10 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n11 0.1643
+R615 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t41 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t39 0.1643
+R616 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t28 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t26 0.1643
+R617 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t24 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t22 0.1643
+R618 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t57 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t55 0.1643
+R619 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t53 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.t51 0.1643
+R620 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n171 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n133 0.156043
+R621 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n45 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n44 0.1445
+R622 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n55 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n54 0.1445
+R623 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n131 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n130 0.106622
+R624 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n132 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n131 0.106622
+R625 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n177 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n36 0.102239
+R626 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n137 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n135 0.102239
+R627 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n140 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n138 0.102239
+R628 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n143 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n142 0.102239
+R629 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n149 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n146 0.102239
+R630 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n153 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n150 0.102239
+R631 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n157 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n154 0.102239
+R632 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n163 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n161 0.102239
+R633 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n166 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n164 0.102239
+R634 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n169 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n168 0.102239
+R635 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n171 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n170 0.102239
+R636 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n181 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n35 0.102239
+R637 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n87 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n86 0.102239
+R638 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n91 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n90 0.102239
+R639 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n95 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n94 0.102239
+R640 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n102 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n99 0.102239
+R641 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n106 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n103 0.102239
+R642 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n110 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n107 0.102239
+R643 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n115 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n114 0.102239
+R644 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n119 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n118 0.102239
+R645 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n123 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n122 0.102239
+R646 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n127 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n126 0.102239
+R647 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n135 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n36 0.101261
+R648 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n138 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n137 0.101261
+R649 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n142 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n140 0.101261
+R650 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n145 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n143 0.101261
+R651 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n146 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n145 0.101261
+R652 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n150 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n149 0.101261
+R653 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n154 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n153 0.101261
+R654 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n158 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n157 0.101261
+R655 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n161 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n158 0.101261
+R656 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n164 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n163 0.101261
+R657 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n168 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n166 0.101261
+R658 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n170 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n169 0.101261
+R659 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n86 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n35 0.101261
+R660 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n90 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n87 0.101261
+R661 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n94 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n91 0.101261
+R662 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n98 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n95 0.101261
+R663 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n99 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n98 0.101261
+R664 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n103 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n102 0.101261
+R665 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n107 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n106 0.101261
+R666 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n111 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n110 0.101261
+R667 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n114 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n111 0.101261
+R668 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n118 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n115 0.101261
+R669 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n122 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n119 0.101261
+R670 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n126 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n123 0.101261
+R671 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n129 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n34 0.1005
+R672 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n179 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n34 0.1005
+R673 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n15 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n14 0.0707
+R674 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n44 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n43 0.068
+R675 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n54 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n53 0.068
+R676 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n62 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n61 0.0574893
+R677 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n59 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n58 0.0574893
+R678 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n62 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n45 0.0482
+R679 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n58 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n55 0.0482
+R680 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n67 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n66 0.0353157
+R681 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n59 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n0 1.44679
+R682 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n61 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n0 1.44679
+R683 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n66 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n0 1.08624
+R684 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n0 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_S.n2 1.08232
+.ends

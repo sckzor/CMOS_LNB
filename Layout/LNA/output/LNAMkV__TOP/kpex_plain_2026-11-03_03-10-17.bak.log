@@ -1,0 +1,904 @@
+GDS input file passed, running in LVS mode
+No explicit top cell specified, using top cell 'TOP'
+LVS input schematic not specified (argument --schematic), using dummy schematic
+Calling MAGIC
+magic -dnull -noconsole -rcfile ../gf180mcuD.magicrc.custom output/LNAMkV__TOP/magic_RC/TOP_MAGIC_RC_Script.tcl, output file: output/LNAMkV__TOP/magic_RC/TOP_MAGIC_RC_Output.txt
+
+Magic 8.3 revision 681 - Compiled on Tue Aug 25 11:50:23 AM CEST 2026.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+Using NULL graphics device.
+Processing system .magicrc file
+Switching to WIRING tool.
+Switching to NETLIST tool.
+Switching to PICK tool.
+Switching to BOX tool.
+Sourcing design custom .magicrc for technology gf180mcuD ...
+10 Magic internal units = 1 Lambda
+"gf180mcuD" is not one of the extraction styles Magic knows.
+The current style is "default".
+The extraction styles are: default.
+Input style import: scaleFactor=10, multiplier=2
+The following types are not handled by extraction and will be treated as non-electrical types:
+    obsactive mvobsactive filldiff fillpoly m1hole obsm1 fillm1 obsv1 m2hole obsm2 fillm2 obsv2 m3hole obsm3 fillm3 m4hole obsm4 fillm4 m5hole obsm5 fillm5 glass fillblock lvstext obscomment 
+Scaled tech values by 10 / 1 to match internal grid scaling
+Loading gf180mcuD Device Generator Menu ...
+Loading "output/LNAMkV__TOP/magic_RC/TOP_MAGIC_RC_Script.tcl" from command line.
+Warning: Calma reading is not undoable!  I hope that's OK.
+Library written using GDS-II Release 6.0
+Library name: LIB
+Reading "$$$CONTEXT_INFO$$$".
+Reading "TOP".
+Extracting TOP into /foss/designs/LNA/MkIII/Layout/LNA/output/LNAMkV__TOP/magic_RC/TOP.ext:
+Processing TOP
+Warning:  Ports "Output" and "I1_default_E" are electrically shorted.
+exttosim finished.
+Note:  This option has been deprecated and is unused.
+Extracting a_n4608_7484#
+Extracting a_n9884_9384#
+Extracting a_n9884_7060#
+Extracting a_n6608_7424#
+Extracting a_5194_10442#
+Extracting a_4652_7498#
+Extracting a_n644_4164#
+Extracting a_2264_4164#
+Extracting a_5048_1590#
+Extracting a_n724_1852#
+Extracting a_2184_1852#
+Extracting a_3064_n2566#
+Extracting a_5266_2300#
+Extracting a_5182_1808#
+Extracting a_134_1254#
+Extracting a_150_194#
+Extracting a_3042_1254#
+Extracting a_156_n2566#
+Extracting a_3058_194#
+Extracting a_n562_n2146#
+Extracting a_2346_n2146#
+Extracting I1_default_S
+Missing substrate connection of device at (-6328 -336) on net I1_default_S
+Missing terminal connection of device at (8096 -1870) on net I1_default_S
+Missing terminal connection of device at (8096 -1870) on net I1_default_S
+Extracting I1_default_C
+Warning: via1 at -8496 8978 smaller than extract section allows
+Error:  Terminal tile at (-6828 -836) not visited!
+Missing drain connection of device at (-6328 -336) on net I1_default_C
+Extracting I1_default_B
+Extracting iDAC
+Extracting BandGap
+Extracting I1_default_E
+Extracting Output
+Extracting vDAC
+Extracting Input
+Extracting GND
+Couldn't find wire at -13208 10726
+Error in extracting node GND
+Extracting VDD
+Couldn't find wire at -15170 10714
+Error in extracting node VDD
+Total Nets: 41
+Nets extracted: 32 (0.780488)
+Nets output: 3 (0.073171)
+exttospice finished.
+MAGIC succeeded after 0.2641s
+Report DB saved at: output/LNAMkV__TOP/magic_RC/TOP_MAGIC_report.rdb.gz
+SPICE netlist saved at: output/LNAMkV__TOP/magic_RC/TOP.pex.spice
+* NGSPICE file created from TOP.ext - technology: gf180mcuD
+
+.subckt TOP I1_default_E I1_default_S I1_default_C I1_default_B iDAC Input Output
++ BandGap vDAC GND VDD
+X0 a_3064_n2566# a_5048_1590# I1_default_C.t20 I1_default_C.t19 pfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X1 I1_default_S.t26 a_150_194# a_150_194# I1_default_S.t25 nfet_03v3 ad=0.273p pd=1.51u as=0.48p ps=2.8u w=0.6u l=0.3u
+X2 a_2346_n2146# a_3064_n2566# I1_default_S.t45 I1_default_S.t44 nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X3 Input a_n4608_7484# a_3064_n2566# I1_default_S.t53 nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X4 a_n6608_7424# a_5194_10442# I1_default_C.t8 I1_default_C.t9 pfet_06v0 ad=7.7p pd=21.54u as=2.6p ps=10.52u w=10u l=4u
+X5 a_2264_4164# a_3058_194# I1_default_S.t56 I1_default_S.t55 nfet_03v3 ad=0.474p pd=2.78u as=0.273p ps=1.51u w=0.6u l=0.3u
+X6 a_2346_n2146# vDAC a_156_n2566# I1_default_S.t34 nfet_03v3 ad=2.6p pd=10.52u as=6p ps=21.2u w=10u l=0.28u
+X7 I1_default_S.t51 a_3064_n2566# a_2346_n2146# I1_default_S.t50 nfet_03v3 ad=13.2p pd=22.64u as=2.6p ps=10.52u w=10u l=0.28u
+X8 a_n562_n2146# vDAC I1_default_B.t2 I1_default_S.t31 nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X9 a_156_n2566# vDAC a_2346_n2146# I1_default_S.t37 nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X10 a_3064_n2566# a_n4608_7484# Input I1_default_S.t53 nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X11 a_5182_1808# a_3064_n2566# a_5266_2300# I1_default_C.t17 pfet_03v3 ad=0.486p pd=2.82u as=0.27p ps=1.5u w=0.6u l=0.3u
+X12 a_n9884_9384# iDAC iDAC I1_default_S.t16 nfet_06v0 ad=7.3p pd=21.46u as=2.6p ps=10.52u w=10u l=4u
+X13 I1_default_C.t3 a_n6608_7424# a_n4608_7484# I1_default_C.t2 pfet_06v0 ad=5.2p pd=20.52u as=5.2p ps=20.52u w=20u l=10u
+X14 a_4652_7498# a_n2470_12372# a_5194_10442# I1_default_S.t52 nfet_06v0 ad=2.6p pd=10.52u as=7.3p ps=21.46u w=10u l=4u
+X15 I1_default_C.t15 a_n9884_9384# a_3042_1254# I1_default_C.t14 pfet_03v3 ad=0.9p pd=4.2u as=0.48p ps=2.8u w=0.6u l=0.3u
+X16 I1_default_S.t43 a_3064_n2566# a_2346_n2146# I1_default_S.t42 nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X17 I1_default_C.t33 a_n644_4164# a_n724_1852# I1_default_C.t32 pfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X18 a_2346_n2146# a_3064_n2566# I1_default_S.t49 I1_default_S.t48 nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X19 a_n724_1852# a_n644_4164# I1_default_C.t33 I1_default_C.t32 pfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X20 a_2184_1852# a_2264_4164# I1_default_C.t26 I1_default_C.t27 pfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X21 a_n6608_7424# BandGap a_4652_7498# I1_default_S.t54 nfet_06v0 ad=7.3p pd=21.46u as=2.6p ps=10.52u w=10u l=4u
+X22 I1_default_C.t20 a_5048_1590# a_3064_n2566# I1_default_C.t19 pfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X23 iDAC iDAC I1_default_S.t15 I1_default_S.t14 nfet_06v0 ad=2.6p pd=10.52u as=4.9p ps=20.98u w=10u l=4u
+X24 a_4652_7498# a_n9884_7060# I1_default_S.t62 I1_default_S.t61 nfet_06v0 ad=7.3p pd=21.46u as=2.6p ps=10.52u w=10u l=4u
+X25 a_134_1254# I1_default_B.t4 a_150_194# I1_default_C.t11 pfet_03v3 ad=0.267p pd=1.49u as=0.48p ps=2.8u w=0.6u l=0.3u
+X26 I1_default_C.t6 a_n6608_7424# a_n4608_7484# I1_default_C.t5 pfet_06v0 ad=15.4p pd=41.54u as=5.2p ps=20.52u w=20u l=10u
+X27 a_3064_n2566# a_5048_1590# I1_default_C.t20 I1_default_C.t19 pfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X28 I1_default_S.t58 a_3058_194# a_3058_194# I1_default_S.t57 nfet_03v3 ad=0.273p pd=1.51u as=0.48p ps=2.8u w=0.6u l=0.3u
+X29 Input a_n4608_7484# a_3064_n2566# I1_default_S.t53 nfet_03v3 ad=2.6p pd=10.52u as=6p ps=21.2u w=10u l=0.28u
+X30 a_n644_4164# a_n4608_7484# a_134_1254# I1_default_C.t11 pfet_03v3 ad=0.486p pd=2.82u as=0.267p ps=1.49u w=0.6u l=0.3u
+X31 I1_default_C.t8 a_5194_10442# a_5194_10442# I1_default_C.t7 pfet_06v0 ad=2.6p pd=10.52u as=7.7p ps=21.54u w=10u l=4u
+X32 a_n2470_12372# I1_default_S.t1 I1_default_S.t0 ppolyf_u_1k r_width=1u r_length=24u
+X33 a_n9884_7060# iDAC I1_default_S.t15 I1_default_S.t17 nfet_06v0 ad=7.3p pd=21.46u as=4.9p ps=20.98u w=10u l=4u
+X34 Input a_n4608_7484# a_3064_n2566# I1_default_S.t53 nfet_03v3 ad=5.5p pd=21.1u as=2.6p ps=10.52u w=10u l=0.28u
+X35 I1_default_C I1_default_S Output I1_default_S npn_10p00x10p00
+X36 I1_default_C.t1 a_n9884_7060# a_n9884_7060# I1_default_C.t39 pfet_06v0 ad=13p pd=22.6u as=7.3p ps=21.46u w=10u l=4u
+X37 a_2184_1852# a_156_n2566# I1_default_S.t3 ppolyf_s r_width=2u r_length=5u
+X38 I1_default_S.t9 a_156_n2566# a_n562_n2146# I1_default_S.t8 nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X39 a_n724_1852# I1_default_B.t0 I1_default_S.t2 ppolyf_s r_width=2u r_length=5u
+X40 Output I1_default_S.t20 I1_default_S.t19 ppolyf_u_1k r_width=4u r_length=4u
+X41 I1_default_C.t26 a_2264_4164# a_2184_1852# I1_default_C.t25 pfet_03v3 ad=2.6p pd=10.52u as=5.3p ps=21.06u w=10u l=0.28u
+X42 a_n4608_7484# a_n6608_7424# I1_default_C.t3 I1_default_C.t4 pfet_06v0 ad=5.2p pd=20.52u as=5.2p ps=20.52u w=20u l=10u
+X43 I1_default_S Input I1_default_S.t39 ppolyf_s r_width=4u r_length=36u
+X44 I1_default_C.t16 a_n9884_9384# a_134_1254# I1_default_C.t11 pfet_03v3 ad=0.9p pd=4.2u as=0.48p ps=2.8u w=0.6u l=0.3u
+X45 I1_default_B.t3 vDAC a_n562_n2146# I1_default_S.t32 nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X46 I1_default_C.t33 a_n644_4164# a_n724_1852# I1_default_C.t32 pfet_03v3 ad=2.6p pd=10.52u as=5.3p ps=21.06u w=10u l=0.28u
+X47 I1_default_C.t20 a_5048_1590# a_3064_n2566# I1_default_C.t19 pfet_03v3 ad=2.6p pd=10.52u as=5.3p ps=21.06u w=10u l=0.28u
+X48 a_n562_n2146# vDAC I1_default_B.t1 I1_default_S.t29 nfet_03v3 ad=2.6p pd=10.52u as=6p ps=21.2u w=10u l=0.28u
+X49 a_2346_n2146# vDAC a_156_n2566# I1_default_S.t36 nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X50 I1_default_C.t31 a_2264_4164# a_2184_1852# I1_default_C.t30 pfet_03v3 ad=12.9p pd=22.58u as=2.6p ps=10.52u w=10u l=0.28u
+X51 a_5266_2300# a_n9884_9384# I1_default_C.t18 I1_default_C.t17 pfet_03v3 ad=0.48p pd=2.8u as=0.9p ps=4.2u w=0.6u l=0.3u
+X52 a_3042_1254# a_156_n2566# a_3058_194# I1_default_C.t14 pfet_03v3 ad=0.267p pd=1.49u as=0.48p ps=2.8u w=0.6u l=0.3u
+X53 a_2264_4164# a_n4608_7484# a_3042_1254# I1_default_C.t14 pfet_03v3 ad=0.486p pd=2.82u as=0.267p ps=1.49u w=0.6u l=0.3u
+X54 a_n562_n2146# a_156_n2566# I1_default_S.t7 I1_default_S.t6 nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X55 a_n4608_7484# a_n6608_7424# I1_default_C.t1 I1_default_C.t0 pfet_06v0 ad=5.2p pd=20.52u as=15.4p ps=41.54u w=20u l=10u
+X56 I1_default_C.t20 a_5048_1590# a_3064_n2566# I1_default_C.t19 pfet_03v3 ad=12.9p pd=22.58u as=2.6p ps=10.52u w=10u l=0.28u
+X57 a_n644_4164# a_150_194# I1_default_S.t28 I1_default_S.t27 nfet_03v3 ad=0.474p pd=2.78u as=0.273p ps=1.51u w=0.6u l=0.3u
+X58 I1_default_S.t13 a_156_n2566# a_n562_n2146# I1_default_S.t12 nfet_03v3 ad=13.2p pd=22.64u as=2.6p ps=10.52u w=10u l=0.28u
+X59 a_3064_n2566# a_n4608_7484# Input I1_default_S.t53 nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X60 a_5182_1808# a_5182_1808# I1_default_S.t22 I1_default_S.t21 nfet_03v3 ad=0.486p pd=2.82u as=0.273p ps=1.51u w=0.6u l=0.3u
+X61 a_n4608_7484# a_n2470_12372# cap_mim_2f0_m4m5_noshield c_width=22u c_length=11u
+X62 a_5266_2300# a_n4608_7484# a_5048_1590# I1_default_C.t38 pfet_03v3 ad=0.27p pd=1.5u as=0.474p ps=2.78u w=0.6u l=0.3u
+X63 I1_default_S.t47 a_3064_n2566# a_2346_n2146# I1_default_S.t46 nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X64 a_n562_n2146# vDAC I1_default_B.t3 I1_default_S.t33 nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X65 I1_default_C.t37 a_n644_4164# a_n724_1852# I1_default_C.t32 pfet_03v3 ad=12.9p pd=22.58u as=2.6p ps=10.52u w=10u l=0.28u
+X66 I1_default_B.t2 vDAC a_n562_n2146# I1_default_S.t30 nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X67 a_156_n2566# vDAC a_2346_n2146# I1_default_S.t35 nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X68 a_2346_n2146# vDAC a_156_n2566# I1_default_S.t38 nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X69 a_n4608_7484# a_n2470_12372# I1_default_S.t18 ppolyf_u_1k r_width=1u r_length=10u
+X70 I1_default_C.t13 a_n9884_9384# a_n9884_9384# I1_default_C.t12 pfet_03v3 ad=0.828p pd=3.96u as=0.39p ps=2.5u w=0.6u l=0.3u
+X71 I1_default_S.t5 a_156_n2566# a_n562_n2146# I1_default_S.t4 nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X72 I1_default_S.t60 a_n9884_7060# a_n9884_7060# I1_default_S.t59 nfet_06v0 ad=2.6p pd=10.52u as=7.3p ps=21.46u w=10u l=4u
+X73 a_n724_1852# a_n644_4164# I1_default_C.t33 I1_default_C.t32 pfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X74 a_2184_1852# a_2264_4164# I1_default_C.t26 I1_default_C.t29 pfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X75 I1_default_S.t24 a_5182_1808# a_5048_1590# I1_default_S.t23 nfet_03v3 ad=0.273p pd=1.51u as=0.468p ps=2.76u w=0.6u l=0.3u
+X76 a_n562_n2146# a_156_n2566# I1_default_S.t11 I1_default_S.t10 nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X77 I1_default_C.t26 a_2264_4164# a_2184_1852# I1_default_C.t28 pfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+C0 a_5194_10442# a_n6608_7424# 0.57021f
+C1 a_134_1254# I1_default_C 0.18232f
+C2 a_2346_n2146# vDAC 0.82217f
+C3 a_156_n2566# a_n4608_7484# 0.04444f
+C4 a_3058_194# a_n4608_7484# 0.01404f
+C5 a_5048_1590# a_5266_2300# 0.11052f
+C6 a_2264_4164# a_n4608_7484# 0.10317f
+C7 a_3064_n2566# I1_default_C 3.58408f
+C8 a_3042_1254# a_n4608_7484# 0.05126f
+C9 I1_default_C a_n644_4164# 4.26659f
+C10 a_n9884_9384# I1_default_C 3.79069f
+C11 a_n9884_7060# I1_default_C 2.56254f
+C12 I1_default_B a_n562_n2146# 2.85729f
+C13 BandGap I1_default_C 0.01033f
+C14 a_134_1254# a_n644_4164# 0.05137f
+C15 a_5182_1808# I1_default_C 0.27798f
+C16 a_2184_1852# I1_default_C 3.11074f
+C17 a_134_1254# a_n9884_9384# 0.02289f
+C18 a_n562_n2146# vDAC 0.82217f
+C19 iDAC I1_default_C 0.02414f
+C20 a_5048_1590# a_n4608_7484# 0.05789f
+C21 a_n2470_12372# I1_default_C 0.89612f
+C22 I1_default_C a_156_n2566# 0.31631f
+C23 iDAC w_n10978_7026# 0.02453f
+C24 a_3058_194# I1_default_C 0.0884f
+C25 a_3064_n2566# Input 2.88684f
+C26 a_3064_n2566# a_n9884_9384# 0.01161f
+C27 I1_default_B a_n724_1852# 0.01606f
+C28 a_n9884_9384# a_n644_4164# 1.26225f
+C29 I1_default_B Output 3.12452f
+C30 a_2264_4164# I1_default_C 4.27269f
+C31 a_n9884_9384# a_n9884_7060# 3.47853f
+C32 I1_default_B vDAC 0.50596f
+C33 a_n9884_9384# BandGap 0.06221f
+C34 a_3064_n2566# a_5182_1808# 0.07538f
+C35 a_n6608_7424# a_n4608_7484# 9.80826f
+C36 I1_default_C a_3042_1254# 0.18232f
+C37 Output vDAC 0.56211f
+C38 I1_default_B a_150_194# 0.09972f
+C39 iDAC a_n9884_9384# 0.62681f
+C40 iDAC a_n9884_7060# 0.41802f
+C41 a_n9884_9384# a_n2470_12372# 0.02613f
+C42 a_n2470_12372# a_n9884_7060# 0.09237f
+C43 a_n2470_12372# BandGap 0.12441f
+C44 a_n9884_9384# a_156_n2566# 0.01051f
+C45 a_4652_7498# a_n9884_9384# 0.0267f
+C46 I1_default_B a_n4608_7484# 0.01894f
+C47 a_4652_7498# a_n9884_7060# 0.31557f
+C48 a_5048_1590# I1_default_C 3.33794f
+C49 a_4652_7498# BandGap 0.38185f
+C50 a_n9884_9384# a_2264_4164# 1.26251f
+C51 a_5266_2300# a_n4608_7484# 0.06484f
+C52 Output a_n4608_7484# 0.06009f
+C53 a_2184_1852# a_156_n2566# 0.01606f
+C54 vDAC a_n4608_7484# 3.10068f
+C55 a_n9884_9384# a_3042_1254# 0.02289f
+C56 a_4652_7498# a_n2470_12372# 0.75154f
+C57 a_2184_1852# a_2264_4164# 0.50497f
+C58 a_5194_10442# I1_default_C 3.90155f
+C59 a_3064_n2566# a_2346_n2146# 0.7636f
+C60 a_150_194# a_n4608_7484# 0.01404f
+C61 I1_default_C a_n6608_7424# 15.2999f
+C62 a_3058_194# a_156_n2566# 0.09951f
+C63 a_5048_1590# a_3064_n2566# 0.79662f
+C64 a_3058_194# a_2264_4164# 0.07007f
+C65 a_5048_1590# a_n9884_9384# 0.11822f
+C66 a_156_n2566# a_3042_1254# 0.08905f
+C67 a_3058_194# a_3042_1254# 0.03453f
+C68 I1_default_B I1_default_C 3.49646f
+C69 a_5048_1590# a_5182_1808# 0.12549f
+C70 a_2346_n2146# a_156_n2566# 2.86857f
+C71 a_2264_4164# a_3042_1254# 0.05137f
+C72 a_5194_10442# a_n9884_7060# 0.03982f
+C73 a_n724_1852# I1_default_C 3.10974f
+C74 a_5266_2300# I1_default_C 0.18831f
+C75 Output I1_default_C 0.07299f
+C76 BandGap a_5194_10442# 0.02228f
+C77 a_134_1254# I1_default_B 0.08905f
+C78 a_n9884_7060# a_n6608_7424# 0.36304f
+C79 BandGap a_n6608_7424# 0.44314f
+C80 a_150_194# I1_default_C 0.0884f
+C81 a_n2470_12372# a_5194_10442# 0.84463f
+C82 a_n2470_12372# a_n6608_7424# 1.72542f
+C83 a_4652_7498# a_5194_10442# 0.28427f
+C84 a_n9884_9384# I1_default_B 0.01049f
+C85 a_134_1254# a_150_194# 0.03453f
+C86 a_3064_n2566# a_5266_2300# 0.09075f
+C87 I1_default_C a_n4608_7484# 5.12749f
+C88 a_n724_1852# a_n644_4164# 0.50497f
+C89 a_n562_n2146# a_156_n2566# 0.76533f
+C90 a_4652_7498# a_n6608_7424# 0.07282f
+C91 a_n9884_9384# a_5266_2300# 0.02078f
+C92 a_3064_n2566# vDAC 0.40663f
+C93 Input vDAC 0.03811f
+C94 a_134_1254# a_n4608_7484# 0.05126f
+C95 a_5182_1808# a_5266_2300# 0.0256f
+C96 a_150_194# a_n644_4164# 0.07007f
+C97 a_3064_n2566# a_n4608_7484# 0.69658f
+C98 a_n644_4164# a_n4608_7484# 0.10264f
+C99 Input a_n4608_7484# 1.23532f
+C100 a_n9884_9384# a_n4608_7484# 7.43913f
+C101 a_n9884_7060# a_n4608_7484# 0.17043f
+C102 a_156_n2566# vDAC 0.80658f
+C103 BandGap a_n4608_7484# 0.01544f
+C104 a_n2470_12372# a_n4608_7484# 1.68781f
+R0 I1_default_S I1_default_B.n2 52810.1
+R1 I1_default_S I1_default_B.n12 1.35341
+R2 I1_default_B.n21 I1_default_B.n4 405.872
+R3 I1_default_B.n22 I1_default_B.n3 1209.54
+R4 I1_default_B.n33 I1_default_B.n10 1085.23
+R5 I1_default_B.n3 I1_default_B.n29 872.721
+R6 I1_default_B.n3 I1_default_B.n11 1071.13
+R7 I1_default_S I1_default_B.n13 155.512
+R8 I1_default_B.n3 I1_default_B.n4 0.586499
+R9 I1_default_B.n32 I1_default_B.n2 4915.9
+R10 I1_default_B.n32 I1_default_B.n12 267.798
+R11 I1_default_B.n13 I1_default_B.n34 3.93299
+R12 I1_default_B.n12 I1_default_B.n34 321.168
+R13 I1_default_B.n17 I1_default_B.n6 190.142
+R14 I1_default_B.n33 I1_default_B.n32 166.631
+R15 I1_default_B.n29 I1_default_B.n28 125.74
+R16 I1_default_B.n24 I1_default_B.n10 119.632
+R17 I1_default_B.n27 I1_default_B.n26 113.936
+R18 I1_default_B.n28 I1_default_B.n27 113.936
+R19 I1_default_B.n11 I1_default_B.n23 90.6438
+R20 I1_default_B.n23 I1_default_B.n22 90.6438
+R21 I1_default_B.n26 I1_default_B.n25 64.8011
+R22 I1_default_B.n25 I1_default_B.n24 49.135
+R23 I1_default_B.n14 I1_default_B.t4 41.7767
+R24 I1_default_B.n13 I1_default_B.n32 282.692
+R25 I1_default_B.n3 I1_default_B.n31 13.51
+R26 I1_default_B.n31 I1_default_B.n30 9.7005
+R27 I1_default_B.n22 I1_default_B.n15 7.86063
+R28 I1_default_B.n7 I1_default_B.n18 4.48301
+R29 I1_default_B.n8 I1_default_B.n19 4.48301
+R30 I1_default_B.n9 I1_default_B.n20 4.48301
+R31 I1_default_B.n0 I1_default_B.n1 0.507116
+R32 I1_default_B.n3 I1_default_B.n10 7.43771
+R33 I1_default_B.n30 I1_default_B.n16 7.23383
+R34 I1_default_B.n17 I1_default_B.n5 5.2005
+R35 I1_default_B.n7 I1_default_B.n5 1.4837
+R36 I1_default_B.n7 I1_default_B.n19 4.48301
+R37 I1_default_B.n8 I1_default_B.n5 1.4837
+R38 I1_default_B.n8 I1_default_B.n20 4.48301
+R39 I1_default_B.n9 I1_default_B.n5 1.4837
+R40 I1_default_B.n9 I1_default_B.n1 5.5681
+R41 I1_default_B.n1 I1_default_B.n21 0.105599
+R42 I1_default_B.n23 I1_default_B.n16 5.2005
+R43 I1_default_B.n30 I1_default_B.n11 5.2005
+R44 I1_default_B.n31 I1_default_B.n15 3.71445
+R45 I1_default_B.n14 I1_default_B.t0 2.95101
+R46 I1_default_B.n16 I1_default_B.n15 2.62097
+R47 I1_default_B.n6 I1_default_B.n0 2.35118
+R48 I1_default_B.n6 I1_default_B.n2 0.964169
+R49 I1_default_B.n18 I1_default_B.n17 2.24791
+R50 I1_default_B.n0 I1_default_B.n5 2.39353
+R51 I1_default_S I1_default_B.n14 2.35115
+R52 I1_default_B.n14 I1_default_B.t1 1.84825
+R53 I1_default_S I1_default_B.n33 1.48621
+R54 I1_default_B.n34 I1_default_S 2.23931
+R55 I1_default_B.n6 I1_default_B.n4 1.35143
+R56 I1_default_B.n14 I1_default_B.t3 1.68445
+R57 I1_default_B.n14 I1_default_B.t2 1.63504
+R58 I1_default_B.n21 I1_default_B.n18 1.47754
+R59 I1_default_B.n21 I1_default_B.n19 1.47754
+R60 I1_default_B.n21 I1_default_B.n20 1.47754
+R61 I1_default_S I1_default_B 1.56364
+R62 I1_default_B.n3 I1_default_S 1.31723
+R63 I1_default_B.n3 I1_default_B.n5 1.20083
+R64 I1_default_C.n25 I1_default_C.n24 569.928
+R65 I1_default_C.n10 I1_default_C.t19 562.947
+R66 I1_default_C.t25 I1_default_C.n18 555.644
+R67 I1_default_C.t2 I1_default_C.t0 416.139
+R68 I1_default_C.t5 I1_default_C.t4 416.139
+R69 I1_default_C.n24 I1_default_C.t14 304.104
+R70 I1_default_C.n18 I1_default_C.t11 304.104
+R71 I1_default_C.n0 I1_default_C.t5 285.728
+R72 I1_default_C.n37 I1_default_C.t7 278.012
+R73 I1_default_C.t9 I1_default_C.n35 278.012
+R74 I1_default_C.n18 I1_default_C.t32 258.348
+R75 I1_default_C.n24 I1_default_C.n23 258.348
+R76 I1_default_C.n42 I1_default_C.n41 243.75
+R77 I1_default_C.n0 I1_default_C.n2 1.28688
+R78 I1_default_C.t0 I1_default_C.t1 286.171
+R79 I1_default_C.n0 I1_default_C.n1 1.31208
+R80 I1_default_C.t3 I1_default_C.t2 208.071
+R81 I1_default_C.t4 I1_default_C.t3 208.071
+R82 I1_default_C.n43 I1_default_C.n42 184.951
+R83 I1_default_C.n43 I1_default_C.n6 184.951
+R84 I1_default_C.n35 I1_default_C.n32 172.565
+R85 I1_default_C.n35 I1_default_C.n33 172.565
+R86 I1_default_C.n37 I1_default_C.n33 172.565
+R87 I1_default_C.n37 I1_default_C.n32 172.565
+R88 I1_default_C.t7 I1_default_C.n36 156.945
+R89 I1_default_C.n36 I1_default_C.t9 156.945
+R90 I1_default_C.t1 I1_default_C.t39 133.23
+R91 I1_default_C.n41 I1_default_C.n6 126.15
+R92 I1_default_C.n23 I1_default_C.t30 87.4409
+R93 I1_default_C.n24 I1_default_C.n12 70.8511
+R94 I1_default_C.n18 I1_default_C.n13 70.8511
+R95 I1_default_C.t27 I1_default_C.t25 63.5935
+R96 I1_default_C.t28 I1_default_C.t27 63.5935
+R97 I1_default_C.t29 I1_default_C.t28 63.5935
+R98 I1_default_C.t30 I1_default_C.t29 63.5935
+R99 I1_default_C.t38 I1_default_C.n11 54.4648
+R100 I1_default_C.n11 I1_default_C.t17 52.6791
+R101 I1_default_C.t39 I1_default_C.t12 15.9863
+R102 I1_default_C.n26 I1_default_C.n25 12.5005
+R103 I1_default_C.n29 I1_default_C.n28 11.2114
+R104 I1_default_C.n28 I1_default_C.n27 10.8005
+R105 I1_default_C.t15 I1_default_C.n12 9.90943
+R106 I1_default_C.t16 I1_default_C.n13 9.90943
+R107 I1_default_C.n29 I1_default_C.t18 9.90943
+R108 I1_default_C.t12 I1_default_C.t13 8.85019
+R109 I1_default_C.n10 I1_default_C.n8 8.82301
+R110 I1_default_C.n19 I1_default_C.t15 8.4005
+R111 I1_default_C.n14 I1_default_C.t16 8.4005
+R112 I1_default_C.t18 I1_default_C.n7 8.4005
+R113 I1_default_C.n27 I1_default_C.n9 6.5105
+R114 I1_default_C.n25 I1_default_C.n7 6.3005
+R115 I1_default_C.n30 I1_default_C.n7 6.3005
+R116 I1_default_C.n11 I1_default_C.n9 6.3005
+R117 I1_default_C.n27 I1_default_C.n26 6.3005
+R118 I1_default_C.n19 I1_default_C.t14 6.3005
+R119 I1_default_C.n20 I1_default_C.n19 6.3005
+R120 I1_default_C.n14 I1_default_C.t11 6.3005
+R121 I1_default_C.n15 I1_default_C.n14 6.3005
+R122 I1_default_C.t1 I1_default_C.t13 5.97451
+R123 I1_default_C.n20 I1_default_C.n12 4.5005
+R124 I1_default_C.n15 I1_default_C.n13 4.5005
+R125 I1_default_C.n30 I1_default_C.n29 4.5005
+R126 I1_default_C.n28 I1_default_C.n8 4.33182
+R127 I1_default_C.t20 I1_default_C.n30 3.85233
+R128 I1_default_C.t17 I1_default_C.n10 2.67907
+R129 I1_default_C.n44 I1_default_C 2.64264
+R130 I1_default_C.n9 I1_default_C.n8 2.48918
+R131 I1_default_C.n38 I1_default_C.n31 2.46572
+R132 I1_default_C.n34 I1_default_C.n31 2.46572
+R133 I1_default_C.n34 I1_default_C.t8 2.46572
+R134 I1_default_C.n4 I1_default_C.n3 0.336706
+R135 I1_default_C.t3 I1_default_C.n1 2.19796
+R136 I1_default_C.n39 I1_default_C.t8 2.07441
+R137 I1_default_C.t3 I1_default_C.n2 1.6918
+R138 I1_default_C.t26 I1_default_C.t31 1.48734
+R139 I1_default_C.t33 I1_default_C.t37 1.48734
+R140 I1_default_C I1_default_C.n5 1.34514
+R141 I1_default_C I1_default_C.n44 1.33871
+R142 I1_default_C I1_default_C.n5 1.30443
+R143 I1_default_C.t6 I1_default_C.n2 0.0101581
+R144 I1_default_C.n21 I1_default_C.n20 0.904811
+R145 I1_default_C.n16 I1_default_C.n15 0.904811
+R146 I1_default_C.n26 I1_default_C.t38 0.893357
+R147 I1_default_C.n40 I1_default_C.t3 0.910688
+R148 I1_default_C.n41 I1_default_C.n40 0.7005
+R149 I1_default_C.n40 I1_default_C 0.470256
+R150 I1_default_C.n22 I1_default_C.t31 0.4632
+R151 I1_default_C.n17 I1_default_C.t37 0.4632
+R152 I1_default_C.n4 I1_default_C.t33 0.443821
+R153 I1_default_C.n3 I1_default_C.t26 0.443821
+R154 I1_default_C.n39 I1_default_C.n38 0.391804
+R155 I1_default_C.t32 I1_default_C.n17 0.3155
+R156 I1_default_C.n17 I1_default_C.n16 0.3155
+R157 I1_default_C.n23 I1_default_C.n22 0.3155
+R158 I1_default_C.n22 I1_default_C.n21 0.3155
+R159 I1_default_C.n21 I1_default_C.n3 0.2561
+R160 I1_default_C.n16 I1_default_C.n4 0.2561
+R161 I1_default_C.n44 I1_default_C.n43 0.2525
+R162 I1_default_C.n6 I1_default_C.n5 0.242808
+R163 I1_default_C.n42 I1_default_C 0.242808
+R164 I1_default_C.n38 I1_default_C.n37 0.233833
+R165 I1_default_C.n36 I1_default_C.n33 0.233833
+R166 I1_default_C.n33 I1_default_C.n31 0.233833
+R167 I1_default_C.n35 I1_default_C.n34 0.233833
+R168 I1_default_C.n36 I1_default_C.n32 0.233833
+R169 I1_default_C.n32 I1_default_C.t8 0.233833
+R170 I1_default_C.t19 I1_default_C.t20 142.825
+R171 I1_default_C.n1 I1_default_C.n39 7.10866
+R172 I1_default_C.t1 I1_default_C.t3 1.38287
+R173 I1_default_C.n4 I1_default_C.t3 1.20438
+R174 I1_default_C.n3 I1_default_C.t20 1.05697
+R175 I1_default_S.t17 I1_default_S.n5 93109.5
+R176 I1_default_S.n162 I1_default_S.n5 22650.5
+R177 I1_default_S.n167 I1_default_S.n166 20877.2
+R178 I1_default_S.t18 I1_default_S.t0 15428.2
+R179 I1_default_S.n166 I1_default_S.t18 14981.7
+R180 I1_default_S.t0 I1_default_S.n161 9367.1
+R181 I1_default_S.n165 I1_default_S.n162 7915.62
+R182 I1_default_S.n166 I1_default_S.n165 6628.11
+R183 I1_default_S.n160 I1_default_S.n159 4915.22
+R184 I1_default_S.n163 I1_default_S.t14 4746.47
+R185 I1_default_S.n30 I1_default_S.n24 3894.69
+R186 I1_default_S.n165 I1_default_S.t14 3516.24
+R187 I1_default_S.n167 I1_default_S.n5 3264.85
+R188 I1_default_S.n164 I1_default_S.t17 3176.76
+R189 I1_default_S.n163 I1_default_S.n162 3173.09
+R190 I1_default_S.t16 I1_default_S.n164 2764.64
+R191 I1_default_S.n165 I1_default_S.t16 1822.47
+R192 I1_default_S.n24 I1_default_S.t21 1542.51
+R193 I1_default_S.t15 I1_default_S.n2 1.31795
+R194 I1_default_S.n154 I1_default_S.t34 1157.79
+R195 I1_default_S.t19 I1_default_S.n158 1085.23
+R196 I1_default_S.t53 I1_default_S.n25 968.51
+R197 I1_default_S.n153 I1_default_S.t15 777.015
+R198 I1_default_S.n25 I1_default_S.n23 716.639
+R199 I1_default_S.n142 I1_default_S.t53 620.297
+R200 I1_default_S.n139 I1_default_S.n30 580.908
+R201 I1_default_S.t52 I1_default_S.t54 497.293
+R202 I1_default_S.n164 I1_default_S.n163 495.053
+R203 I1_default_S.n24 I1_default_S.t23 453.68
+R204 I1_default_S.t59 I1_default_S.n160 435.68
+R205 I1_default_S.n139 I1_default_S.t54 435.68
+R206 I1_default_S.n25 I1_default_S.t39 434.957
+R207 I1_default_S.n43 I1_default_S.t61 410.377
+R208 I1_default_S.n43 I1_default_S.t52 410.377
+R209 I1_default_S.n161 I1_default_S.t61 375.17
+R210 I1_default_S.n159 I1_default_S.n3 292.976
+R211 I1_default_S.t15 I1_default_S.n167 216.988
+R212 I1_default_S.t15 I1_default_S.n3 161.169
+R213 I1_default_S.n4 I1_default_S.n2 321.197
+R214 I1_default_S.n137 I1_default_S.n44 190.142
+R215 I1_default_S.n140 I1_default_S.n29 190.142
+R216 I1_default_S.n46 I1_default_S.n29 190.142
+R217 I1_default_S.n92 I1_default_S.n44 190.142
+R218 I1_default_S.n159 I1_default_S.t19 166.631
+R219 I1_default_S.t4 I1_default_S.t33 148.912
+R220 I1_default_S.t8 I1_default_S.t6 148.912
+R221 I1_default_S.t12 I1_default_S.t10 148.912
+R222 I1_default_S.t35 I1_default_S.t36 148.912
+R223 I1_default_S.t36 I1_default_S.t37 148.912
+R224 I1_default_S.t37 I1_default_S.t38 148.912
+R225 I1_default_S.t38 I1_default_S.t42 148.912
+R226 I1_default_S.t44 I1_default_S.t46 148.912
+R227 I1_default_S.t48 I1_default_S.t50 148.912
+R228 I1_default_S.t33 I1_default_S.t32 125.74
+R229 I1_default_S.n161 I1_default_S.t59 122.124
+R230 I1_default_S.t25 I1_default_S.t4 120.992
+R231 I1_default_S.t42 I1_default_S.t57 120.992
+R232 I1_default_S.n158 I1_default_S.t29 119.632
+R233 I1_default_S.n18 I1_default_S.t12 117.269
+R234 I1_default_S.t50 I1_default_S.n152 117.269
+R235 I1_default_S.t31 I1_default_S.t30 113.936
+R236 I1_default_S.t32 I1_default_S.t31 113.936
+R237 I1_default_S.t10 I1_default_S.t27 100.516
+R238 I1_default_S.t55 I1_default_S.t48 100.516
+R239 I1_default_S.n142 I1_default_S.n24 96.1026
+R240 I1_default_S.n154 I1_default_S.n18 91.209
+R241 I1_default_S.n152 I1_default_S.n23 91.209
+R242 I1_default_S.t3 I1_default_S.t35 85.6248
+R243 I1_default_S.t30 I1_default_S.t2 64.8011
+R244 I1_default_S.t34 I1_default_S.n153 52.1196
+R245 I1_default_S.t2 I1_default_S.t29 49.135
+R246 I1_default_S.t27 I1_default_S.t8 48.3968
+R247 I1_default_S.t46 I1_default_S.t55 48.3968
+R248 I1_default_S.n2 I1_default_S.n159 262.149
+R249 I1_default_S.t6 I1_default_S.t25 27.9215
+R250 I1_default_S.t57 I1_default_S.t44 27.9215
+R251 I1_default_S.n94 I1_default_S.t1 23.37
+R252 I1_default_S.n144 I1_default_S.n143 16.1459
+R253 I1_default_S.n153 I1_default_S.t3 11.1689
+R254 I1_default_S.n144 I1_default_S.n142 10.6599
+R255 I1_default_S.n152 I1_default_S.n151 10.5284
+R256 I1_default_S.n157 I1_default_S.n18 10.5284
+R257 I1_default_S.n140 I1_default_S.n28 7.91354
+R258 I1_default_S.n96 I1_default_S.n38 7.91354
+R259 I1_default_S.n111 I1_default_S.n110 7.91354
+R260 I1_default_S.n115 I1_default_S.n114 7.91354
+R261 I1_default_S.n119 I1_default_S.n118 7.91354
+R262 I1_default_S.n66 I1_default_S.n65 7.91354
+R263 I1_default_S.n70 I1_default_S.n69 7.91354
+R264 I1_default_S.n74 I1_default_S.n73 7.91354
+R265 I1_default_S.t15 I1_default_S.n144 7.89942
+R266 I1_default_S.n99 I1_default_S.n38 7.83746
+R267 I1_default_S.n103 I1_default_S.n102 7.83746
+R268 I1_default_S.n107 I1_default_S.n106 7.83746
+R269 I1_default_S.n123 I1_default_S.n122 7.83746
+R270 I1_default_S.n127 I1_default_S.n126 7.83746
+R271 I1_default_S.n131 I1_default_S.n130 7.83746
+R272 I1_default_S.n133 I1_default_S.n42 7.83746
+R273 I1_default_S.n50 I1_default_S.n49 7.83746
+R274 I1_default_S.n54 I1_default_S.n53 7.83746
+R275 I1_default_S.n58 I1_default_S.n57 7.83746
+R276 I1_default_S.n62 I1_default_S.n61 7.83746
+R277 I1_default_S.n78 I1_default_S.n77 7.83746
+R278 I1_default_S.n82 I1_default_S.n81 7.83746
+R279 I1_default_S.n86 I1_default_S.n85 7.83746
+R280 I1_default_S.n90 I1_default_S.n89 7.83746
+R281 I1_default_S.n158 I1_default_S.t15 7.43771
+R282 I1_default_S.n146 I1_default_S.n145 6.49471
+R283 I1_default_S.n20 I1_default_S.n19 6.49471
+R284 I1_default_S.n93 I1_default_S.n92 5.2005
+R285 I1_default_S.n91 I1_default_S.n90 5.2005
+R286 I1_default_S.n89 I1_default_S.n88 5.2005
+R287 I1_default_S.n87 I1_default_S.n86 5.2005
+R288 I1_default_S.n85 I1_default_S.n84 5.2005
+R289 I1_default_S.n83 I1_default_S.n82 5.2005
+R290 I1_default_S.n81 I1_default_S.n80 5.2005
+R291 I1_default_S.n79 I1_default_S.n78 5.2005
+R292 I1_default_S.n77 I1_default_S.n76 5.2005
+R293 I1_default_S.n75 I1_default_S.n74 5.2005
+R294 I1_default_S.n73 I1_default_S.n72 5.2005
+R295 I1_default_S.n71 I1_default_S.n70 5.2005
+R296 I1_default_S.n69 I1_default_S.n68 5.2005
+R297 I1_default_S.n67 I1_default_S.n66 5.2005
+R298 I1_default_S.n65 I1_default_S.n64 5.2005
+R299 I1_default_S.n63 I1_default_S.n62 5.2005
+R300 I1_default_S.n61 I1_default_S.n60 5.2005
+R301 I1_default_S.n59 I1_default_S.n58 5.2005
+R302 I1_default_S.n57 I1_default_S.n56 5.2005
+R303 I1_default_S.n55 I1_default_S.n54 5.2005
+R304 I1_default_S.n53 I1_default_S.n52 5.2005
+R305 I1_default_S.n51 I1_default_S.n50 5.2005
+R306 I1_default_S.n49 I1_default_S.n48 5.2005
+R307 I1_default_S.n47 I1_default_S.n46 5.2005
+R308 I1_default_S.n140 I1_default_S.n139 5.2005
+R309 I1_default_S.n141 I1_default_S.n140 5.2005
+R310 I1_default_S.n28 I1_default_S.n27 5.2005
+R311 I1_default_S.n97 I1_default_S.n96 5.2005
+R312 I1_default_S.n139 I1_default_S.n38 5.2005
+R313 I1_default_S.n98 I1_default_S.n38 5.2005
+R314 I1_default_S.n100 I1_default_S.n99 5.2005
+R315 I1_default_S.n102 I1_default_S.n101 5.2005
+R316 I1_default_S.n104 I1_default_S.n103 5.2005
+R317 I1_default_S.n106 I1_default_S.n105 5.2005
+R318 I1_default_S.n108 I1_default_S.n107 5.2005
+R319 I1_default_S.n110 I1_default_S.n109 5.2005
+R320 I1_default_S.n112 I1_default_S.n111 5.2005
+R321 I1_default_S.n114 I1_default_S.n113 5.2005
+R322 I1_default_S.n116 I1_default_S.n115 5.2005
+R323 I1_default_S.n118 I1_default_S.n117 5.2005
+R324 I1_default_S.n120 I1_default_S.n119 5.2005
+R325 I1_default_S.n122 I1_default_S.n121 5.2005
+R326 I1_default_S.n124 I1_default_S.n123 5.2005
+R327 I1_default_S.n126 I1_default_S.n125 5.2005
+R328 I1_default_S.n128 I1_default_S.n127 5.2005
+R329 I1_default_S.n130 I1_default_S.n129 5.2005
+R330 I1_default_S.n132 I1_default_S.n131 5.2005
+R331 I1_default_S.n134 I1_default_S.n133 5.2005
+R332 I1_default_S.n135 I1_default_S.n42 5.2005
+R333 I1_default_S.n137 I1_default_S.n136 5.2005
+R334 I1_default_S.n143 I1_default_S.t24 4.8305
+R335 I1_default_S.n145 I1_default_S.t56 4.8305
+R336 I1_default_S.n19 I1_default_S.t28 4.8305
+R337 I1_default_S.n143 I1_default_S.t22 4.7255
+R338 I1_default_S.n145 I1_default_S.t58 4.7255
+R339 I1_default_S.n19 I1_default_S.t26 4.7255
+R340 I1_default_S.n175 I1_default_S.n168 2.96496
+R341 I1_default_S.n136 I1_default_S.n95 2.44517
+R342 I1_default_S.n92 I1_default_S.n6 2.24791
+R343 I1_default_S.n89 I1_default_S.n7 2.24791
+R344 I1_default_S.n85 I1_default_S.n8 2.24791
+R345 I1_default_S.n81 I1_default_S.n9 2.24791
+R346 I1_default_S.n61 I1_default_S.n14 2.24791
+R347 I1_default_S.n57 I1_default_S.n15 2.24791
+R348 I1_default_S.n53 I1_default_S.n16 2.24791
+R349 I1_default_S.n49 I1_default_S.n17 2.24791
+R350 I1_default_S.n99 I1_default_S.n39 2.24791
+R351 I1_default_S.n106 I1_default_S.n36 2.24791
+R352 I1_default_S.n123 I1_default_S.n41 2.24791
+R353 I1_default_S.n130 I1_default_S.n32 2.24791
+R354 I1_default_S.n133 I1_default_S.n31 2.24791
+R355 I1_default_S.n138 I1_default_S.n42 2.24791
+R356 I1_default_S.n102 I1_default_S.n39 2.24791
+R357 I1_default_S.n103 I1_default_S.n36 2.24791
+R358 I1_default_S.n126 I1_default_S.n41 2.24791
+R359 I1_default_S.n127 I1_default_S.n32 2.24791
+R360 I1_default_S.n131 I1_default_S.n31 2.24791
+R361 I1_default_S.n138 I1_default_S.n137 2.24791
+R362 I1_default_S.n46 I1_default_S.n17 2.24791
+R363 I1_default_S.n50 I1_default_S.n16 2.24791
+R364 I1_default_S.n54 I1_default_S.n15 2.24791
+R365 I1_default_S.n58 I1_default_S.n14 2.24791
+R366 I1_default_S.n78 I1_default_S.n9 2.24791
+R367 I1_default_S.n82 I1_default_S.n8 2.24791
+R368 I1_default_S.n86 I1_default_S.n7 2.24791
+R369 I1_default_S.n90 I1_default_S.n6 2.24791
+R370 I1_default_S.n77 I1_default_S.n10 2.23559
+R371 I1_default_S.n73 I1_default_S.n11 2.23559
+R372 I1_default_S.n69 I1_default_S.n12 2.23559
+R373 I1_default_S.n65 I1_default_S.n13 2.23559
+R374 I1_default_S.n96 I1_default_S.n37 2.23559
+R375 I1_default_S.n110 I1_default_S.n35 2.23559
+R376 I1_default_S.n114 I1_default_S.n34 2.23559
+R377 I1_default_S.n115 I1_default_S.n40 2.23559
+R378 I1_default_S.n122 I1_default_S.n33 2.23559
+R379 I1_default_S.n37 I1_default_S.n28 2.23559
+R380 I1_default_S.n107 I1_default_S.n35 2.23559
+R381 I1_default_S.n111 I1_default_S.n34 2.23559
+R382 I1_default_S.n118 I1_default_S.n40 2.23559
+R383 I1_default_S.n119 I1_default_S.n33 2.23559
+R384 I1_default_S.n62 I1_default_S.n13 2.23559
+R385 I1_default_S.n66 I1_default_S.n12 2.23559
+R386 I1_default_S.n70 I1_default_S.n11 2.23559
+R387 I1_default_S.n74 I1_default_S.n10 2.23559
+R388 I1_default_S I1_default_S.t20 1.98286
+R389 I1_default_S.t53 I1_default_S.t15 1.93822
+R390 I1_default_S.n174 I1_default_S.n169 1.84825
+R391 I1_default_S.n45 I1_default_S.t62 1.84787
+R392 I1_default_S.n95 I1_default_S.n94 1.81224
+R393 I1_default_S.n174 I1_default_S.n170 1.68445
+R394 I1_default_S.n146 I1_default_S.t45 1.61884
+R395 I1_default_S.n20 I1_default_S.t7 1.61884
+R396 I1_default_S.n174 I1_default_S.n172 1.55089
+R397 I1_default_S.t51 I1_default_S.n148 1.54234
+R398 I1_default_S.n147 I1_default_S.t49 1.54234
+R399 I1_default_S.t13 I1_default_S.n22 1.54234
+R400 I1_default_S.n21 I1_default_S.t11 1.54234
+R401 I1_default_S.t19 I1_default_S 1.48621
+R402 I1_default_S.n30 I1_default_S.t15 1.48621
+R403 I1_default_S.n160 I1_default_S.n10 1.4837
+R404 I1_default_S.n160 I1_default_S.n11 1.4837
+R405 I1_default_S.n160 I1_default_S.n12 1.4837
+R406 I1_default_S.n160 I1_default_S.n13 1.4837
+R407 I1_default_S.n139 I1_default_S.n37 1.4837
+R408 I1_default_S.n139 I1_default_S.n35 1.4837
+R409 I1_default_S.n139 I1_default_S.n34 1.4837
+R410 I1_default_S.n139 I1_default_S.n40 1.4837
+R411 I1_default_S.n139 I1_default_S.n33 1.4837
+R412 I1_default_S.n160 I1_default_S.n6 1.47754
+R413 I1_default_S.n160 I1_default_S.n7 1.47754
+R414 I1_default_S.n160 I1_default_S.n8 1.47754
+R415 I1_default_S.n160 I1_default_S.n9 1.47754
+R416 I1_default_S.n160 I1_default_S.n14 1.47754
+R417 I1_default_S.n160 I1_default_S.n15 1.47754
+R418 I1_default_S.n160 I1_default_S.n16 1.47754
+R419 I1_default_S.n160 I1_default_S.n17 1.47754
+R420 I1_default_S.n139 I1_default_S.n39 1.47754
+R421 I1_default_S.n139 I1_default_S.n36 1.47754
+R422 I1_default_S.n139 I1_default_S.n41 1.47754
+R423 I1_default_S.n139 I1_default_S.n32 1.47754
+R424 I1_default_S.n139 I1_default_S.n31 1.47754
+R425 I1_default_S.n139 I1_default_S.n138 1.47754
+R426 I1_default_S.t15 I1_default_S.n26 1.37315
+R427 I1_default_S.n3 I1_default_S.n4 0.28337
+R428 I1_default_S I1_default_S.n4 1.3005
+R429 I1_default_S.n47 I1_default_S.n45 1.27322
+R430 I1_default_S.t15 I1_default_B 1.56364
+R431 I1_default_S.t15 I1_default_S.n141 1.20083
+R432 I1_default_S.n45 I1_default_S.n0 1.17246
+R433 I1_default_S.t15 I1_default_S.n0 0.657891
+R434 I1_default_S.n94 I1_default_S.n93 0.633435
+R435 I1_default_S.n1 I1_default_S.n175 2.35115
+R436 I1_default_B I1_default_S.t15 1.47029
+R437 I1_default_S.n150 I1_default_S.n149 0.488714
+R438 I1_default_S.n156 I1_default_S.n155 0.488714
+R439 I1_default_S.n149 I1_default_S.t51 0.4716
+R440 I1_default_S.n155 I1_default_S.t13 0.4716
+R441 I1_default_S.n155 I1_default_S.n154 0.2605
+R442 I1_default_S.n149 I1_default_S.n23 0.2605
+R443 I1_default_S.t49 I1_default_S.t47 0.1643
+R444 I1_default_S.t45 I1_default_S.t43 0.1643
+R445 I1_default_S.t11 I1_default_S.t9 0.1643
+R446 I1_default_S.t7 I1_default_S.t5 0.1643
+R447 I1_default_S.t62 I1_default_S.t60 0.1643
+R448 I1_default_S.n172 I1_default_S.n173 0.1643
+R449 I1_default_S.n170 I1_default_S.n171 0.1643
+R450 I1_default_S.n148 I1_default_S.n147 0.1445
+R451 I1_default_S.n22 I1_default_S.n21 0.1445
+R452 I1_default_S.n48 I1_default_S.n47 0.102239
+R453 I1_default_S.n52 I1_default_S.n51 0.102239
+R454 I1_default_S.n56 I1_default_S.n55 0.102239
+R455 I1_default_S.n60 I1_default_S.n59 0.102239
+R456 I1_default_S.n67 I1_default_S.n64 0.102239
+R457 I1_default_S.n71 I1_default_S.n68 0.102239
+R458 I1_default_S.n75 I1_default_S.n72 0.102239
+R459 I1_default_S.n80 I1_default_S.n79 0.102239
+R460 I1_default_S.n84 I1_default_S.n83 0.102239
+R461 I1_default_S.n88 I1_default_S.n87 0.102239
+R462 I1_default_S.n93 I1_default_S.n91 0.102239
+R463 I1_default_S.n141 I1_default_S.n27 0.102239
+R464 I1_default_S.n98 I1_default_S.n97 0.102239
+R465 I1_default_S.n101 I1_default_S.n100 0.102239
+R466 I1_default_S.n105 I1_default_S.n104 0.102239
+R467 I1_default_S.n112 I1_default_S.n109 0.102239
+R468 I1_default_S.n116 I1_default_S.n113 0.102239
+R469 I1_default_S.n120 I1_default_S.n117 0.102239
+R470 I1_default_S.n125 I1_default_S.n124 0.102239
+R471 I1_default_S.n129 I1_default_S.n128 0.102239
+R472 I1_default_S.n134 I1_default_S.n132 0.102239
+R473 I1_default_S.n136 I1_default_S.n135 0.102239
+R474 I1_default_S.n51 I1_default_S.n48 0.101261
+R475 I1_default_S.n55 I1_default_S.n52 0.101261
+R476 I1_default_S.n59 I1_default_S.n56 0.101261
+R477 I1_default_S.n63 I1_default_S.n60 0.101261
+R478 I1_default_S.n64 I1_default_S.n63 0.101261
+R479 I1_default_S.n68 I1_default_S.n67 0.101261
+R480 I1_default_S.n72 I1_default_S.n71 0.101261
+R481 I1_default_S.n76 I1_default_S.n75 0.101261
+R482 I1_default_S.n79 I1_default_S.n76 0.101261
+R483 I1_default_S.n83 I1_default_S.n80 0.101261
+R484 I1_default_S.n87 I1_default_S.n84 0.101261
+R485 I1_default_S.n91 I1_default_S.n88 0.101261
+R486 I1_default_S.n97 I1_default_S.n27 0.101261
+R487 I1_default_S.n100 I1_default_S.n98 0.101261
+R488 I1_default_S.n104 I1_default_S.n101 0.101261
+R489 I1_default_S.n108 I1_default_S.n105 0.101261
+R490 I1_default_S.n109 I1_default_S.n108 0.101261
+R491 I1_default_S.n113 I1_default_S.n112 0.101261
+R492 I1_default_S.n117 I1_default_S.n116 0.101261
+R493 I1_default_S.n121 I1_default_S.n120 0.101261
+R494 I1_default_S.n124 I1_default_S.n121 0.101261
+R495 I1_default_S.n128 I1_default_S.n125 0.101261
+R496 I1_default_S.n132 I1_default_S.n129 0.101261
+R497 I1_default_S.n135 I1_default_S.n134 0.101261
+R498 I1_default_S.n43 I1_default_S.n29 0.1005
+R499 I1_default_S.n29 I1_default_S.n0 0.1005
+R500 I1_default_S.n44 I1_default_S.n43 0.1005
+R501 I1_default_S.n95 I1_default_S.n44 0.1005
+R502 I1_default_S.n175 I1_default_S.n174 0.0707
+R503 I1_default_S.n147 I1_default_S.n146 0.068
+R504 I1_default_S.n21 I1_default_S.n20 0.068
+R505 I1_default_S.n151 I1_default_S.n150 0.0574893
+R506 I1_default_S.n157 I1_default_S.n156 0.0574893
+R507 I1_default_S.n150 I1_default_S.n148 0.0482
+R508 I1_default_S.n156 I1_default_S.n22 0.0482
+R509 I1_default_S.n1 I1_default_B 0.306294
+R510 I1_default_S.n157 I1_default_S.t15 1.44679
+R511 I1_default_S.n151 I1_default_S.t15 1.44679
+R512 I1_default_S.n1 I1_default_S.t15 1.31055
+R513 I1_default_S I1_default_S.t15 1.05063
+C105 Input I1_default_S 4.34654f
+C106 vDAC I1_default_S 5.74903f
+C107 Output I1_default_S 4.08132f
+C108 BandGap I1_default_S 1.80357f
+C109 iDAC I1_default_S 4.04453f
+C110 I1_default_B I1_default_S 3.03373f
+C111 I1_default_C I1_default_S 0.32073p
+C112 a_2346_n2146# I1_default_S 3.1572f ; **FLOATING
+C113 a_n562_n2146# I1_default_S 3.16112f ; **FLOATING
+C114 a_3058_194# I1_default_S 0.58599f ; **FLOATING
+C115 a_156_n2566# I1_default_S 4.83484f ; **FLOATING
+C116 a_3042_1254# I1_default_S 0.03297f ; **FLOATING
+C117 a_150_194# I1_default_S 0.58606f ; **FLOATING
+C118 a_134_1254# I1_default_S 0.03296f ; **FLOATING
+C119 a_5182_1808# I1_default_S 0.55177f ; **FLOATING
+C120 a_3064_n2566# I1_default_S 4.80849f ; **FLOATING
+C121 a_2184_1852# I1_default_S 1.0002f ; **FLOATING
+C122 a_n724_1852# I1_default_S 1.0011f ; **FLOATING
+C123 a_5048_1590# I1_default_S 0.93949f ; **FLOATING
+C124 a_2264_4164# I1_default_S 0.91392f ; **FLOATING
+C125 a_n644_4164# I1_default_S 0.91983f ; **FLOATING
+C126 a_4652_7498# I1_default_S 0.5789f ; **FLOATING
+C127 a_5194_10442# I1_default_S 1.15447f ; **FLOATING
+C128 a_n6608_7424# I1_default_S 3.34162f ; **FLOATING
+C129 a_n9884_7060# I1_default_S 6.87546f ; **FLOATING
+C130 a_n9884_9384# I1_default_S 4.8066f ; **FLOATING
+C131 a_n2470_12372# I1_default_S 6.60019f ; **FLOATING
+C132 a_n4608_7484# I1_default_S 25.0872f ; **FLOATING
+C133 w_n10978_7026# I1_default_S 1.50834f
+C134 w_n11882_9350# I1_default_S 1.50726f ; **FLOATING
+C135 I1_default_C.t20 I1_default_S 3.06502f ; **FLOATING
+C136 I1_default_C.t3 I1_default_S 11.2962f ; **FLOATING
+C137 I1_default_C.t1 I1_default_S 5.15293f ; **FLOATING
+C138 I1_default_C.n0 I1_default_S 2.3112f ; **FLOATING
+C139 I1_default_C.n1 I1_default_S 0.42328f ; **FLOATING
+C140 I1_default_C.t26 I1_default_S 0.34316f ; **FLOATING
+C141 I1_default_C.n3 I1_default_S 0.96366f ; **FLOATING
+C142 I1_default_C.t33 I1_default_S 0.34316f ; **FLOATING
+C143 I1_default_C.n4 I1_default_S 4.52356f ; **FLOATING
+C144 I1_default_C.n5 I1_default_S 0.03858f ; **FLOATING
+C145 I1_default_C.n6 I1_default_S 0.06571f ; **FLOATING
+C146 I1_default_C.t19 I1_default_S 0.92801f ; **FLOATING
+C147 I1_default_C.n10 I1_default_S 0.52892f ; **FLOATING
+C148 I1_default_C.t17 I1_default_S 0.0516f ; **FLOATING
+C149 I1_default_C.n11 I1_default_S 0.09988f ; **FLOATING
+C150 I1_default_C.t38 I1_default_S 0.0516f ; **FLOATING
+C151 I1_default_C.n12 I1_default_S 0.29384f ; **FLOATING
+C152 I1_default_C.t14 I1_default_S 0.30312f ; **FLOATING
+C153 I1_default_C.n13 I1_default_S 0.29384f ; **FLOATING
+C154 I1_default_C.t11 I1_default_S 0.30312f ; **FLOATING
+C155 I1_default_C.t37 I1_default_S 0.12365f ; **FLOATING
+C156 I1_default_C.n15 I1_default_S 0.02814f ; **FLOATING
+C157 I1_default_C.n16 I1_default_S 0.21587f ; **FLOATING
+C158 I1_default_C.n17 I1_default_S 0.10243f ; **FLOATING
+C159 I1_default_C.t32 I1_default_S 1.55095f ; **FLOATING
+C160 I1_default_C.n18 I1_default_S 1.12922f ; **FLOATING
+C161 I1_default_C.t25 I1_default_S 0.72826f ; **FLOATING
+C162 I1_default_C.t27 I1_default_S 0.14958f ; **FLOATING
+C163 I1_default_C.t28 I1_default_S 0.14958f ; **FLOATING
+C164 I1_default_C.t29 I1_default_S 0.14958f ; **FLOATING
+C165 I1_default_C.t30 I1_default_S 0.17763f ; **FLOATING
+C166 I1_default_C.t31 I1_default_S 0.12365f ; **FLOATING
+C167 I1_default_C.n20 I1_default_S 0.02814f ; **FLOATING
+C168 I1_default_C.n21 I1_default_S 0.21587f ; **FLOATING
+C169 I1_default_C.n22 I1_default_S 0.10243f ; **FLOATING
+C170 I1_default_C.n23 I1_default_S 0.40667f ; **FLOATING
+C171 I1_default_C.n24 I1_default_S 1.12844f ; **FLOATING
+C172 I1_default_C.n25 I1_default_S 0.60065f ; **FLOATING
+C173 I1_default_C.n26 I1_default_S 0.01248f ; **FLOATING
+C174 I1_default_C.n28 I1_default_S 0.02729f ; **FLOATING
+C175 I1_default_C.n29 I1_default_S 0.02117f ; **FLOATING
+C176 I1_default_C.n30 I1_default_S 0.0231f ; **FLOATING
+C177 I1_default_C.t8 I1_default_S 0.22275f ; **FLOATING
+C178 I1_default_C.n31 I1_default_S 0.08773f ; **FLOATING
+C179 I1_default_C.n32 I1_default_S 0.08773f ; **FLOATING
+C180 I1_default_C.n33 I1_default_S 0.08773f ; **FLOATING
+C181 I1_default_C.n34 I1_default_S 0.08771f ; **FLOATING
+C182 I1_default_C.n35 I1_default_S 0.65012f ; **FLOATING
+C183 I1_default_C.t9 I1_default_S 0.67037f ; **FLOATING
+C184 I1_default_C.n36 I1_default_S 0.48369f ; **FLOATING
+C185 I1_default_C.t7 I1_default_S 0.67037f ; **FLOATING
+C186 I1_default_C.n37 I1_default_S 0.65012f ; **FLOATING
+C187 I1_default_C.n38 I1_default_S 0.05069f ; **FLOATING
+C188 I1_default_C.n39 I1_default_S 0.10634f ; **FLOATING
+C189 I1_default_C.t13 I1_default_S 0.0387f ; **FLOATING
+C190 I1_default_C.t12 I1_default_S 1.05254f ; **FLOATING
+C191 I1_default_C.t39 I1_default_S 0.56377f ; **FLOATING
+C192 I1_default_C.t0 I1_default_S 3.33707f ; **FLOATING
+C193 I1_default_C.t2 I1_default_S 2.96452f ; **FLOATING
+C194 I1_default_C.t4 I1_default_S 2.96452f ; **FLOATING
+C195 I1_default_C.t5 I1_default_S 3.33347f ; **FLOATING
+C196 I1_default_C.t6 I1_default_S 0.55364f ; **FLOATING
+C197 I1_default_C.n40 I1_default_S 0.45021f ; **FLOATING
+C198 I1_default_C.n41 I1_default_S 0.07845f ; **FLOATING
+C199 I1_default_C.n42 I1_default_S 0.09065f ; **FLOATING
+C200 I1_default_C.n43 I1_default_S 0.0783f ; **FLOATING
+C201 I1_default_C.n44 I1_default_S 0.05868f ; **FLOATING
+C202 I1_default_B.n0 I1_default_S 0.0103f ; **FLOATING
+C203 I1_default_B.n2 I1_default_S 1.01367f ; **FLOATING
+C204 I1_default_B.n3 I1_default_S 2.06643f ; **FLOATING
+C205 I1_default_B.n6 I1_default_S 0.31993f ; **FLOATING
+C206 I1_default_B.n10 I1_default_S 0.10397f ; **FLOATING
+C207 I1_default_B.n11 I1_default_S 0.0803f ; **FLOATING
+C208 I1_default_B.n12 I1_default_S 0.17155f ; **FLOATING
+C209 I1_default_B.n14 I1_default_S 0.02569f ; **FLOATING
+C210 I1_default_B.n21 I1_default_S 0.26261f ; **FLOATING
+C211 I1_default_B.n22 I1_default_S 0.09939f ; **FLOATING
+C212 I1_default_B.n23 I1_default_S 0.01844f ; **FLOATING
+C213 I1_default_B.n24 I1_default_S 0.01349f ; **FLOATING
+C214 I1_default_B.n26 I1_default_S 0.01429f ; **FLOATING
+C215 I1_default_B.n27 I1_default_S 0.01822f ; **FLOATING
+C216 I1_default_B.n28 I1_default_S 0.0185f ; **FLOATING
+C217 I1_default_B.n29 I1_default_S 0.04862f ; **FLOATING
+C218 I1_default_B.n32 I1_default_S 0.3489f ; **FLOATING
+C219 I1_default_B.n33 I1_default_S 0.10093f ; **FLOATING
+C220 I1_default_B.n34 I1_default_S 0.08318f ; **FLOATING
+.ends
+

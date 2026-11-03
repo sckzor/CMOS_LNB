@@ -1,0 +1,212 @@
+GDS input file passed, running in LVS mode
+No explicit top cell specified, using top cell 'TOP'
+LVS input schematic not specified (argument --schematic), using dummy schematic
+Calling MAGIC
+magic -dnull -noconsole -rcfile gf180mcuD.magicrc.custom output/GainStageMkIV__TOP/magic_CC/TOP_MAGIC_CC_Script.tcl, output file: output/GainStageMkIV__TOP/magic_CC/TOP_MAGIC_CC_Output.txt
+
+Magic 8.3 revision 681 - Compiled on Tue Aug 25 11:50:23 AM CEST 2026.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+Using NULL graphics device.
+Processing system .magicrc file
+Switching to WIRING tool.
+Switching to NETLIST tool.
+Switching to PICK tool.
+Switching to BOX tool.
+Sourcing design custom .magicrc for technology gf180mcuD ...
+10 Magic internal units = 1 Lambda
+"gf180mcuD" is not one of the extraction styles Magic knows.
+The current style is "default".
+The extraction styles are: default.
+Input style import: scaleFactor=10, multiplier=2
+The following types are not handled by extraction and will be treated as non-electrical types:
+    obsactive mvobsactive filldiff fillpoly m1hole obsm1 fillm1 obsv1 m2hole obsm2 fillm2 obsv2 m3hole obsm3 fillm3 m4hole obsm4 fillm4 m5hole obsm5 fillm5 glass fillblock lvstext obscomment 
+Scaled tech values by 10 / 1 to match internal grid scaling
+Loading gf180mcuD Device Generator Menu ...
+Loading "output/GainStageMkIV__TOP/magic_CC/TOP_MAGIC_CC_Script.tcl" from command line.
+Warning: Calma reading is not undoable!  I hope that's OK.
+Library written using GDS-II Release 6.0
+Library name: LIB
+Reading "$$$CONTEXT_INFO$$$".
+Reading "npn_10p00x10p00_0".
+Reading "npn_10p00x10p00".
+Reading "ppolyf_s_resistor".
+Reading "npn_bjt".
+Reading "ppolyf_u_high_Rs_resistor".
+Reading "GainStage".
+Reading "InputBuffer".
+Reading "OutputBuffer".
+Reading "TOP".
+Extracting TOP into /foss/designs/LNA/MkIII/Layout/output/GainStageMkIV__TOP/magic_CC/TOP.ext:
+Processing TOP
+exttospice finished.
+MAGIC succeeded after 0.1898s
+Report DB saved at: output/GainStageMkIV__TOP/magic_CC/TOP_MAGIC_report.rdb.gz
+SPICE netlist saved at: output/GainStageMkIV__TOP/magic_CC/TOP.pex.spice
+* NGSPICE file created from TOP.ext - technology: gf180mcuD
+
+.subckt TOP Input GainStage1 GainStage2 InputBuffer Output VDD GND Com TBias CBias
++ CGBias
+X0 InputBuffer a_5048_1590# VDD VDD pfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X1 GND a_150_194# a_150_194# GND nfet_03v3 ad=0.273p pd=1.51u as=0.48p ps=2.8u w=0.6u l=0.3u
+X2 a_2346_n2146# InputBuffer GND GND nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X3 Input CGBias InputBuffer GND nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X4 a_2264_4164# a_3058_194# GND GND nfet_03v3 ad=0.474p pd=2.78u as=0.273p ps=1.51u w=0.6u l=0.3u
+X5 a_2346_n2146# CBias GainStage1 GND nfet_03v3 ad=2.6p pd=10.52u as=6p ps=21.2u w=10u l=0.28u
+X6 GND InputBuffer a_2346_n2146# GND nfet_03v3 ad=13.2p pd=22.64u as=2.6p ps=10.52u w=10u l=0.28u
+X7 a_n562_n2146# CBias GainStage2 GND nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X8 GainStage1 CBias a_2346_n2146# GND nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X9 InputBuffer CGBias Input GND nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X10 a_5182_1808# InputBuffer a_5266_2300# VDD pfet_03v3 ad=0.486p pd=2.82u as=0.27p ps=1.5u w=0.6u l=0.3u
+X11 VDD TBias a_3042_1254# VDD pfet_03v3 ad=0.9p pd=4.2u as=0.48p ps=2.8u w=0.6u l=0.3u
+X12 GND InputBuffer a_2346_n2146# GND nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X13 VDD a_n644_4164# a_n724_1852# VDD pfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X14 a_2346_n2146# InputBuffer GND GND nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X15 a_n724_1852# a_n644_4164# VDD VDD pfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X16 a_2184_1852# a_2264_4164# VDD VDD pfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X17 VDD a_5048_1590# InputBuffer VDD pfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X18 a_134_1254# GainStage2 a_150_194# VDD pfet_03v3 ad=0.267p pd=1.49u as=0.48p ps=2.8u w=0.6u l=0.3u
+X19 InputBuffer a_5048_1590# VDD VDD pfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X20 GND a_3058_194# a_3058_194# GND nfet_03v3 ad=0.273p pd=1.51u as=0.48p ps=2.8u w=0.6u l=0.3u
+X21 Input CGBias InputBuffer GND nfet_03v3 ad=2.6p pd=10.52u as=6p ps=21.2u w=10u l=0.28u
+X22 a_n644_4164# Com a_134_1254# VDD pfet_03v3 ad=0.486p pd=2.82u as=0.267p ps=1.49u w=0.6u l=0.3u
+X23 Input CGBias InputBuffer GND nfet_03v3 ad=5.5p pd=21.1u as=2.6p ps=10.52u w=10u l=0.28u
+X24 a_2184_1852# GainStage1 GND ppolyf_s r_width=2u r_length=5u
+X25 GND GainStage1 a_n562_n2146# GND nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X26 a_n724_1852# GainStage2 GND ppolyf_s r_width=2u r_length=5u
+X27 VDD GainStage2 Output GND npn_10p00x10p00
+X28 VDD a_2264_4164# a_2184_1852# VDD pfet_03v3 ad=2.6p pd=10.52u as=5.3p ps=21.06u w=10u l=0.28u
+X29 GND Input GND ppolyf_s r_width=4u r_length=36u
+X30 VDD TBias a_134_1254# VDD pfet_03v3 ad=0.9p pd=4.2u as=0.48p ps=2.8u w=0.6u l=0.3u
+X31 GainStage2 CBias a_n562_n2146# GND nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X32 VDD a_n644_4164# a_n724_1852# VDD pfet_03v3 ad=2.6p pd=10.52u as=5.3p ps=21.06u w=10u l=0.28u
+X33 VDD a_5048_1590# InputBuffer VDD pfet_03v3 ad=2.6p pd=10.52u as=5.3p ps=21.06u w=10u l=0.28u
+X34 Output GND GND ppolyf_u_1k r_width=4u r_length=4u
+X35 a_n562_n2146# CBias GainStage2 GND nfet_03v3 ad=2.6p pd=10.52u as=6p ps=21.2u w=10u l=0.28u
+X36 a_2346_n2146# CBias GainStage1 GND nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X37 VDD a_2264_4164# a_2184_1852# VDD pfet_03v3 ad=12.9p pd=22.58u as=2.6p ps=10.52u w=10u l=0.28u
+X38 a_5266_2300# TBias VDD VDD pfet_03v3 ad=0.48p pd=2.8u as=0.9p ps=4.2u w=0.6u l=0.3u
+X39 a_3042_1254# GainStage1 a_3058_194# VDD pfet_03v3 ad=0.267p pd=1.49u as=0.48p ps=2.8u w=0.6u l=0.3u
+X40 a_2264_4164# Com a_3042_1254# VDD pfet_03v3 ad=0.486p pd=2.82u as=0.267p ps=1.49u w=0.6u l=0.3u
+X41 a_n562_n2146# GainStage1 GND GND nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X42 VDD a_5048_1590# InputBuffer VDD pfet_03v3 ad=12.9p pd=22.58u as=2.6p ps=10.52u w=10u l=0.28u
+X43 a_n644_4164# a_150_194# GND GND nfet_03v3 ad=0.474p pd=2.78u as=0.273p ps=1.51u w=0.6u l=0.3u
+X44 GND GainStage1 a_n562_n2146# GND nfet_03v3 ad=13.2p pd=22.64u as=2.6p ps=10.52u w=10u l=0.28u
+X45 InputBuffer CGBias Input GND nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X46 a_5182_1808# a_5182_1808# GND GND nfet_03v3 ad=0.486p pd=2.82u as=0.273p ps=1.51u w=0.6u l=0.3u
+X47 a_5266_2300# Com a_5048_1590# VDD pfet_03v3 ad=0.27p pd=1.5u as=0.474p ps=2.78u w=0.6u l=0.3u
+X48 GND InputBuffer a_2346_n2146# GND nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X49 a_n562_n2146# CBias GainStage2 GND nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X50 VDD a_n644_4164# a_n724_1852# VDD pfet_03v3 ad=12.9p pd=22.58u as=2.6p ps=10.52u w=10u l=0.28u
+X51 GainStage2 CBias a_n562_n2146# GND nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X52 GainStage1 CBias a_2346_n2146# GND nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X53 a_2346_n2146# CBias GainStage1 GND nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X54 GND GainStage1 a_n562_n2146# GND nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X55 a_n724_1852# a_n644_4164# VDD VDD pfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X56 a_2184_1852# a_2264_4164# VDD VDD pfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X57 GND a_5182_1808# a_5048_1590# GND nfet_03v3 ad=0.273p pd=1.51u as=0.468p ps=2.76u w=0.6u l=0.3u
+X58 a_n562_n2146# GainStage1 GND GND nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X59 VDD a_2264_4164# a_2184_1852# VDD pfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+C0 Com a_150_194# 0.01404f
+C1 InputBuffer CBias 0.40663f
+C2 VDD a_n724_1852# 3.10994f
+C3 InputBuffer a_5048_1590# 0.79662f
+C4 GainStage1 VDD 0.31631f
+C5 a_n562_n2146# CBias 0.82217f
+C6 a_2346_n2146# CBias 0.82217f
+C7 a_134_1254# GainStage2 0.08905f
+C8 a_3058_194# Com 0.01404f
+C9 a_n644_4164# a_n724_1852# 0.50497f
+C10 InputBuffer TBias 0.01161f
+C11 a_134_1254# Com 0.05126f
+C12 a_5182_1808# VDD 0.27732f
+C13 GainStage2 CBias 0.50596f
+C14 a_134_1254# a_150_194# 0.03453f
+C15 CGBias GainStage1 0.02357f
+C16 InputBuffer a_5266_2300# 0.09075f
+C17 Com a_5048_1590# 0.04663f
+C18 CGBias Input 0.96318f
+C19 a_n562_n2146# Output 0.01144f
+C20 TBias GainStage2 0.01049f
+C21 Com a_2264_4164# 0.10317f
+C22 CGBias VDD 0.01191f
+C23 TBias Com 7.0737f
+C24 a_n644_4164# VDD 4.26905f
+C25 GainStage2 Output 3.14029f
+C26 a_5266_2300# Com 0.06484f
+C27 Com a_3042_1254# 0.05126f
+C28 a_3058_194# a_2264_4164# 0.07007f
+C29 a_n562_n2146# GainStage1 0.76533f
+C30 a_2346_n2146# GainStage1 2.86857f
+C31 InputBuffer Input 2.88684f
+C32 a_134_1254# TBias 0.02289f
+C33 InputBuffer a_5182_1808# 0.07538f
+C34 GainStage2 a_n724_1852# 0.01606f
+C35 a_3058_194# a_3042_1254# 0.03453f
+C36 TBias a_5048_1590# 0.11822f
+C37 InputBuffer VDD 3.58406f
+C38 Com GainStage1 0.02087f
+C39 CBias Output 0.56963f
+C40 a_5266_2300# a_5048_1590# 0.11052f
+C41 TBias a_2264_4164# 1.26251f
+C42 CGBias InputBuffer 0.67595f
+C43 a_3058_194# GainStage1 0.09951f
+C44 GainStage2 VDD 3.49418f
+C45 a_2264_4164# a_3042_1254# 0.05137f
+C46 a_5266_2300# TBias 0.02078f
+C47 a_2264_4164# a_2184_1852# 0.50497f
+C48 TBias a_3042_1254# 0.02289f
+C49 Com VDD 3.57612f
+C50 VDD a_150_194# 0.0884f
+C51 GainStage1 CBias 0.80658f
+C52 a_3058_194# VDD 0.0884f
+C53 a_n644_4164# Com 0.10264f
+C54 a_n644_4164# a_150_194# 0.07007f
+C55 Input CBias 0.03811f
+C56 a_134_1254# VDD 0.18232f
+C57 a_5182_1808# a_5048_1590# 0.12549f
+C58 TBias GainStage1 0.01051f
+C59 a_2346_n2146# InputBuffer 0.7636f
+C60 a_5048_1590# VDD 3.33779f
+C61 GainStage1 a_3042_1254# 0.08905f
+C62 GainStage1 a_2184_1852# 0.01606f
+C63 a_134_1254# a_n644_4164# 0.05137f
+C64 a_2264_4164# VDD 4.27261f
+C65 CGBias CBias 3.03691f
+C66 a_5266_2300# a_5182_1808# 0.0256f
+C67 CGBias a_5048_1590# 0.01126f
+C68 TBias VDD 2.98603f
+C69 a_n562_n2146# GainStage2 2.85729f
+C70 InputBuffer Com 0.02063f
+C71 VDD Output 0.07299f
+C72 a_5266_2300# VDD 0.18826f
+C73 VDD a_3042_1254# 0.18232f
+C74 VDD a_2184_1852# 3.11074f
+C75 TBias a_n644_4164# 1.26225f
+C76 Com GainStage2 0.01878f
+C77 GainStage2 a_150_194# 0.09954f
+C78 CGBias Output 0.06009f
+C79 Input GND 4.34654f
+C80 CBias GND 5.74466f
+C81 GainStage1 GND 4.83484f
+C82 CGBias GND 6.46114f
+C83 Com GND 10.0872f
+C84 TBias GND 5.85601f
+C85 InputBuffer GND 4.80849f
+C86 Output GND 3.75888f
+C87 GainStage2 GND 2.43747f
+C88 VDD GND 0.10578p
+C89 a_2346_n2146# GND 3.1572f ; **FLOATING
+C90 a_n562_n2146# GND 3.15391f ; **FLOATING
+C91 a_3058_194# GND 0.58599f ; **FLOATING
+C92 a_3042_1254# GND 0.03297f ; **FLOATING
+C93 a_150_194# GND 0.58606f ; **FLOATING
+C94 a_134_1254# GND 0.03296f ; **FLOATING
+C95 a_5182_1808# GND 0.5516f ; **FLOATING
+C96 a_2184_1852# GND 1.0002f ; **FLOATING
+C97 a_n724_1852# GND 1.0011f ; **FLOATING
+C98 a_5048_1590# GND 0.95304f ; **FLOATING
+C99 a_2264_4164# GND 0.91381f ; **FLOATING
+C100 a_n644_4164# GND 0.91877f ; **FLOATING
+.ends
+

@@ -1,0 +1,258 @@
+[2026-11-03 03:07:25,891] [INFO]    GDS input file passed, running in LVS mode
+[2026-11-03 03:07:25,892] [INFO]    No explicit top cell specified, using top cell 'TOP'
+[2026-11-03 03:07:25,893] [INFO]    LVS input schematic not specified (argument --schematic), using dummy schematic
+[2026-11-03 03:07:25,901] [INFO]    Calling MAGIC
+[2026-11-03 03:07:25,902] [SUBPROCESS]    magic -dnull -noconsole -rcfile ../gf180mcuD.magicrc.custom output/LNAMkV__TOP/magic_CC/TOP_MAGIC_CC_Script.tcl, output file: output/LNAMkV__TOP/magic_CC/TOP_MAGIC_CC_Output.txt
+[2026-11-03 03:07:25,910] [SUBPROCESS]    
+[2026-11-03 03:07:25,910] [SUBPROCESS]    Magic 8.3 revision 681 - Compiled on Tue Aug 25 11:50:23 AM CEST 2026.
+[2026-11-03 03:07:25,911] [SUBPROCESS]    Starting magic under Tcl interpreter
+[2026-11-03 03:07:25,911] [SUBPROCESS]    Using the terminal as the console.
+[2026-11-03 03:07:25,912] [SUBPROCESS]    Using NULL graphics device.
+[2026-11-03 03:07:25,934] [SUBPROCESS]    Processing system .magicrc file
+[2026-11-03 03:07:25,940] [SUBPROCESS]    Switching to WIRING tool.
+[2026-11-03 03:07:25,941] [SUBPROCESS]    Switching to NETLIST tool.
+[2026-11-03 03:07:25,941] [SUBPROCESS]    Switching to PICK tool.
+[2026-11-03 03:07:25,941] [SUBPROCESS]    Switching to BOX tool.
+[2026-11-03 03:07:25,941] [SUBPROCESS]    Sourcing design custom .magicrc for technology gf180mcuD ...
+[2026-11-03 03:07:25,942] [SUBPROCESS]    10 Magic internal units = 1 Lambda
+[2026-11-03 03:07:25,942] [SUBPROCESS]    "gf180mcuD" is not one of the extraction styles Magic knows.
+[2026-11-03 03:07:25,942] [SUBPROCESS]    The current style is "default".
+[2026-11-03 03:07:25,943] [SUBPROCESS]    The extraction styles are: default.
+[2026-11-03 03:07:25,961] [SUBPROCESS]    Input style import: scaleFactor=10, multiplier=2
+[2026-11-03 03:07:26,051] [SUBPROCESS]    The following types are not handled by extraction and will be treated as non-electrical types:
+[2026-11-03 03:07:26,051] [SUBPROCESS]        obsactive mvobsactive filldiff fillpoly m1hole obsm1 fillm1 obsv1 m2hole obsm2 fillm2 obsv2 m3hole obsm3 fillm3 m4hole obsm4 fillm4 m5hole obsm5 fillm5 glass fillblock lvstext obscomment 
+[2026-11-03 03:07:26,055] [SUBPROCESS]    Scaled tech values by 10 / 1 to match internal grid scaling
+[2026-11-03 03:07:26,056] [SUBPROCESS]    Loading gf180mcuD Device Generator Menu ...
+[2026-11-03 03:07:26,057] [SUBPROCESS]    Loading "output/LNAMkV__TOP/magic_CC/TOP_MAGIC_CC_Script.tcl" from command line.
+[2026-11-03 03:07:26,057] [SUBPROCESS]    Warning: Calma reading is not undoable!  I hope that's OK.
+[2026-11-03 03:07:26,057] [SUBPROCESS]    Library written using GDS-II Release 6.0
+[2026-11-03 03:07:26,058] [SUBPROCESS]    Library name: LIB
+[2026-11-03 03:07:26,058] [SUBPROCESS]    Reading "$$$CONTEXT_INFO$$$".
+[2026-11-03 03:07:26,058] [SUBPROCESS]    Reading "TOP".
+[2026-11-03 03:07:26,105] [SUBPROCESS]    Extracting TOP into /foss/designs/LNA/MkIII/Layout/LNA/output/LNAMkV__TOP/magic_CC/TOP.ext:
+[2026-11-03 03:07:26,106] [SUBPROCESS]    Processing TOP
+[2026-11-03 03:07:26,121] [SUBPROCESS]    Warning:  Ports "Output" and "I1_default_E" are electrically shorted.
+[2026-11-03 03:07:26,121] [SUBPROCESS]    Warning:  Ports "GainStage2" and "I1_default_B" are electrically shorted.
+[2026-11-03 03:07:26,121] [SUBPROCESS]    exttospice finished.
+[2026-11-03 03:07:26,124] [INFO]    MAGIC succeeded after 0.221s
+[2026-11-03 03:07:26,129] [SUBPROCESS]    Report DB saved at: output/LNAMkV__TOP/magic_CC/TOP_MAGIC_report.rdb.gz
+[2026-11-03 03:07:26,129] [SUBPROCESS]    SPICE netlist saved at: output/LNAMkV__TOP/magic_CC/TOP.pex.spice
+[2026-11-03 03:07:26,130] [SUBPROCESS]    * NGSPICE file created from TOP.ext - technology: gf180mcuD
+
+.subckt TOP I1_default_S I1_default_C iDAC Input GainStage1 GainStage2 InputBuffer
++ Output BandGap vDAC GND VDD
+X0 InputBuffer a_5048_1590# I1_default_C I1_default_C pfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X1 I1_default_S a_150_194# a_150_194# I1_default_S nfet_03v3 ad=0.273p pd=1.51u as=0.48p ps=2.8u w=0.6u l=0.3u
+X2 a_2346_n2146# InputBuffer I1_default_S I1_default_S nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X3 Input a_n4608_7484# InputBuffer I1_default_S nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X4 a_n6608_7424# a_5194_10442# I1_default_C I1_default_C pfet_06v0 ad=7.7p pd=21.54u as=2.6p ps=10.52u w=10u l=4u
+X5 a_2264_4164# a_3058_194# I1_default_S I1_default_S nfet_03v3 ad=0.474p pd=2.78u as=0.273p ps=1.51u w=0.6u l=0.3u
+X6 a_2346_n2146# vDAC GainStage1 I1_default_S nfet_03v3 ad=2.6p pd=10.52u as=6p ps=21.2u w=10u l=0.28u
+X7 I1_default_S InputBuffer a_2346_n2146# I1_default_S nfet_03v3 ad=13.2p pd=22.64u as=2.6p ps=10.52u w=10u l=0.28u
+X8 a_n562_n2146# vDAC GainStage2 I1_default_S nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X9 GainStage1 vDAC a_2346_n2146# I1_default_S nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X10 InputBuffer a_n4608_7484# Input I1_default_S nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X11 a_5182_1808# InputBuffer a_5266_2300# I1_default_C pfet_03v3 ad=0.486p pd=2.82u as=0.27p ps=1.5u w=0.6u l=0.3u
+X12 a_n9884_9384# iDAC iDAC I1_default_S nfet_06v0 ad=7.3p pd=21.46u as=2.6p ps=10.52u w=10u l=4u
+X13 I1_default_C a_n6608_7424# a_n4608_7484# I1_default_C pfet_06v0 ad=5.2p pd=20.52u as=5.2p ps=20.52u w=20u l=10u
+X14 a_4652_7498# a_n2470_12372# a_5194_10442# I1_default_S nfet_06v0 ad=2.6p pd=10.52u as=7.3p ps=21.46u w=10u l=4u
+X15 I1_default_C a_n9884_9384# a_3042_1254# I1_default_C pfet_03v3 ad=0.9p pd=4.2u as=0.48p ps=2.8u w=0.6u l=0.3u
+X16 I1_default_S InputBuffer a_2346_n2146# I1_default_S nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X17 I1_default_C a_n644_4164# a_n724_1852# I1_default_C pfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X18 a_2346_n2146# InputBuffer I1_default_S I1_default_S nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X19 a_n724_1852# a_n644_4164# I1_default_C I1_default_C pfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X20 a_2184_1852# a_2264_4164# I1_default_C I1_default_C pfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X21 a_n6608_7424# BandGap a_4652_7498# I1_default_S nfet_06v0 ad=7.3p pd=21.46u as=2.6p ps=10.52u w=10u l=4u
+X22 I1_default_C a_5048_1590# InputBuffer I1_default_C pfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X23 iDAC iDAC I1_default_S I1_default_S nfet_06v0 ad=2.6p pd=10.52u as=4.9p ps=20.98u w=10u l=4u
+X24 a_4652_7498# a_n9884_7060# I1_default_S I1_default_S nfet_06v0 ad=7.3p pd=21.46u as=2.6p ps=10.52u w=10u l=4u
+X25 a_134_1254# GainStage2 a_150_194# I1_default_C pfet_03v3 ad=0.267p pd=1.49u as=0.48p ps=2.8u w=0.6u l=0.3u
+X26 I1_default_C a_n6608_7424# a_n4608_7484# I1_default_C pfet_06v0 ad=15.4p pd=41.54u as=5.2p ps=20.52u w=20u l=10u
+X27 InputBuffer a_5048_1590# I1_default_C I1_default_C pfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X28 I1_default_S a_3058_194# a_3058_194# I1_default_S nfet_03v3 ad=0.273p pd=1.51u as=0.48p ps=2.8u w=0.6u l=0.3u
+X29 Input a_n4608_7484# InputBuffer I1_default_S nfet_03v3 ad=2.6p pd=10.52u as=6p ps=21.2u w=10u l=0.28u
+X30 a_n644_4164# a_n4608_7484# a_134_1254# I1_default_C pfet_03v3 ad=0.486p pd=2.82u as=0.267p ps=1.49u w=0.6u l=0.3u
+X31 I1_default_C a_5194_10442# a_5194_10442# I1_default_C pfet_06v0 ad=2.6p pd=10.52u as=7.7p ps=21.54u w=10u l=4u
+X32 a_n2470_12372# I1_default_S I1_default_S ppolyf_u_1k r_width=1u r_length=24u
+X33 a_n9884_7060# iDAC I1_default_S I1_default_S nfet_06v0 ad=7.3p pd=21.46u as=4.9p ps=20.98u w=10u l=4u
+X34 Input a_n4608_7484# InputBuffer I1_default_S nfet_03v3 ad=5.5p pd=21.1u as=2.6p ps=10.52u w=10u l=0.28u
+X35 I1_default_C GainStage2 Output I1_default_S npn_10p00x10p00
+X36 I1_default_C a_n9884_7060# a_n9884_7060# I1_default_C pfet_06v0 ad=13p pd=22.6u as=7.3p ps=21.46u w=10u l=4u
+X37 a_2184_1852# GainStage1 I1_default_S ppolyf_s r_width=2u r_length=5u
+X38 I1_default_S GainStage1 a_n562_n2146# I1_default_S nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X39 a_n724_1852# GainStage2 I1_default_S ppolyf_s r_width=2u r_length=5u
+X40 Output I1_default_S I1_default_S ppolyf_u_1k r_width=4u r_length=4u
+X41 I1_default_C a_2264_4164# a_2184_1852# I1_default_C pfet_03v3 ad=2.6p pd=10.52u as=5.3p ps=21.06u w=10u l=0.28u
+X42 a_n4608_7484# a_n6608_7424# I1_default_C I1_default_C pfet_06v0 ad=5.2p pd=20.52u as=5.2p ps=20.52u w=20u l=10u
+X43 I1_default_S Input I1_default_S ppolyf_s r_width=4u r_length=36u
+X44 I1_default_C a_n9884_9384# a_134_1254# I1_default_C pfet_03v3 ad=0.9p pd=4.2u as=0.48p ps=2.8u w=0.6u l=0.3u
+X45 GainStage2 vDAC a_n562_n2146# I1_default_S nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X46 I1_default_C a_n644_4164# a_n724_1852# I1_default_C pfet_03v3 ad=2.6p pd=10.52u as=5.3p ps=21.06u w=10u l=0.28u
+X47 I1_default_C a_5048_1590# InputBuffer I1_default_C pfet_03v3 ad=2.6p pd=10.52u as=5.3p ps=21.06u w=10u l=0.28u
+X48 a_n562_n2146# vDAC GainStage2 I1_default_S nfet_03v3 ad=2.6p pd=10.52u as=6p ps=21.2u w=10u l=0.28u
+X49 a_2346_n2146# vDAC GainStage1 I1_default_S nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X50 I1_default_C a_2264_4164# a_2184_1852# I1_default_C pfet_03v3 ad=12.9p pd=22.58u as=2.6p ps=10.52u w=10u l=0.28u
+X51 a_5266_2300# a_n9884_9384# I1_default_C I1_default_C pfet_03v3 ad=0.48p pd=2.8u as=0.9p ps=4.2u w=0.6u l=0.3u
+X52 a_3042_1254# GainStage1 a_3058_194# I1_default_C pfet_03v3 ad=0.267p pd=1.49u as=0.48p ps=2.8u w=0.6u l=0.3u
+X53 a_2264_4164# a_n4608_7484# a_3042_1254# I1_default_C pfet_03v3 ad=0.486p pd=2.82u as=0.267p ps=1.49u w=0.6u l=0.3u
+X54 a_n562_n2146# GainStage1 I1_default_S I1_default_S nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X55 a_n4608_7484# a_n6608_7424# I1_default_C I1_default_C pfet_06v0 ad=5.2p pd=20.52u as=15.4p ps=41.54u w=20u l=10u
+X56 I1_default_C a_5048_1590# InputBuffer I1_default_C pfet_03v3 ad=12.9p pd=22.58u as=2.6p ps=10.52u w=10u l=0.28u
+X57 a_n644_4164# a_150_194# I1_default_S I1_default_S nfet_03v3 ad=0.474p pd=2.78u as=0.273p ps=1.51u w=0.6u l=0.3u
+X58 I1_default_S GainStage1 a_n562_n2146# I1_default_S nfet_03v3 ad=13.2p pd=22.64u as=2.6p ps=10.52u w=10u l=0.28u
+X59 InputBuffer a_n4608_7484# Input I1_default_S nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X60 a_5182_1808# a_5182_1808# I1_default_S I1_default_S nfet_03v3 ad=0.486p pd=2.82u as=0.273p ps=1.51u w=0.6u l=0.3u
+X61 a_n4608_7484# a_n2470_12372# cap_mim_2f0_m4m5_noshield c_width=22u c_length=11u
+X62 a_5266_2300# a_n4608_7484# a_5048_1590# I1_default_C pfet_03v3 ad=0.27p pd=1.5u as=0.474p ps=2.78u w=0.6u l=0.3u
+X63 I1_default_S InputBuffer a_2346_n2146# I1_default_S nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X64 a_n562_n2146# vDAC GainStage2 I1_default_S nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X65 I1_default_C a_n644_4164# a_n724_1852# I1_default_C pfet_03v3 ad=12.9p pd=22.58u as=2.6p ps=10.52u w=10u l=0.28u
+X66 GainStage2 vDAC a_n562_n2146# I1_default_S nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X67 GainStage1 vDAC a_2346_n2146# I1_default_S nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X68 a_2346_n2146# vDAC GainStage1 I1_default_S nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X69 a_n4608_7484# a_n2470_12372# I1_default_S ppolyf_u_1k r_width=1u r_length=10u
+X70 I1_default_C a_n9884_9384# a_n9884_9384# I1_default_C pfet_03v3 ad=0.828p pd=3.96u as=0.39p ps=2.5u w=0.6u l=0.3u
+X71 I1_default_S GainStage1 a_n562_n2146# I1_default_S nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X72 I1_default_S a_n9884_7060# a_n9884_7060# I1_default_S nfet_06v0 ad=2.6p pd=10.52u as=7.3p ps=21.46u w=10u l=4u
+X73 a_n724_1852# a_n644_4164# I1_default_C I1_default_C pfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X74 a_2184_1852# a_2264_4164# I1_default_C I1_default_C pfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X75 I1_default_S a_5182_1808# a_5048_1590# I1_default_S nfet_03v3 ad=0.273p pd=1.51u as=0.468p ps=2.76u w=0.6u l=0.3u
+X76 a_n562_n2146# GainStage1 I1_default_S I1_default_S nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X77 I1_default_C a_2264_4164# a_2184_1852# I1_default_C pfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+C0 a_n2470_12372# a_n9884_9384# 0.02613f
+C1 BandGap a_n6608_7424# 0.44314f
+C2 InputBuffer a_5266_2300# 0.09075f
+C3 a_n724_1852# I1_default_C 3.10974f
+C4 a_134_1254# I1_default_C 0.18232f
+C5 a_150_194# GainStage2 0.09972f
+C6 a_n9884_7060# a_n9884_9384# 3.47853f
+C7 a_4652_7498# a_n6608_7424# 0.07282f
+C8 a_n4608_7484# a_5048_1590# 0.05789f
+C9 I1_default_C a_n9884_9384# 3.79069f
+C10 BandGap a_n4608_7484# 0.01544f
+C11 GainStage1 a_n9884_9384# 0.01051f
+C12 a_n4608_7484# InputBuffer 0.69658f
+C13 Output vDAC 0.56211f
+C14 a_5182_1808# I1_default_C 0.27798f
+C15 a_n4608_7484# a_150_194# 0.01404f
+C16 vDAC Input 0.03811f
+C17 a_n644_4164# I1_default_C 4.26659f
+C18 a_n4608_7484# a_3058_194# 0.01404f
+C19 a_n4608_7484# a_5266_2300# 0.06484f
+C20 a_n4608_7484# a_n6608_7424# 9.80826f
+C21 a_n4608_7484# GainStage2 0.01894f
+C22 a_2184_1852# a_2264_4164# 0.50497f
+C23 I1_default_C a_3042_1254# 0.18232f
+C24 a_n562_n2146# vDAC 0.82217f
+C25 a_2264_4164# a_3058_194# 0.07007f
+C26 GainStage1 a_3042_1254# 0.08905f
+C27 GainStage1 vDAC 0.80658f
+C28 a_n2470_12372# a_5194_10442# 0.84463f
+C29 a_5048_1590# a_n9884_9384# 0.11822f
+C30 BandGap a_n9884_9384# 0.06221f
+C31 a_134_1254# a_150_194# 0.03453f
+C32 InputBuffer a_n9884_9384# 0.01161f
+C33 a_5182_1808# a_5048_1590# 0.12549f
+C34 a_5194_10442# a_n9884_7060# 0.03982f
+C35 a_2346_n2146# vDAC 0.82217f
+C36 a_5182_1808# InputBuffer 0.07538f
+C37 Output I1_default_C 0.07299f
+C38 a_n724_1852# GainStage2 0.01606f
+C39 a_5194_10442# I1_default_C 3.90155f
+C40 a_4652_7498# a_n9884_9384# 0.0267f
+C41 a_n9884_9384# iDAC 0.62681f
+C42 a_n2470_12372# a_n9884_7060# 0.09237f
+C43 a_n4608_7484# a_2264_4164# 0.10317f
+C44 a_134_1254# GainStage2 0.08905f
+C45 a_n9884_9384# a_5266_2300# 0.02078f
+C46 a_n2470_12372# I1_default_C 0.89612f
+C47 a_n644_4164# a_150_194# 0.07007f
+C48 GainStage2 a_n9884_9384# 0.01049f
+C49 a_5182_1808# a_5266_2300# 0.0256f
+C50 a_n4608_7484# a_134_1254# 0.05126f
+C51 InputBuffer vDAC 0.40663f
+C52 I1_default_C a_n9884_7060# 2.56254f
+C53 GainStage1 a_n562_n2146# 0.76533f
+C54 a_n4608_7484# a_n9884_9384# 7.43913f
+C55 GainStage1 I1_default_C 0.31631f
+C56 a_3042_1254# a_3058_194# 0.03453f
+C57 BandGap a_5194_10442# 0.02228f
+C58 a_2264_4164# a_n9884_9384# 1.26251f
+C59 a_n644_4164# a_n4608_7484# 0.10264f
+C60 vDAC GainStage2 0.50596f
+C61 GainStage1 a_2346_n2146# 2.86857f
+C62 a_n2470_12372# BandGap 0.12441f
+C63 InputBuffer Input 2.88684f
+C64 a_5194_10442# a_4652_7498# 0.28427f
+C65 a_134_1254# a_n9884_9384# 0.02289f
+C66 a_n4608_7484# a_3042_1254# 0.05126f
+C67 a_n4608_7484# vDAC 3.10068f
+C68 I1_default_C a_5048_1590# 3.33794f
+C69 a_n2470_12372# a_4652_7498# 0.75154f
+C70 a_5194_10442# a_n6608_7424# 0.57021f
+C71 Output GainStage2 3.12452f
+C72 BandGap I1_default_C 0.01033f
+C73 InputBuffer I1_default_C 3.58408f
+C74 a_n644_4164# a_n724_1852# 0.50497f
+C75 a_n2470_12372# a_n6608_7424# 1.72542f
+C76 a_2264_4164# a_3042_1254# 0.05137f
+C77 I1_default_C a_150_194# 0.0884f
+C78 a_n644_4164# a_134_1254# 0.05137f
+C79 a_4652_7498# a_n9884_7060# 0.31557f
+C80 a_n9884_7060# iDAC 0.41802f
+C81 Output a_n4608_7484# 0.06009f
+C82 I1_default_C iDAC 0.02414f
+C83 a_2184_1852# I1_default_C 3.11074f
+C84 a_n644_4164# a_n9884_9384# 1.26225f
+C85 GainStage1 a_2184_1852# 0.01606f
+C86 I1_default_C a_3058_194# 0.0884f
+C87 a_n9884_7060# a_n6608_7424# 0.36304f
+C88 a_2346_n2146# InputBuffer 0.7636f
+C89 GainStage1 a_3058_194# 0.09951f
+C90 I1_default_C a_5266_2300# 0.18831f
+C91 I1_default_C a_n6608_7424# 15.2999f
+C92 a_n2470_12372# a_n4608_7484# 1.68781f
+C93 a_n4608_7484# Input 1.23532f
+C94 a_n562_n2146# GainStage2 2.85729f
+C95 I1_default_C GainStage2 3.49646f
+C96 a_3042_1254# a_n9884_9384# 0.02289f
+C97 w_n10978_7026# iDAC 0.02453f
+C98 a_n4608_7484# a_n9884_7060# 0.17043f
+C99 InputBuffer a_5048_1590# 0.79662f
+C100 a_n4608_7484# I1_default_C 5.12749f
+C101 GainStage1 a_n4608_7484# 0.04444f
+C102 BandGap a_4652_7498# 0.38185f
+C103 I1_default_C a_2264_4164# 4.27269f
+C104 a_5048_1590# a_5266_2300# 0.11052f
+C105 Input I1_default_S 4.34654f
+C106 vDAC I1_default_S 5.74903f
+C107 GainStage1 I1_default_S 4.83484f
+C108 InputBuffer I1_default_S 4.80849f
+C109 Output I1_default_S 4.08132f
+C110 BandGap I1_default_S 1.80357f
+C111 iDAC I1_default_S 4.04453f
+C112 GainStage2 I1_default_S 3.0312f
+C113 I1_default_C I1_default_S 0.32058p
+C114 a_2346_n2146# I1_default_S 3.1572f ; **FLOATING
+C115 a_n562_n2146# I1_default_S 3.16112f ; **FLOATING
+C116 a_3058_194# I1_default_S 0.58599f ; **FLOATING
+C117 a_3042_1254# I1_default_S 0.03297f ; **FLOATING
+C118 a_150_194# I1_default_S 0.58606f ; **FLOATING
+C119 a_134_1254# I1_default_S 0.03296f ; **FLOATING
+C120 a_5182_1808# I1_default_S 0.55177f ; **FLOATING
+C121 a_2184_1852# I1_default_S 1.0002f ; **FLOATING
+C122 a_n724_1852# I1_default_S 1.0011f ; **FLOATING
+C123 a_5048_1590# I1_default_S 0.93949f ; **FLOATING
+C124 a_2264_4164# I1_default_S 0.91392f ; **FLOATING
+C125 a_n644_4164# I1_default_S 0.91983f ; **FLOATING
+C126 a_4652_7498# I1_default_S 0.5789f ; **FLOATING
+C127 a_5194_10442# I1_default_S 1.15447f ; **FLOATING
+C128 a_n6608_7424# I1_default_S 3.34162f ; **FLOATING
+C129 a_n9884_7060# I1_default_S 6.87546f ; **FLOATING
+C130 a_n9884_9384# I1_default_S 4.8066f ; **FLOATING
+C131 a_n2470_12372# I1_default_S 6.60019f ; **FLOATING
+C132 a_n4608_7484# I1_default_S 25.0872f ; **FLOATING
+C133 w_n10978_7026# I1_default_S 1.50834f
+C134 w_n11882_9350# I1_default_S 1.50726f ; **FLOATING
+.ends
+

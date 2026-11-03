@@ -1,0 +1,10 @@
+* Extracted by KLayout with GF180MCU LVS runset on : 02/11/2026 04:04
+
+* cell OutputBuffer
+.SUBCKT OutputBuffer
+* device instance $1 r90 *1 11.59,8.9 ppolyf_u_1k
+R$1 SUB \$2 SUB 1000 ppolyf_u_1k L=4U W=4U
+* device instance $2 m135 *1 -2.74,15.03 npn_10p00x10p00
+Q$2 \$6 \$5 \$2 SUB npn_10p00x10p00 AE=100P PE=40U AB=131.7904P PB=45.92U
++ AC=131.7904P PC=45.92U NE=1
+.ENDS OutputBuffer

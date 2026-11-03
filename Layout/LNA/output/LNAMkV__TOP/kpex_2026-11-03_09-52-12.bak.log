@@ -1,0 +1,414 @@
+[2026-11-03 09:52:12,500] [INFO]    GDS input file passed, running in LVS mode
+[2026-11-03 09:52:12,501] [INFO]    No explicit top cell specified, using top cell 'TOP'
+[2026-11-03 09:52:12,502] [INFO]    LVS input schematic not specified (argument --schematic), using dummy schematic
+[2026-11-03 09:52:12,507] [INFO]    Calling MAGIC
+[2026-11-03 09:52:12,508] [SUBPROCESS]    magic -dnull -noconsole -rcfile ../gf180mcuD.magicrc.custom output/LNAMkV__TOP/magic_RC/TOP_MAGIC_RC_Script.tcl, output file: output/LNAMkV__TOP/magic_RC/TOP_MAGIC_RC_Output.txt
+[2026-11-03 09:52:12,516] [SUBPROCESS]    
+[2026-11-03 09:52:12,517] [SUBPROCESS]    Magic 8.3 revision 681 - Compiled on Tue Aug 25 11:50:23 AM CEST 2026.
+[2026-11-03 09:52:12,517] [SUBPROCESS]    Starting magic under Tcl interpreter
+[2026-11-03 09:52:12,517] [SUBPROCESS]    Using the terminal as the console.
+[2026-11-03 09:52:12,518] [SUBPROCESS]    Using NULL graphics device.
+[2026-11-03 09:52:12,536] [SUBPROCESS]    Processing system .magicrc file
+[2026-11-03 09:52:12,541] [SUBPROCESS]    Switching to WIRING tool.
+[2026-11-03 09:52:12,542] [SUBPROCESS]    Switching to NETLIST tool.
+[2026-11-03 09:52:12,543] [SUBPROCESS]    Switching to PICK tool.
+[2026-11-03 09:52:12,543] [SUBPROCESS]    Switching to BOX tool.
+[2026-11-03 09:52:12,544] [SUBPROCESS]    Sourcing design custom .magicrc for technology gf180mcuD ...
+[2026-11-03 09:52:12,546] [SUBPROCESS]    10 Magic internal units = 1 Lambda
+[2026-11-03 09:52:12,546] [SUBPROCESS]    "gf180mcuD" is not one of the extraction styles Magic knows.
+[2026-11-03 09:52:12,546] [SUBPROCESS]    The current style is "default".
+[2026-11-03 09:52:12,547] [SUBPROCESS]    The extraction styles are: default.
+[2026-11-03 09:52:12,562] [SUBPROCESS]    Input style import: scaleFactor=10, multiplier=2
+[2026-11-03 09:52:12,649] [SUBPROCESS]    The following types are not handled by extraction and will be treated as non-electrical types:
+[2026-11-03 09:52:12,650] [SUBPROCESS]        obsactive mvobsactive filldiff fillpoly m1hole obsm1 fillm1 obsv1 m2hole obsm2 fillm2 obsv2 m3hole obsm3 fillm3 m4hole obsm4 fillm4 m5hole obsm5 fillm5 glass fillblock lvstext obscomment 
+[2026-11-03 09:52:12,653] [SUBPROCESS]    Scaled tech values by 10 / 1 to match internal grid scaling
+[2026-11-03 09:52:12,655] [SUBPROCESS]    Loading gf180mcuD Device Generator Menu ...
+[2026-11-03 09:52:12,656] [SUBPROCESS]    Loading "output/LNAMkV__TOP/magic_RC/TOP_MAGIC_RC_Script.tcl" from command line.
+[2026-11-03 09:52:12,658] [SUBPROCESS]    Warning: Calma reading is not undoable!  I hope that's OK.
+[2026-11-03 09:52:12,659] [SUBPROCESS]    Library written using GDS-II Release 6.0
+[2026-11-03 09:52:12,659] [SUBPROCESS]    Library name: LIB
+[2026-11-03 09:52:12,659] [SUBPROCESS]    Reading "$$$CONTEXT_INFO$$$".
+[2026-11-03 09:52:12,660] [SUBPROCESS]    Reading "npn_10p00x10p00_0".
+[2026-11-03 09:52:12,665] [SUBPROCESS]    Reading "npn_10p00x10p00".
+[2026-11-03 09:52:12,666] [SUBPROCESS]    Reading "cap_mim".
+[2026-11-03 09:52:12,667] [SUBPROCESS]    Reading "pfet$1".
+[2026-11-03 09:52:12,668] [SUBPROCESS]    Reading "ppolyf_u_high_Rs_resistor$2".
+[2026-11-03 09:52:12,668] [SUBPROCESS]    Reading "ppolyf_u_high_Rs_resistor$1".
+[2026-11-03 09:52:12,669] [SUBPROCESS]    Reading "nfet".
+[2026-11-03 09:52:12,669] [SUBPROCESS]    Reading "pfet".
+[2026-11-03 09:52:12,672] [SUBPROCESS]    Reading "ppolyf_u_high_Rs_resistor".
+[2026-11-03 09:52:12,672] [SUBPROCESS]    Reading "npn_bjt".
+[2026-11-03 09:52:12,673] [SUBPROCESS]    Reading "ppolyf_s_resistor".
+[2026-11-03 09:52:12,675] [SUBPROCESS]    Reading "pfet$2".
+[2026-11-03 09:52:12,676] [SUBPROCESS]    Reading "Reference".
+[2026-11-03 09:52:12,680] [SUBPROCESS]    Reading "OutputBuffer".
+[2026-11-03 09:52:12,682] [SUBPROCESS]    Reading "InputBuffer".
+[2026-11-03 09:52:12,686] [SUBPROCESS]    Reading "GainStage".
+[2026-11-03 09:52:12,692] [SUBPROCESS]    Reading "TOP".
+[2026-11-03 09:52:12,696] [SUBPROCESS]    Extracting TOP into /foss/designs/LNA/MkIII/Layout/LNA/output/LNAMkV__TOP/magic_RC/TOP.ext:
+[2026-11-03 09:52:12,697] [SUBPROCESS]    Processing TOP
+[2026-11-03 09:52:12,704] [SUBPROCESS]    exttosim finished.
+[2026-11-03 09:52:12,704] [SUBPROCESS]    Note:  This option has been deprecated and is unused.
+[2026-11-03 09:52:12,705] [SUBPROCESS]    Extracting OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B
+[2026-11-03 09:52:12,713] [SUBPROCESS]    Warning: psubdiffcont at -4042 916 smaller than extract section allows
+[2026-11-03 09:52:12,714] [SUBPROCESS]    Extracting a_268_1472#
+[2026-11-03 09:52:12,714] [SUBPROCESS]    Extracting a_n6608_7424#
+[2026-11-03 09:52:12,715] [SUBPROCESS]    Extracting a_5390_10102#
+[2026-11-03 09:52:12,715] [SUBPROCESS]    Extracting a_4598_7392#
+[2026-11-03 09:52:12,715] [SUBPROCESS]    Extracting a_n644_4164#
+[2026-11-03 09:52:12,716] [SUBPROCESS]    Extracting a_2264_4164#
+[2026-11-03 09:52:12,716] [SUBPROCESS]    Extracting a_5048_1590#
+[2026-11-03 09:52:12,716] [SUBPROCESS]    Extracting a_n724_1852#
+[2026-11-03 09:52:12,717] [SUBPROCESS]    Extracting a_2184_1852#
+[2026-11-03 09:52:12,717] [SUBPROCESS]    Extracting a_3064_n2566#
+[2026-11-03 09:52:12,717] [SUBPROCESS]    Extracting a_5266_2300#
+[2026-11-03 09:52:12,718] [SUBPROCESS]    Extracting a_5182_1808#
+[2026-11-03 09:52:12,718] [SUBPROCESS]    Extracting a_134_1254#
+[2026-11-03 09:52:12,718] [SUBPROCESS]    Extracting a_150_194#
+[2026-11-03 09:52:12,719] [SUBPROCESS]    Extracting a_3042_1254#
+[2026-11-03 09:52:12,719] [SUBPROCESS]    Extracting a_156_n2566#
+[2026-11-03 09:52:12,719] [SUBPROCESS]    Extracting a_3058_194#
+[2026-11-03 09:52:12,720] [SUBPROCESS]    Extracting a_n562_n2146#
+[2026-11-03 09:52:12,720] [SUBPROCESS]    Extracting a_2346_n2146#
+[2026-11-03 09:52:12,720] [SUBPROCESS]    Extracting GND
+[2026-11-03 09:52:12,727] [SUBPROCESS]    Missing substrate connection of device at (-6328 -336) on net GND
+[2026-11-03 09:52:12,728] [SUBPROCESS]    Missing terminal connection of device at (8096 -1870) on net GND
+[2026-11-03 09:52:12,729] [SUBPROCESS]    Missing terminal connection of device at (8096 -1870) on net GND
+[2026-11-03 09:52:12,729] [SUBPROCESS]    Missing substrate connection of device at (-6328 -336) on net GND
+[2026-11-03 09:52:12,730] [SUBPROCESS]    Extracting VDD
+[2026-11-03 09:52:12,731] [SUBPROCESS]    Error:  Terminal tile at (-6828 -836) not visited!
+[2026-11-03 09:52:12,731] [SUBPROCESS]    Missing drain connection of device at (-6328 -336) on net VDD
+[2026-11-03 09:52:12,731] [SUBPROCESS]    Extracting Tbias
+[2026-11-03 09:52:12,732] [SUBPROCESS]    Extracting Div
+[2026-11-03 09:52:12,732] [SUBPROCESS]    Warning:  Orphaned node "Div" arbitrarily attached to "Div.t0"
+[2026-11-03 09:52:12,733] [SUBPROCESS]    Extracting iDAC
+[2026-11-03 09:52:12,733] [SUBPROCESS]    Extracting BandGap
+[2026-11-03 09:52:12,733] [SUBPROCESS]    Extracting Output
+[2026-11-03 09:52:12,736] [SUBPROCESS]    Extracting vDAC
+[2026-11-03 09:52:12,736] [SUBPROCESS]    Extracting Input
+[2026-11-03 09:52:12,736] [SUBPROCESS]    Total Nets: 35
+[2026-11-03 09:52:12,736] [SUBPROCESS]    Nets extracted: 29 (0.828571)
+[2026-11-03 09:52:12,737] [SUBPROCESS]    Nets output: 22 (0.628571)
+[2026-11-03 09:52:12,739] [SUBPROCESS]    exttospice finished.
+[2026-11-03 09:52:12,744] [INFO]    MAGIC succeeded after 0.2357s
+[2026-11-03 09:52:12,761] [SUBPROCESS]    Report DB saved at: output/LNAMkV__TOP/magic_RC/TOP_MAGIC_report.rdb.gz
+[2026-11-03 09:52:12,761] [SUBPROCESS]    SPICE netlist saved at: output/LNAMkV__TOP/magic_RC/TOP.pex.spice
+[2026-11-03 09:52:12,762] [SUBPROCESS]    * NGSPICE file created from TOP.ext - technology: gf180mcuD
+
+.subckt TOP iDAC Tbias Div Input Output BandGap GND VDD vDAC
+X0 a_3064_n2566.t0 a_5048_1590.t0 VDD.t8 VDD.t7 pfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X1 GND.t1 a_150_194.t0 a_150_194.t0 GND.t0 nfet_03v3 ad=0.273p pd=1.51u as=0.48p ps=2.8u w=0.6u l=0.3u
+X2 a_2346_n2146# a_3064_n2566.t0 GND.t24 GND.t25 nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X3 Input Tbias a_3064_n2566.t0 GND.t14 nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X4 a_2264_4164.t1 a_3058_194.t0 GND.t55 GND.t54 nfet_03v3 ad=0.474p pd=2.78u as=0.273p ps=1.51u w=0.6u l=0.3u
+X5 a_2346_n2146# vDAC.t0 a_156_n2566.t0 GND.t37 nfet_03v3 ad=2.6p pd=10.52u as=6p ps=21.2u w=10u l=0.28u
+X6 GND.t30 a_3064_n2566.t0 a_2346_n2146# GND.t29 nfet_03v3 ad=13.2p pd=22.64u as=2.6p ps=10.52u w=10u l=0.28u
+X7 a_n562_n2146# vDAC.t1 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.t2 GND.t34 nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X8 a_156_n2566.t0 vDAC.t0 a_2346_n2146# GND.t40 nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X9 a_3064_n2566.t0 Tbias Input GND.t14 nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X10 a_4598_7392# iDAC GND.t12 GND.t11 nfet_06v0 ad=7.3p pd=21.46u as=13p ps=22.6u w=10u l=4u
+X11 a_n6608_7424.t0 BandGap a_4598_7392# GND.t4 nfet_06v0 ad=7.3p pd=21.46u as=2.6p ps=10.52u w=10u l=4u
+X12 a_5182_1808.t0 a_3064_n2566.t0 a_5266_2300.t0 VDD.t25 pfet_03v3 ad=0.486p pd=2.82u as=0.27p ps=1.5u w=0.6u l=0.3u
+X13 VDD.t1 a_n6608_7424.t0 Tbias VDD.t15 pfet_06v0 ad=5.2p pd=20.52u as=5.2p ps=20.52u w=20u l=10u
+X14 VDD.t28 a_268_1472.t0 a_3042_1254.t0 VDD.t27 pfet_03v3 ad=0.9p pd=4.2u as=0.48p ps=2.8u w=0.6u l=0.3u
+X15 GND.t24 a_3064_n2566.t0 a_2346_n2146# GND.t23 nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X16 VDD.t1 a_n644_4164.t2 a_n724_1852# VDD.t0 pfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X17 a_2346_n2146# a_3064_n2566.t0 GND.t27 GND.t28 nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X18 a_n724_1852# a_n644_4164.t2 VDD.t1 VDD.t0 pfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X19 a_2184_1852# a_2264_4164.t2 VDD.t1 VDD.t31 pfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X20 VDD.t8 a_5048_1590.t0 a_3064_n2566.t0 VDD.t7 pfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X21 a_134_1254.t0 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.t4 a_150_194.t0 VDD.t6 pfet_03v3 ad=0.267p pd=1.49u as=0.48p ps=2.8u w=0.6u l=0.3u
+X22 Tbias Div.t0 GND.t6 ppolyf_u_1k r_width=1u r_length=10u
+X23 VDD.t18 a_n6608_7424.t0 Tbias VDD.t17 pfet_06v0 ad=15.4p pd=41.54u as=5.2p ps=20.52u w=20u l=10u
+X24 a_3064_n2566.t0 a_5048_1590.t0 VDD.t8 VDD.t7 pfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X25 GND.t53 a_3058_194.t0 a_3058_194.t0 GND.t52 nfet_03v3 ad=0.273p pd=1.51u as=0.48p ps=2.8u w=0.6u l=0.3u
+X26 Input Tbias a_3064_n2566.t0 GND.t14 nfet_03v3 ad=2.6p pd=10.52u as=6p ps=21.2u w=10u l=0.28u
+X27 a_n644_4164.t0 Tbias a_134_1254.t0 VDD.t6 pfet_03v3 ad=0.486p pd=2.82u as=0.267p ps=1.49u w=0.6u l=0.3u
+X28 Tbias Div.t1 cap_mim_2f0_m4m5_noshield c_width=22u c_length=11u
+X29 a_n6608_7424.t0 a_5390_10102.t0 VDD.t20 VDD.t21 pfet_06v0 ad=7.7p pd=21.54u as=2.6p ps=10.52u w=10u l=4u
+X30 Input Tbias a_3064_n2566.t0 GND.t14 nfet_03v3 ad=5.5p pd=21.1u as=2.6p ps=10.52u w=10u l=0.28u
+X31 VDD GND.t5 Output GND npn_10p00x10p00
+X32 GND.t10 iDAC iDAC GND.t9 nfet_06v0 ad=2.6p pd=10.52u as=7.3p ps=21.46u w=10u l=4u
+X33 a_2184_1852# a_156_n2566.t0 GND.t13 ppolyf_s r_width=2u r_length=5u
+X34 GND.t48 a_156_n2566.t0 a_n562_n2146# GND.t47 nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X35 Div.t0 GND.t8 GND.t7 ppolyf_u_1k r_width=1u r_length=24u
+X36 a_n724_1852# OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.t0 GND.t31 ppolyf_s r_width=2u r_length=5u
+X37 Output GND.t43 GND.t42 ppolyf_u_1k r_width=4u r_length=4u
+X38 VDD.t20 a_5390_10102.t0 a_5390_10102.t0 VDD.t19 pfet_06v0 ad=2.6p pd=10.52u as=7.7p ps=21.54u w=10u l=4u
+X39 VDD.t1 a_2264_4164.t2 a_2184_1852# VDD.t30 pfet_03v3 ad=2.6p pd=10.52u as=5.3p ps=21.06u w=10u l=0.28u
+X40 Tbias a_n6608_7424.t0 VDD.t1 VDD.t16 pfet_06v0 ad=5.2p pd=20.52u as=5.2p ps=20.52u w=20u l=10u
+X41 GND Input GND.t20 ppolyf_s r_width=4u r_length=36u
+X42 VDD.t23 a_268_1472.t0 a_134_1254.t0 VDD.t6 pfet_03v3 ad=0.9p pd=4.2u as=0.48p ps=2.8u w=0.6u l=0.3u
+X43 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.t3 vDAC.t1 a_n562_n2146# GND.t35 nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X44 a_268_1472.t0 iDAC GND.t10 GND.t11 nfet_06v0 ad=7.3p pd=21.46u as=2.6p ps=10.52u w=10u l=4u
+X45 VDD.t1 a_n644_4164.t2 a_n724_1852# VDD.t0 pfet_03v3 ad=2.6p pd=10.52u as=5.3p ps=21.06u w=10u l=0.28u
+X46 VDD.t8 a_5048_1590.t0 a_3064_n2566.t0 VDD.t7 pfet_03v3 ad=2.6p pd=10.52u as=5.3p ps=21.06u w=10u l=0.28u
+X47 a_n562_n2146# vDAC.t1 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.t1 GND.t32 nfet_03v3 ad=2.6p pd=10.52u as=6p ps=21.2u w=10u l=0.28u
+X48 a_2346_n2146# vDAC.t0 a_156_n2566.t0 GND.t39 nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X49 VDD.t35 a_2264_4164.t2 a_2184_1852# VDD.t34 pfet_03v3 ad=12.9p pd=22.58u as=2.6p ps=10.52u w=10u l=0.28u
+X50 a_5266_2300.t0 a_268_1472.t0 VDD.t26 VDD.t25 pfet_03v3 ad=0.48p pd=2.8u as=0.9p ps=4.2u w=0.6u l=0.3u
+X51 a_3042_1254.t0 a_156_n2566.t0 a_3058_194.t0 VDD.t27 pfet_03v3 ad=0.267p pd=1.49u as=0.48p ps=2.8u w=0.6u l=0.3u
+X52 a_2264_4164.t0 Tbias a_3042_1254.t0 VDD.t27 pfet_03v3 ad=0.486p pd=2.82u as=0.267p ps=1.49u w=0.6u l=0.3u
+X53 a_n562_n2146# a_156_n2566.t0 GND.t45 GND.t46 nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X54 Tbias a_n6608_7424.t0 VDD.t14 VDD.t13 pfet_06v0 ad=5.2p pd=20.52u as=15.4p ps=41.54u w=20u l=10u
+X55 VDD.t8 a_5048_1590.t0 a_3064_n2566.t0 VDD.t7 pfet_03v3 ad=12.9p pd=22.58u as=2.6p ps=10.52u w=10u l=0.28u
+X56 a_n644_4164.t1 a_150_194.t0 GND.t3 GND.t2 nfet_03v3 ad=0.474p pd=2.78u as=0.273p ps=1.51u w=0.6u l=0.3u
+X57 GND.t51 a_156_n2566.t0 a_n562_n2146# GND.t50 nfet_03v3 ad=13.2p pd=22.64u as=2.6p ps=10.52u w=10u l=0.28u
+X58 a_3064_n2566.t0 Tbias Input GND.t14 nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X59 a_5182_1808.t0 a_5182_1808.t0 GND.t19 GND.t18 nfet_03v3 ad=0.486p pd=2.82u as=0.273p ps=1.51u w=0.6u l=0.3u
+X60 a_5266_2300.t0 Tbias a_5048_1590.t0 VDD.t29 pfet_03v3 ad=0.27p pd=1.5u as=0.474p ps=2.78u w=0.6u l=0.3u
+X61 GND.t27 a_3064_n2566.t0 a_2346_n2146# GND.t26 nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X62 a_n562_n2146# vDAC.t1 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.t3 GND.t36 nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X63 VDD.t1 a_n644_4164.t2 a_n724_1852# VDD.t0 pfet_03v3 ad=12.9p pd=22.58u as=2.6p ps=10.52u w=10u l=0.28u
+X64 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.t2 vDAC.t1 a_n562_n2146# GND.t33 nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X65 a_156_n2566.t0 vDAC.t0 a_2346_n2146# GND.t38 nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X66 a_2346_n2146# vDAC.t0 a_156_n2566.t0 GND.t41 nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X67 a_268_1472.t0 a_268_1472.t0 VDD.t24 VDD.t24 pfet_03v3 ad=0.39p pd=2.5u as=0.828p ps=3.96u w=0.6u l=0.3u
+X68 GND.t45 a_156_n2566.t0 a_n562_n2146# GND.t44 nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X69 a_4598_7392# Div.t1 a_5390_10102.t0 GND.t15 nfet_06v0 ad=2.6p pd=10.52u as=7.3p ps=21.46u w=10u l=4u
+X70 a_n724_1852# a_n644_4164.t2 VDD.t1 VDD.t0 pfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X71 a_2184_1852# a_2264_4164.t2 VDD.t1 VDD.t33 pfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X72 GND.t17 a_5182_1808.t0 a_5048_1590.t0 GND.t16 nfet_03v3 ad=0.273p pd=1.51u as=0.468p ps=2.76u w=0.6u l=0.3u
+X73 a_n562_n2146# a_156_n2566.t0 GND.t48 GND.t49 nfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+X74 VDD.t1 a_2264_4164.t2 a_2184_1852# VDD.t32 pfet_03v3 ad=2.6p pd=10.52u as=2.6p ps=10.52u w=10u l=0.28u
+R0 vDAC.t1 vDAC.t0 4.08939
+R1 vDAC vDAC.t1 8.04976
+R2 Div.t1 Div.t0 4.43624
+R3 Div Div.t0 0.0005
+R4 VDD.n26 VDD.n25 569.928
+R5 VDD.n14 VDD.t7 562.947
+R6 VDD.t30 VDD.n19 555.644
+R7 VDD.t15 VDD.t13 416.139
+R8 VDD.t16 VDD.t17 416.139
+R9 VDD.n25 VDD.t27 304.104
+R10 VDD.n19 VDD.t6 304.104
+R11 VDD.t17 VDD.n5 285.728
+R12 VDD.t19 VDD.t24 278.125
+R13 VDD.t21 VDD.n6 277.664
+R14 VDD.n19 VDD.t0 258.348
+R15 VDD.n25 VDD.n24 258.348
+R16 VDD.n3 VDD.t13 286.495
+R17 VDD.n4 VDD.n5 1.22612
+R18 VDD.t1 VDD.t15 208.071
+R19 VDD.t1 VDD.t16 208.071
+R20 VDD.n10 VDD.n6 172.635
+R21 VDD.n8 VDD.n6 172.635
+R22 VDD.n9 VDD.t21 157.292
+R23 VDD.n9 VDD.t19 156.597
+R24 VDD.n8 VDD.n2 0.230493
+R25 VDD.t24 VDD.n0 2.02164
+R26 VDD.n24 VDD.t34 87.4409
+R27 VDD.n25 VDD.n16 70.8511
+R28 VDD.n19 VDD.n17 70.8511
+R29 VDD.t31 VDD.t30 63.5935
+R30 VDD.t32 VDD.t31 63.5935
+R31 VDD.t33 VDD.t32 63.5935
+R32 VDD.t34 VDD.t33 63.5935
+R33 VDD.t29 VDD.n15 54.4648
+R34 VDD.n15 VDD.t25 52.6791
+R35 VDD.n27 VDD.n26 12.5005
+R36 VDD.n30 VDD.n29 11.2114
+R37 VDD.n29 VDD.n28 10.8005
+R38 VDD.t28 VDD.n16 9.90943
+R39 VDD.t23 VDD.n17 9.90943
+R40 VDD.n30 VDD.t26 9.90943
+R41 VDD.n14 VDD.n12 8.82301
+R42 VDD.n20 VDD.t28 8.4005
+R43 VDD.n18 VDD.t23 8.4005
+R44 VDD.t26 VDD.n11 8.4005
+R45 VDD.n28 VDD.n13 6.5105
+R46 VDD.n26 VDD.n11 6.3005
+R47 VDD.n31 VDD.n11 6.3005
+R48 VDD.n15 VDD.n13 6.3005
+R49 VDD.n28 VDD.n27 6.3005
+R50 VDD.n20 VDD.t27 6.3005
+R51 VDD.n21 VDD.n20 6.3005
+R52 VDD.n18 VDD.t6 6.3005
+R53 VDD.n1 VDD.n18 6.3005
+R54 VDD.t1 VDD.t18 1.02197
+R55 VDD.n21 VDD.n16 4.5005
+R56 VDD.n1 VDD.n17 4.5005
+R57 VDD.n31 VDD.n30 4.5005
+R58 VDD.n29 VDD.n12 4.33182
+R59 VDD.n4 VDD.t24 3.87676
+R60 VDD.t8 VDD.n31 3.85233
+R61 VDD.t1 VDD.n3 1.05139
+R62 VDD.t25 VDD.n14 2.67907
+R63 VDD.n13 VDD.n12 2.48918
+R64 VDD.n2 VDD.n7 2.47063
+R65 VDD.n7 VDD.t20 2.46572
+R66 VDD.t1 VDD.n4 2.15097
+R67 VDD.t1 VDD.t35 1.48734
+R68 VDD.n5 VDD.t18 1.3025
+R69 VDD.n3 VDD.t14 0.412564
+R70 VDD VDD.t1 1.05581
+R71 VDD.t24 VDD.n2 1.95247
+R72 VDD.n22 VDD.n21 0.904811
+R73 VDD.n27 VDD.t29 0.893357
+R74 VDD.n23 VDD.t35 0.4632
+R75 VDD.n24 VDD.n23 0.3155
+R76 VDD.n23 VDD.n22 0.3155
+R77 VDD.n10 VDD.n0 0.230303
+R78 VDD.n9 VDD.n8 0.233833
+R79 VDD.n7 VDD.n6 0.233833
+R80 VDD.n10 VDD.n9 0.233833
+R81 VDD.t7 VDD.t8 142.825
+R82 VDD.t20 VDD.n0 0.00549791
+R83 VDD.t1 VDD.n1 1.34813
+R84 VDD.t0 VDD.t1 1.30475
+R85 VDD.n22 VDD.t1 1.10637
+R86 VDD.t1 VDD.t8 1.05697
+R87 GND.n14 GND.n11 54788.8
+R88 GND.t7 GND.t6 16444.2
+R89 GND.n25 GND.t7 11438.3
+R90 GND.t5 GND.n26 9028.24
+R91 GND.n26 GND.t6 5529.22
+R92 GND.n24 GND.n3 4859.73
+R93 GND.n15 GND.n14 3721.96
+R94 GND.n25 GND.n24 3714.29
+R95 GND.n15 GND.t18 1542.51
+R96 GND.t37 GND.t51 1158.37
+R97 GND.n17 GND.t42 1085.23
+R98 GND.t14 GND.n20 968.51
+R99 GND.n13 GND.t4 964.26
+R100 GND.n18 GND.n5 777.014
+R101 GND.n20 GND.t30 717.221
+R102 GND.n21 GND.t14 620.297
+R103 GND.n11 GND.n4 132.23
+R104 GND.t4 GND.t15 527.659
+R105 GND.t15 GND.n4 492.067
+R106 GND.n15 GND.t16 453.68
+R107 GND.n20 GND.t20 434.957
+R108 GND.n1 GND.n2 1.55769
+R109 GND.n14 GND.n13 183.28
+R110 GND.n4 GND.t12 0.84917
+R111 GND.t42 GND.n3 0.806909
+R112 GND.t36 GND.t44 148.912
+R113 GND.t46 GND.t47 148.912
+R114 GND.t49 GND.t50 148.912
+R115 GND.t39 GND.t38 148.912
+R116 GND.t40 GND.t39 148.912
+R117 GND.t41 GND.t40 148.912
+R118 GND.t23 GND.t41 148.912
+R119 GND.t26 GND.t25 148.912
+R120 GND.t29 GND.t28 148.912
+R121 GND.t35 GND.t36 125.74
+R122 GND.t44 GND.t0 120.992
+R123 GND.t52 GND.t23 120.992
+R124 GND.n17 GND.t32 119.632
+R125 GND.n2 GND.t9 80.7205
+R126 GND.t33 GND.t34 113.936
+R127 GND.t34 GND.t35 113.936
+R128 GND.t2 GND.t49 100.516
+R129 GND.t28 GND.t54 100.516
+R130 GND.n21 GND.n15 96.1026
+R131 GND.t51 GND.t50 126.647
+R132 GND.t30 GND.t29 126.647
+R133 GND.n24 GND.n1 86.0387
+R134 GND.t38 GND.t13 85.6248
+R135 GND.t31 GND.t33 64.8011
+R136 GND.n11 GND.t11 52.3716
+R137 GND.n18 GND.t37 52.1196
+R138 GND.t32 GND.t31 49.135
+R139 GND.t47 GND.t2 48.3968
+R140 GND.t54 GND.t26 48.3968
+R141 GND.t0 GND.t46 27.9215
+R142 GND.t25 GND.t52 27.9215
+R143 GND.n26 GND.n0 19.7262
+R144 GND.n23 GND.n22 16.1459
+R145 GND.n0 GND.t8 11.3585
+R146 GND.t13 GND.n18 11.1689
+R147 GND.n23 GND.n21 10.6599
+R148 GND.n0 GND.n25 10.4005
+R149 GND.n5 GND.n23 7.89942
+R150 GND.t5 GND.n17 7.43771
+R151 GND.t30 GND.n19 6.49471
+R152 GND.t51 GND.n16 6.49471
+R153 GND.n19 GND.t55 4.8305
+R154 GND.n16 GND.t3 4.8305
+R155 GND.n22 GND.t17 4.8305
+R156 GND.n19 GND.t53 4.7255
+R157 GND.n16 GND.t1 4.7255
+R158 GND.n22 GND.t19 4.7255
+R159 GND.n8 GND.n9 2.96496
+R160 GND.t5 GND.t43 1.99962
+R161 GND.t14 GND.n5 1.93822
+R162 GND.n8 GND.n10 1.84825
+R163 GND.n13 GND.n5 1.48621
+R164 GND.n3 GND.t5 0.67362
+R165 GND.n8 GND.t5 2.72261
+R166 GND.n0 GND.t10 2.6555
+R167 GND.n2 GND.t12 0.639534
+R168 GND.n5 GND.t30 1.83069
+R169 GND.t51 GND.n5 1.82965
+R170 GND.n1 GND.n0 1.81545
+R171 GND.n8 GND.n7 1.68445
+R172 GND.n8 GND.n6 1.62109
+R173 GND.t51 GND.t45 1.61884
+R174 GND.t30 GND.t24 1.61884
+R175 GND.t51 GND.t48 1.54234
+R176 GND.t30 GND.t27 1.54234
+R177 GND.n5 GND.n12 1.37315
+R178 GND.n5 GND.t12 1.18243
+R179 GND.n5 GND.t5 1.11666
+R180 GND.t5 GND 1.02751
+R181 a_2264_4164.t1 a_2264_4164.t2 10.5024
+R182 a_2264_4164.t0 a_2264_4164.t1 10.3338
+R183 a_n644_4164.t1 a_n644_4164.t2 10.5024
+R184 a_n644_4164.t0 a_n644_4164.t1 10.3338
+R185 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n17 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n16 6351.09
+R186 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n2 GND 1.31795
+R187 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n0 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n7 1209.54
+R188 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n23 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n4 1085.23
+R189 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n0 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n18 872.721
+R190 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n0 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n5 1071.13
+R191 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n1 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n0 0.49678
+R192 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n21 GND 742.004
+R193 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n1 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n22 7648.77
+R194 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n22 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n21 291.959
+R195 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n2 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n6 321.197
+R196 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n6 GND 1.29149
+R197 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n23 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n22 166.631
+R198 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n11 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n4 119.632
+R199 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n14 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n13 113.936
+R200 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n15 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n14 113.936
+R201 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n5 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n10 90.6438
+R202 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n10 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n7 90.6438
+R203 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n17 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n15 75.4825
+R204 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n13 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n12 64.8011
+R205 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n18 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n17 50.2582
+R206 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n12 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n11 49.135
+R207 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n3 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.t4 41.7767
+R208 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n22 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n2 262.149
+R209 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n0 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n20 13.51
+R210 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n20 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n19 9.7005
+R211 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n8 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n7 7.86063
+R212 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n0 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n4 7.43771
+R213 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n19 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n9 7.23383
+R214 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n10 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n9 5.2005
+R215 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n19 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n5 5.2005
+R216 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n20 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n8 3.71445
+R217 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n3 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.t0 2.95101
+R218 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n9 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n8 2.62097
+R219 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n3 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.t1 1.84825
+R220 GND OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n3 2.72266
+R221 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n3 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.t3 1.68445
+R222 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n3 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.t2 1.63504
+R223 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n23 GND 1.4888
+R224 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n21 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n6 1.3005
+R225 OutputBuffer_0/npn_bjt_0/npn_10p00x10p00_0.I1_default_B.n1 GND 2.26861
+C0 Input GND 7.00176f
+C1 vDAC GND 10.5305f
+C2 Output GND 12.3083f
+C3 BandGap GND 1.75743f
+C4 iDAC GND 4.72279f
+C5 Div GND 10.0008f
+C6 Tbias GND 44.1813f
+C7 VDD GND 0.32205p
+C8 a_2346_n2146# GND 5.2941f ; **FLOATING
+C9 a_n562_n2146# GND 5.2941f ; **FLOATING
+C10 a_2184_1852# GND 3.53688f ; **FLOATING
+C11 a_n724_1852# GND 3.53688f ; **FLOATING
+C12 a_4598_7392# GND 3.10296f ; **FLOATING
+.ends
+

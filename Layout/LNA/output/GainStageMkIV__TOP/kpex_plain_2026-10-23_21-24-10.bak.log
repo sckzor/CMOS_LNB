@@ -1,0 +1,267 @@
+GDS input file passed, running in LVS mode
+No explicit top cell specified, using top cell 'TOP'
+LVS input schematic not specified (argument --schematic), using dummy schematic
+Calling MAGIC
+magic -dnull -noconsole -rcfile /foss/pdks/ihp-sg13g2/libs.tech/magic/ihp-sg13g2.magicrc output/GainStageMkIV__TOP/magic_CC/TOP_MAGIC_CC_Script.tcl, output file: output/GainStageMkIV__TOP/magic_CC/TOP_MAGIC_CC_Output.txt
+
+Magic 8.3 revision 681 - Compiled on Tue Aug 25 11:50:23 AM CEST 2026.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+Using NULL graphics device.
+Processing system .magicrc file
+Switching to WIRING tool.
+Switching to NETLIST tool.
+Switching to PICK tool.
+Switching to BOX tool.
+Sourcing design .magicrc for technology ihp-sg13g2 ...
+2 Magic internal units = 1 Lambda
+Input style sg13g2(): scaleFactor=2, multiplier=2
+The following types are not handled by extraction and will be treated as non-electrical types:
+    pblock sealcont difffill nemitter hvnemitter hvisodiffres sealvia1 sealvia2 sealvia3 sealvia4 sealvia5 sealvia6 pillar solder seal glass thruvia inductor 
+Scaled tech values by 2 / 1 to match internal grid scaling
+Loading ihp-sg13g2 Device Generator Menu ...
+Loading "output/GainStageMkIV__TOP/magic_CC/TOP_MAGIC_CC_Script.tcl" from command line.
+Warning: Calma reading is not undoable!  I hope that's OK.
+Library written using GDS-II Release 6.0
+Library name: LIB
+Reading "$$$CONTEXT_INFO$$$".
+Error while reading cell "$$$CONTEXT_INFO$$$" (byte position 128): Unknown layer/datatype in boundary, layer=0 type=0
+Reading "npn_10p00x10p00_0".
+Error while reading cell "npn_10p00x10p00_0" (byte position 1538): Unknown layer/datatype in boundary, layer=34 type=0
+Error while reading cell "npn_10p00x10p00_0" (byte position 3482): Unknown layer/datatype in boundary, layer=22 type=0
+Error while reading cell "npn_10p00x10p00_0" (byte position 39034): Unknown layer/datatype in boundary, layer=204 type=0
+Error while reading cell "npn_10p00x10p00_0" (byte position 39098): Unknown layer/datatype in boundary, layer=12 type=0
+Error while reading cell "npn_10p00x10p00_0" (byte position 39162): Unknown layer/datatype in boundary, layer=118 type=5
+Error while reading cell "npn_10p00x10p00_0" (byte position 39226): Unknown layer/datatype in boundary, layer=127 type=5
+Reading "npn_10p00x10p00".
+Reading "ppolyf_u_high_Rs_resistor".
+Error while reading cell "ppolyf_u_high_Rs_resistor" (byte position 40310): Unknown layer/datatype in boundary, layer=34 type=0
+Error while reading cell "ppolyf_u_high_Rs_resistor" (byte position 40502): Unknown layer/datatype in boundary, layer=22 type=0
+Error while reading cell "ppolyf_u_high_Rs_resistor" (byte position 42166): Unknown layer/datatype in boundary, layer=110 type=5
+Error while reading cell "ppolyf_u_high_Rs_resistor" (byte position 42230): Unknown layer/datatype in boundary, layer=62 type=0
+Reading "npn_bjt".
+Reading "ppolyf_s_resistor".
+Error while reading cell "ppolyf_s_resistor" (byte position 42496): Unknown layer/datatype in boundary, layer=34 type=0
+Error while reading cell "ppolyf_s_resistor" (byte position 42688): Unknown layer/datatype in boundary, layer=22 type=0
+Error while reading cell "ppolyf_s_resistor" (byte position 44224): Unknown layer/datatype in boundary, layer=110 type=5
+Reading "OutputBuffer".
+Error while reading cell "OutputBuffer" (byte position 44566): Unknown layer/datatype in boundary, layer=34 type=0
+Error while reading cell "OutputBuffer" (byte position 46998): Unknown layer/datatype in boundary, layer=35 type=0
+Reading "InputBuffer".
+Error while reading cell "InputBuffer" (byte position 49434): Unknown layer/datatype in boundary, layer=34 type=0
+Error while reading cell "InputBuffer" (byte position 54746): Unknown layer/datatype in boundary, layer=22 type=0
+Error while reading cell "InputBuffer" (byte position 77402): Unknown layer/datatype in boundary, layer=21 type=0
+Error while reading cell "InputBuffer" (byte position 77530): Unknown layer/datatype in boundary, layer=35 type=0
+Reading "GainStage".
+Error while reading cell "GainStage" (byte position 81608): Unknown layer/datatype in boundary, layer=34 type=0
+Error while reading cell "GainStage" (byte position 88264): Unknown layer/datatype in boundary, layer=22 type=0
+Error while reading cell "GainStage" (byte position 115528): Unknown layer/datatype in boundary, layer=110 type=5
+Error while reading cell "GainStage" (byte position 119752): Unknown layer/datatype in boundary, layer=21 type=0
+Error while reading cell "GainStage" (byte position 119880): Unknown layer/datatype in boundary, layer=35 type=0
+Reading "TOP".
+Error while reading cell "TOP" (byte position 124380): Unknown layer/datatype in boundary, layer=34 type=0
+Extracting TOP into /foss/designs/LNA/MkIII/Layout/output/GainStageMkIV__TOP/magic_CC/TOP.ext:
+Processing TOP
+exttospice finished.
+MAGIC succeeded after 0.1769s
+Report DB saved at: output/GainStageMkIV__TOP/magic_CC/TOP_MAGIC_report.rdb.gz
+SPICE netlist saved at: output/GainStageMkIV__TOP/magic_CC/TOP.pex.spice
+* NGSPICE file created from TOP.ext - technology: ihp-sg13g2
+
+.subckt TOP
+C0 m3_6788_4164# m3_6628_4164# 0.55138f
+C1 m3_6468_4164# m3_6628_4164# 0.55138f
+C2 m3_6468_4164# m3_6308_4164# 0.55138f
+C3 m3_6628_n1240# m3_6788_n1240# 0.55138f
+C4 m3_3224_n2566# m3_3064_n2566# 0.51213f
+C5 w_5994_n690# m3_8096_n1928# 0.01295f
+C6 m3_2584_4164# m3_2424_4164# 0.51213f
+C7 m3_6308_n1240# m3_6148_n1240# 0.55138f
+C8 dw_5106_2776# m3_5424_3048# 0.01717f
+C9 dw_192_1789# m3_n550_264# 0.01886f
+C10 dw_790_670# m3_522_942# 0.01608f
+C11 m3_2744_n2566# m3_2904_n2566# 0.51213f
+C12 w_90_124# m3_526_412# 0.01608f
+C13 m3_6148_4164# m3_5422_2518# 0.01085f
+C14 dw_3100_1789# m3_2904_4164# 0.09559f
+C15 dw_192_1789# m3_n4_4164# 0.09559f
+C16 m3_6308_n1240# m3_6468_n1240# 0.55138f
+C17 dw_5994_n690# m3_8096_n1928# 0.01658f
+C18 w_n798_n2216# m3_316_n2566# 0.09285f
+C19 w_n798_n2216# m3_156_n2566# 0.09285f
+C20 w_5994_n690# m3_6308_n1240# 0.09179f
+C21 m3_3704_n2566# dw_2110_n2216# 0.03753f
+C22 w_n2370_n1648# m3_n2391_n1505# 0.04702f
+C23 m3_796_n2566# m3_636_n2566# 0.51213f
+C24 m3_476_n2566# m3_636_n2566# 0.51213f
+C25 dw_3100_1789# m3_2264_4164# 0.1095f
+C26 m3_6628_n1240# m3_6468_n1240# 0.55138f
+C27 m3_2424_n2566# m3_2584_n2566# 0.51213f
+C28 m3_2584_4164# m3_2744_4164# 0.51213f
+C29 w_n798_n2216# m3_n550_264# 0.0203f
+C30 w_2998_124# m3_3434_412# 0.01608f
+C31 m3_6308_4164# m3_6148_4164# 0.55138f
+C32 w_2110_n2216# m3_2904_n2566# 0.09285f
+C33 dw_3698_670# m3_3430_942# 0.01608f
+C34 w_5994_n690# m3_6628_n1240# 0.09179f
+C35 w_n2370_n684# m3_n2391_n1505# 0.04702f
+C36 dw_6984_1589# m3_6788_4164# 0.09453f
+C37 dw_6984_1589# m3_6468_4164# 0.09201f
+C38 w_90_124# m3_284_412# 0.01722f
+C39 m3_5424_1988# m3_5182_1988# 0.04517f
+C40 m3_n644_4164# m3_n484_4164# 0.51213f
+C41 dw_4866_2246# m3_5182_2518# 0.01608f
+C42 w_n798_n2216# m3_n164_n2566# 0.09285f
+C43 w_n798_n2216# m3_796_n2566# 0.10333f
+C44 m3_284_942# m3_n550_264# 0.01595f
+C45 m3_n4_4164# m3_n164_4164# 0.51213f
+C46 w_n798_n2216# m3_476_n2566# 0.09285f
+C47 m3_2264_4164# m3_2424_4164# 0.51213f
+C48 m3_5424_3048# m3_6148_4164# 0.01086f
+C49 w_2110_n2216# m3_2264_n2566# 0.11169f
+C50 w_n6128_n1186# m3_n2391_n1505# 0.01036f
+C51 m3_156_n2566# m3_n4_n2566# 0.51213f
+C52 w_2110_n2216# m3_2358_264# 0.0203f
+C53 w_5994_n690# m3_6788_n1240# 0.10227f
+C54 dw_3698_670# m3_3192_942# 0.01711f
+C55 dw_790_670# m3_284_942# 0.01711f
+C56 m3_284_942# m3_522_942# 0.04638f
+C57 w_2298_204# m3_2358_264# 0.15613f
+C58 m3_2904_4164# m3_2744_4164# 0.51213f
+C59 w_n798_n2216# m3_n2391_n1505# 0.04451f
+C60 w_n798_n2216# m3_636_n2566# 0.09285f
+C61 m3_3224_n2566# m3_3384_n2566# 0.51213f
+C62 w_2110_n2216# m3_3224_n2566# 0.09285f
+C63 dw_192_1789# m3_n164_4164# 0.09308f
+C64 m3_796_n2566# m3_2264_n2566# 0.03336f
+C65 m3_2744_n2566# m3_2584_n2566# 0.51213f
+C66 dw_192_1789# m3_n324_4164# 0.09308f
+C67 m3_n164_n2566# m3_n4_n2566# 0.51213f
+C68 m3_n644_n2566# m3_n2391_n1505# 0.02445f
+C69 w_2110_n2216# m3_3064_n2566# 0.09285f
+C70 dw_6984_1589# m3_6148_4164# 0.10844f
+C71 w_5994_n690# m3_6148_n1240# 0.11062f
+C72 dw_5994_n690# m3_6788_n1240# 0.03753f
+C73 w_n826_366# m3_n550_264# 0.01405f
+C74 w_2110_n2216# m3_2424_n2566# 0.09285f
+C75 w_6984_1589# m3_8096_n1928# 0.01786f
+C76 dw_n798_n2216# m3_796_n2566# 0.03753f
+C77 m3_n164_n2566# m3_n324_n2566# 0.51213f
+C78 w_n798_n2216# m3_n644_n2566# 0.11169f
+C79 w_5026_1700# m3_5424_1988# 0.01722f
+C80 w_5994_n690# m3_6468_n1240# 0.09179f
+C81 w_2110_n2216# m3_2584_n2566# 0.09285f
+C82 w_n798_n2216# m3_n484_n2566# 0.09285f
+C83 m3_n324_4164# m3_n164_4164# 0.51213f
+C84 m3_n644_n2566# m3_n484_n2566# 0.51213f
+C85 m3_8096_n1928# w_8036_n1988# 1.87133f
+C86 w_n798_n2216# m3_2264_n2566# 0.01042f
+C87 w_8064_5528# m3_8096_n1928# 0.01224f
+C88 w_n7096_n2154# m3_n2391_n1505# 0.02769f
+C89 w_n798_n2216# m3_n4_n2566# 0.09285f
+C90 m3_2358_264# m3_3192_412# 0.01094f
+C91 w_n2338_n1840# m3_n2391_n1505# 0.01425f
+C92 m3_3430_942# m3_3192_942# 0.04638f
+C93 w_5026_1700# m3_5182_1988# 0.01608f
+C94 m3_3544_n2566# m3_3384_n2566# 0.51213f
+C95 w_2110_n2216# m3_2744_n2566# 0.09285f
+C96 dw_3100_1789# m3_2358_264# 0.01886f
+C97 dw_192_1789# m3_n484_4164# 0.09308f
+C98 w_2110_n2216# m3_3544_n2566# 0.09285f
+C99 dw_192_1789# m3_n644_4164# 0.1095f
+C100 dw_3100_1789# m3_2424_4164# 0.09308f
+C101 m3_8096_n1928# m3_6788_n1240# 0.04152f
+C102 dw_6984_1589# m3_8096_n1928# 0.01006f
+C103 w_n798_n2216# m3_n324_n2566# 0.09285f
+C104 m3_3064_n2566# m3_2904_n2566# 0.51213f
+C105 m3_316_n2566# m3_156_n2566# 0.51213f
+C106 m3_284_412# m3_526_412# 0.04517f
+C107 m3_5182_2518# m3_5422_2518# 0.04576f
+C108 dw_534_1200# m3_268_1472# 0.01717f
+C109 m3_3544_n2566# m3_3704_n2566# 0.51213f
+C110 w_2998_124# m3_3192_412# 0.01722f
+C111 m3_2358_264# m3_3192_942# 0.01595f
+C112 w_2082_366# m3_2358_264# 0.01405f
+C113 w_2110_n2216# m3_3384_n2566# 0.09285f
+C114 m3_8096_n1928# m3_6788_4164# 0.04152f
+C115 dw_4866_2246# m3_5422_2518# 0.01717f
+C116 m3_n4_4164# w_192_1789# 0.04209f
+C117 w_n610_204# m3_n550_264# 0.15613f
+C118 m3_n324_n2566# m3_n484_n2566# 0.51213f
+C119 dw_3100_1789# m3_2584_4164# 0.09308f
+C120 dw_6984_1589# m3_6628_4164# 0.09201f
+C121 m3_3176_1472# dw_3442_1200# 0.01717f
+C122 m3_5424_1988# m3_6148_4164# 0.01086f
+C123 dw_n798_n2216# m3_2264_n2566# 0.01337f
+C124 m3_n324_4164# m3_n484_4164# 0.51213f
+C125 dw_3100_1789# m3_2744_4164# 0.09308f
+C126 m3_3434_412# m3_3192_412# 0.04517f
+C127 dw_6984_1589# m3_6308_4164# 0.09201f
+C128 m3_284_412# m3_n550_264# 0.01094f
+C129 w_3100_1789# m3_2904_4164# 0.04209f
+C130 m3_476_n2566# m3_316_n2566# 0.51213f
+C131 m3_2424_n2566# m3_2264_n2566# 0.51213f
+C132 w_2110_n2216# m3_796_n2566# 0.0131f
+C133 w_6984_1589# m3_6788_4164# 0.04209f
+C134 w_2110_n2216# m3_3704_n2566# 0.10333f
+C135 m3_8096_n1928# sub 2.03854f
+C136 m3_6788_n1240# sub 0.2196f
+C137 m3_6628_n1240# sub 0.046f
+C138 m3_6468_n1240# sub 0.046f
+C139 m3_6308_n1240# sub 0.046f
+C140 m3_6148_n1240# sub 0.41505f
+C141 m3_3704_n2566# sub 0.35346f
+C142 m3_3544_n2566# sub 0.04195f
+C143 m3_3384_n2566# sub 0.03891f
+C144 m3_3224_n2566# sub 0.03765f
+C145 m3_3064_n2566# sub 0.04172f
+C146 m3_2904_n2566# sub 0.04448f
+C147 m3_2744_n2566# sub 0.04097f
+C148 m3_2584_n2566# sub 0.03759f
+C149 m3_2424_n2566# sub 0.03759f
+C150 m3_2264_n2566# sub 0.22504f
+C151 m3_796_n2566# sub 0.20806f
+C152 m3_636_n2566# sub 0.04195f
+C153 m3_476_n2566# sub 0.03891f
+C154 m3_316_n2566# sub 0.03765f
+C155 m3_156_n2566# sub 0.04172f
+C156 m3_n4_n2566# sub 0.04448f
+C157 m3_n164_n2566# sub 0.04097f
+C158 m3_n324_n2566# sub 0.03759f
+C159 m3_n484_n2566# sub 0.03759f
+C160 m3_n644_n2566# sub 0.29582f
+C161 m3_n2391_n1505# sub 1.12266f
+C162 m3_3434_412# sub 0.06469f
+C163 m3_3192_412# sub 0.03492f
+C164 m3_3430_942# sub 0.07223f
+C165 m3_3192_942# sub 0.02195f
+C166 m3_2358_264# sub 0.27269f
+C167 m3_526_412# sub 0.06412f
+C168 m3_284_412# sub 0.03492f
+C169 m3_522_942# sub 0.0709f
+C170 m3_284_942# sub 0.02195f
+C171 m3_n550_264# sub 0.27453f
+C172 m3_3176_1472# sub 0.09543f
+C173 m3_268_1472# sub 0.09543f
+C174 m3_5424_1988# sub 0.03734f
+C175 m3_5182_1988# sub 0.07352f
+C176 m3_5422_2518# sub 0.02409f
+C177 m3_5182_2518# sub 0.07217f
+C178 m3_5424_3048# sub 0.08645f
+C179 m3_6788_4164# sub 0.22282f
+C180 m3_6628_4164# sub 0.04581f
+C181 m3_6468_4164# sub 0.04581f
+C182 m3_6308_4164# sub 0.04581f
+C183 m3_6148_4164# sub 0.30023f
+C184 m3_2904_4164# sub 0.35859f
+C185 m3_2744_4164# sub 0.04096f
+C186 m3_2584_4164# sub 0.0377f
+C187 m3_2424_4164# sub 0.0377f
+C188 m3_2264_4164# sub 0.38355f
+C189 m3_n4_4164# sub 0.35859f
+C190 m3_n164_4164# sub 0.04096f
+C191 m3_n324_4164# sub 0.0377f
+C192 m3_n484_4164# sub 0.0377f
+C193 m3_n644_4164# sub 0.38355f
+.ends
+

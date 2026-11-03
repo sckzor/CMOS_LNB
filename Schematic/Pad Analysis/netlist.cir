@@ -1,0 +1,168 @@
+* Qucs 26.1.1  /foss/designs/LNA/MkIII/Schematic/Pad Analysis/Pad_Layout_Testing_S_Parameters_MkII.sch
+.INCLUDE "/foss/tools/qucs-s/share/qucs-s/xspice_cmlib/include/ngspice_mathfunc.inc"
+.INCLUDE "/foss/pdks/ciel/gf180mcu/versions/026824c7969ce6f4fc9678e6ca04b0a06a596c4b/gf180mcuD/libs.tech/ngspice/design.ngspice"
+.LIB "/foss/pdks/ciel/gf180mcu/versions/026824c7969ce6f4fc9678e6ca04b0a06a596c4b/gf180mcuD/libs.tech/ngspice/sm141064.ngspice" bjt_typical
+.LIB "/foss/pdks/ciel/gf180mcu/versions/026824c7969ce6f4fc9678e6ca04b0a06a596c4b/gf180mcuD/libs.tech/ngspice/sm141064.ngspice" cap_mim
+.LIB "/foss/pdks/ciel/gf180mcu/versions/026824c7969ce6f4fc9678e6ca04b0a06a596c4b/gf180mcuD/libs.tech/ngspice/sm141064.ngspice" mimcap_typical
+.LIB "/foss/pdks/ciel/gf180mcu/versions/026824c7969ce6f4fc9678e6ca04b0a06a596c4b/gf180mcuD/libs.tech/ngspice/sm141064.ngspice" res_typical
+.LIB "/foss/pdks/ciel/gf180mcu/versions/026824c7969ce6f4fc9678e6ca04b0a06a596c4b/gf180mcuD/libs.tech/ngspice/sm141064.ngspice" FF
+.LIB "/foss/pdks/ciel/gf180mcu/versions/026824c7969ce6f4fc9678e6ca04b0a06a596c4b/gf180mcuD/libs.tech/ngspice/sm141064.ngspice" diode_typical
+.LIB "/foss/pdks/ciel/gf180mcu/versions/026824c7969ce6f4fc9678e6ca04b0a06a596c4b/gf180mcuD/libs.tech/ngspice/sm141064.ngspice" moscap_typical
+
+* NGSPICE file created from TOP.ext - technology: gf180mcuD
+
+.subckt TOP_pad DVSS VSS VDD DVDD Input
+X0 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+X1 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+X2 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+D0 DVSS Input diode_nd2ps_06v0 pj=0.106n area=0.15n
+X3 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+X4 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+X5 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+X6 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+X7 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+X8 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+X9 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+D1 DVSS Input diode_nd2ps_06v0 pj=0.106n area=0.15n
+D2 Input DVDD diode_pd2nw_06v0 pj=0.106n area=0.15n
+X10 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+X11 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+X12 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+X13 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+X14 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+X15 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+X16 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+D3 Input DVDD diode_pd2nw_06v0 pj=0.106n area=0.15n
+X17 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+X18 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+X19 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+D4 DVSS Input diode_nd2ps_06v0 pj=0.106n area=0.15n
+X20 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+X21 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+D5 Input DVDD diode_pd2nw_06v0 pj=0.106n area=0.15n
+X22 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+X23 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+D6 DVSS DVDD diode_nd2ps_06v0 pj=82p area=40p
+X24 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+X25 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+D7 DVSS DVDD diode_nd2ps_06v0 pj=82p area=40p
+X26 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+D8 DVSS Input diode_nd2ps_06v0 pj=0.106n area=0.15n
+X27 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+X28 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+D9 DVSS DVDD diode_nd2ps_06v0 pj=82p area=40p
+D10 Input DVDD diode_pd2nw_06v0 pj=0.106n area=0.15n
+X29 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+X30 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+D11 DVSS DVDD diode_nd2ps_06v0 pj=82p area=40p
+X31 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+X32 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+X33 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+X34 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+X35 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+C0 DVDD Input 0.52229p
+C1 DVSS VDD 40.4107f
+C2 DVDD DVSS 1.18867p
+C3 DVDD VDD 38.4152f
+C4 Input DVSS 0.38031p
+C5 Input VDD 21.911f
+C6 VDD VSS 20.3592f
+C7 Input VSS 0.16635p
+C8 DVDD VSS 0.4195p
+C9 DVSS VSS 0.33421p
+.ends
+
+
+* NGSPICE file created from TOP.ext - technology: gf180mcuD
+
+.subckt TOP_pad_mkII DVSS VSS VDD DVDD Input
+X0 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+X1 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+X2 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+X3 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+X4 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+X5 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+X6 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+X7 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+X8 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+X9 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+D0 Input DVDD diode_pd2nw_06v0 pj=0.106n area=0.15n
+X10 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+X11 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+X12 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+X13 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+X14 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+X15 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+X16 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+D1 Input DVDD diode_pd2nw_06v0 pj=0.106n area=0.15n
+X17 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+X18 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+X19 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+X20 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+X21 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+D2 Input DVDD diode_pd2nw_06v0 pj=0.106n area=0.15n
+X22 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+X23 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+D3 DVSS DVDD diode_nd2ps_06v0 pj=82p area=40p
+X24 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+X25 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+D4 DVSS DVDD diode_nd2ps_06v0 pj=82p area=40p
+X26 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+X27 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+X28 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+D5 DVSS DVDD diode_nd2ps_06v0 pj=82p area=40p
+D6 Input DVDD diode_pd2nw_06v0 pj=0.106n area=0.15n
+X29 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+X30 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+D7 DVSS DVDD diode_nd2ps_06v0 pj=82p area=40p
+X31 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+X32 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+X33 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+X34 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+X35 DVDD DVSS cap_nmos_06v0 c_width=15u c_length=15u
+C0 DVDD DVSS 1.15112p
+C1 DVDD VDD 38.4152f
+C2 Input DVSS 0.34303p
+C3 Input VDD 21.911f
+C4 DVDD Input 0.50306p
+C5 DVSS VDD 40.4107f
+C6 VDD VSS 20.3592f
+C7 Input VSS 0.16963p
+C8 DVDD VSS 0.35203p
+C9 DVSS VSS 0.32476p
+.ends
+
+.PARAM sw_stat_global = 0
+.PARAM sw_stat_mismatch = 0
+.PARAM fnoicor = 1
+
+
+
+
+
+
+C1 _net0 _net1  10P 
+VP2 _net1 0 dc 0 ac 0.632456 SIN(0 0.632456 1MEG) portnum 2 z0 50
+VP1 _net0 0 dc 0 ac 0.632456 SIN(0 0.632456 1MEG) portnum 1 z0 50
+
+
+X4 0 gnd 0 gnd _net0 TOP_pad 
+X5 0 gnd 0 gnd _net1 TOP_pad 
+C2 _net2 _net3  10P 
+VP3 _net3 0 dc 0 ac 0.632456 SIN(0 0.632456 1MEG) portnum 3 z0 50
+VP4 _net2 0 dc 0 ac 0.632456 SIN(0 0.632456 1MEG) portnum 4 z0 50
+X6 0 gnd 0 gnd _net2 TOP_pad_mkII 
+X7 0 gnd 0 gnd _net3 TOP_pad_mkII 
+
+.control
+
+SP LIN 200 1MEG 5G 1
+let s43_db = dB(s_4_3)
+let s21_db = dB(s_2_1)
+write spice4qucs.sp1.plot S_1_1 Y_1_1 Z_1_1 Cy_1_1 S_1_2 Y_1_2 Z_1_2 Cy_1_2 S_1_3 Y_1_3 Z_1_3 Cy_1_3 S_1_4 Y_1_4 Z_1_4 Cy_1_4 S_2_1 Y_2_1 Z_2_1 Cy_2_1 S_2_2 Y_2_2 Z_2_2 Cy_2_2 S_2_3 Y_2_3 Z_2_3 Cy_2_3 S_2_4 Y_2_4 Z_2_4 Cy_2_4 S_3_1 Y_3_1 Z_3_1 Cy_3_1 S_3_2 Y_3_2 Z_3_2 Cy_3_2 S_3_3 Y_3_3 Z_3_3 Cy_3_3 S_3_4 Y_3_4 Z_3_4 Cy_3_4 S_4_1 Y_4_1 Z_4_1 Cy_4_1 S_4_2 Y_4_2 Z_4_2 Cy_4_2 S_4_3 Y_4_3 Z_4_3 Cy_4_3 S_4_4 Y_4_4 Z_4_4 Cy_4_4 s43_db s21_db
+destroy all
+reset
+
+exit
+.endc
+.END
