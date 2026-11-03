@@ -74,6 +74,13 @@ x a_2264_4164# VDD a_2184_1852# VDD s=104000,2104 d=104000,2104 l=56 w=2000 x=27
 x a_5182_1808# a_5048_1590# GND GND s=18720,552 d=10920,302 l=60 w=120 x=5204 y=1590 nfet_03v3
 x GainStage1 GND a_n562_n2146# GND s=104000,2104 d=104000,2104 l=56 w=2000 x=662 y=-2145 nfet_03v3
 x a_2264_4164# a_2184_1852# VDD VDD s=104000,2104 d=104000,2104 l=56 w=2000 x=2610 y=1852 pfet_03v3
+C Tbias VDD 5.5
+C VDD a_268_1472# 4.5
+C VDD GainStage2 3.5
+C vDAC Tbias 3.1
+C VDD a_2184_1852# 3.1
+C a_n562_n2146# GainStage2 2.9
+C VDD a_n724_1852# 3.1
 C Output GainStage2 3.1
 C InputBuffer Input 2.9
 C Tbias a_268_1472# 7.3
@@ -85,13 +92,6 @@ C VDD a_5390_10102# 3.9
 C GainStage1 a_2346_n2146# 2.9
 C Tbias a_n6608_7424# 10.4
 C VDD a_n644_4164# 4.3
-C Tbias VDD 5.5
-C VDD a_268_1472# 4.5
-C VDD GainStage2 3.5
-C vDAC Tbias 3.1
-C VDD a_2184_1852# 3.1
-C a_n562_n2146# GainStage2 2.9
-C VDD a_n724_1852# 3.1
 C Input0 4.3
 R Input 486
 C vDAC0 5.7

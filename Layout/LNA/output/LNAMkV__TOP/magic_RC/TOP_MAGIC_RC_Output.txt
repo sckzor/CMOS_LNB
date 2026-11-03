@@ -63,9 +63,9 @@ Extracting a_n562_n2146#
 Extracting a_2346_n2146#
 Extracting GND
 Warning: psubdiffcont at -4042 916 smaller than extract section allows
-Missing terminal connection of device at (8096 -1870) on net GND
-Missing terminal connection of device at (8096 -1870) on net GND
 Missing substrate connection of device at (-6328 -336) on net GND
+Missing terminal connection of device at (8096 -1870) on net GND
+Missing terminal connection of device at (8096 -1870) on net GND
 Extracting VDD
 Error:  Terminal tile at (-6828 -836) not visited!
 Missing drain connection of device at (-6328 -336) on net VDD
