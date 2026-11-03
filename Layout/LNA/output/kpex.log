@@ -1,7 +1,0 @@
-[2026-10-28 06:02:26,436] [ERROR]    No PEX engines activated
-[2026-10-28 06:02:26,437] [SUBPROCESS]    
-
-Please activate one or more engines using the arguments:
-[2026-10-28 06:02:29,781] [ERROR]    Running PEX engine MAGIC requires --gds (--lvsdb not possible)
-[2026-10-28 06:03:19,022] [INFO]    GDS input file passed, running in LVS mode
-[2026-10-28 06:03:19,023] [ERROR]    Can't read GDS file (LVS input) at path custom_pad.klay.g
