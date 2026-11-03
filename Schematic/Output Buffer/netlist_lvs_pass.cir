@@ -1,0 +1,15 @@
+* Qucs 26.1.1  /foss/designs/LNA/MkIII/Schematic/Output Buffer/OutputBufferMkVI_LVS_SS.sch
+.INCLUDE "/foss/tools/qucs-s/share/qucs-s/xspice_cmlib/include/ngspice_mathfunc.inc"
+.INCLUDE "/foss/pdks/ciel/gf180mcu/versions/026824c7969ce6f4fc9678e6ca04b0a06a596c4b/gf180mcuD/libs.tech/ngspice/design.ngspice"
+.LIB "/foss/pdks/ciel/gf180mcu/versions/026824c7969ce6f4fc9678e6ca04b0a06a596c4b/gf180mcuD/libs.tech/ngspice/sm141064.ngspice" bjt_typical
+.LIB "/foss/pdks/ciel/gf180mcu/versions/026824c7969ce6f4fc9678e6ca04b0a06a596c4b/gf180mcuD/libs.tech/ngspice/sm141064.ngspice" cap_mim
+.LIB "/foss/pdks/ciel/gf180mcu/versions/026824c7969ce6f4fc9678e6ca04b0a06a596c4b/gf180mcuD/libs.tech/ngspice/sm141064.ngspice" mimcap_typical
+.LIB "/foss/pdks/ciel/gf180mcu/versions/026824c7969ce6f4fc9678e6ca04b0a06a596c4b/gf180mcuD/libs.tech/ngspice/sm141064.ngspice" res_typical
+.LIB "/foss/pdks/ciel/gf180mcu/versions/026824c7969ce6f4fc9678e6ca04b0a06a596c4b/gf180mcuD/libs.tech/ngspice/sm141064.ngspice" FS
+.SUBCKT OutputBuffer VDD Output Input VSS 
+R3 VSS  Output  VSS ppolyf_u_1k W=4u L=4u
+XQ1 VDD  Input  Output  VSS NPN_10P00X10P00 m=1
+.ENDS
+
+
+
