@@ -306,7 +306,7 @@ The average and peak DC power consumption of the LNA was characterized when satu
 ## Supply Sweep Test Bench
 
 *Most Up-To-Date Test Bench: Schematic/LNA/LNA_Testing_Power_MkI.sch*
-The LNA voltage supply was sweeped between 2 and 4 volts.  As expected, the gain was positively corellated with operating voltage.  The thin oxide on the transistors will break down above 3.3V, but it is good to see the stability margins on the LNA at slightly higher voltage.  The amplifier remained stable across the entire voltage sweep at all corners, which was good.
+The LNA voltage supply was sweeped between 2 and 4 volts.  As expected, the gain was positively correlated with operating voltage.  The thin oxide on the transistors will break down above 3.3V, but it is good to see the stability margins on the LNA at slightly higher voltage.  The amplifier remained stable across the entire voltage sweep at all corners, which was good.
 
 
 ### Typical 
