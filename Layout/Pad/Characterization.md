@@ -3,7 +3,7 @@
 ![Nominal Pad](/Images/NominalPad.png)
 
 ## Low Loss Pad
-This pad has half the number of ESD protection diodes
+This pad has half the amount of ESD protection
 
 ![Low Loss Pad](/Images/Low_Loss_Pad.png)
 
