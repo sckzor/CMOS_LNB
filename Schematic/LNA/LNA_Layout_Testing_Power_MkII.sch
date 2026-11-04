@@ -1,6 +1,6 @@
 <Qucs Schematic 26.1.1>
 <Properties>
-  <View=-1073,-446,2665,431,1.00452,541,0>
+  <View=-1141,-502,2120,1307,0.567027,0,0>
   <Grid=10,10,1>
   <DataSet=LNA_Layout_Testing_Power_MkII.dat>
   <DataDisplay=LNA_Layout_Testing_Power_MkII.dpl>
@@ -23,7 +23,6 @@
   <SpiceLib SpiceLib4 1 -710 49 -14 16 0 0 "/foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice" 1 "res_typical" 1>
   <SpicePar SpicePar1 1 -506 153 -29 16 0 0 "sw_stat_global=0" 1 "sw_stat_mismatch=0" 1 "fnoicor=1" 1>
   <.TR TR1 1 -726 143 0 50 0 0 "lin" 1 "0" 1 "0.02 us" 1 "2000" 0 "Trapezoidal" 0 "2" 0 "1 ns" 0 "1e-16" 0 "150" 0 "0.001" 0 "1 pA" 0 "1 uV" 0 "26.85" 0 "1e-3" 0 "1e-6" 0 "1" 0 "CroutLU" 0 "no" 0 "yes" 0 "0" 0>
-  <SpiceLib SpiceLib5 1 -710 -311 -14 16 0 0 "/foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice" 1 "FS" 1>
   <GND * 1 260 -280 0 0 0 3>
   <C C1 1 410 -280 -26 17 0 0 "10 pF" 1 "" 0 "neutral" 0>
   <GND * 1 930 -340 0 0 0 1>
@@ -42,6 +41,8 @@
   <Idc I1 1 170 -290 -82 -26 1 1 "20 uA" 1>
   <Pac P1 1 290 -280 -26 18 0 0 "1" 1 "50 Ohm" 1 "-60 dBm" 0 "1.7 GHz" 0 "26.85" 0 "true" 0 "false" 0>
   <SPICE X1 1 650 -250 -26 -209 0 0 "/foss/designs/LNA/MkIII/Layout/LNA/output/LNAMkV__TOP/magic_RC/TOP.pex.spice" 1 "_netBandGap,_netvDAC,_netiDAC,_netOutput,_netInput,_netGND,_netVDD,_netTbias,_netDiv,_netGainStage1,_netGainStage2,_netInputBuffer" 0 "yes" 0 "none" 0 "" 0>
+  <NutmegEq NutmegEq1 1 -670 400 -31 16 0 0 "ALL" 1 "pin=i(v2) *  -3.3" 1>
+  <SpiceLib SpiceLib5 1 -710 -311 -14 16 0 0 "/foss/pdks/gf180mcuD/libs.tech/ngspice/sm141064.ngspice" 1 "typical" 1>
 </Components>
 <Wires>
   <810 -340 870 -340 "output" 870 -370 31 "">
@@ -87,6 +88,9 @@
   <Rect -82 1229 702 449 3 #c0c0c0 1 00 1 -1 0.2 1 1 -1 0.2 1 1 -1 0.2 1 315 0 225 1 0 0 "" "" "">
 	<"ngspice/tran.v(input)" #0000ff 0 3 0 0 0>
 	<"ngspice/tran.v(output)" #ff0000 0 3 0 0 0>
+  </Rect>
+  <Rect 758 1219 702 449 3 #c0c0c0 1 00 1 -1 0.2 1 1 -1 0.2 1 1 -1 0.2 1 315 0 225 1 0 0 "" "" "">
+	<"ngspice/tran.pin" #ff0000 0 3 0 0 0>
   </Rect>
 </Diagrams>
 <Paintings>
