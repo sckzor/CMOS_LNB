@@ -43,6 +43,26 @@ The "CalculateOIP3.py" file was used to calculate the amplifier OIP3 from the ex
 |---------------------|---------------------|
 |![Linearity](/Images/LNA_Layout_Linearity.png)|![Linearity](/Images/LNA_Layout_Linearity_HP.png)|
 
+*I think there is currently an error in this simulation.  Take the data with a grain of salt.*
+
+#### Low Power (-30 dBm)
+|Parameter|Value|
+|---------|-----|
+|P<sub>low</sub>| -19.1 dBm |
+|P<sub>high</sub>| -19.8 dBm |
+|IM3<sub>low</sub>| -40.8 dBm |
+|IM3<sub>high</sub>| -40.8 dBm |
+|OIP3| -8.8 dBm |
+
+#### High Power (-20 dBm)
+|Parameter|Value|
+|---------|-----|
+|P<sub>low</sub>| -11.7 dBm |
+|P<sub>high</sub>| -11.0 dBm |
+|IM3<sub>low</sub>| -24.9 dBm |
+|IM3<sub>high</sub>| -24.7 dBm |
+|OIP3| -4.6 dBm |
+
 ## DC Power Consumption Test Bench
 
 *Most Up-To-Date Test Bench: Schematic/LNA/LNA_Layout_Testing_Power_MkI.sch*
