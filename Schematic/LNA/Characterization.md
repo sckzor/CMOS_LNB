@@ -10,7 +10,7 @@
 
 *Most Up-To-Date Test Bench: Schematic/LNA/LNA_Testing_S_Parameters_MkII.sch*
 
-This testing was performed using the QUCS-S S paramter simulation utility.  It shows the linear response of the amplifier at all corners.
+This testing was performed using the QUCS-S S parameter simulation utility.  It shows the linear response of the amplifier at all corners.
 
 ### Typical
 
