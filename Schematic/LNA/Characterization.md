@@ -135,6 +135,8 @@ Linearity of the amplifier was assessed using a standard two tone test character
 
 The "CalculateOIP3.py" file was used to calculate the amplifier OIP3 from the extracted linearity. 
 
+*I think there is currently an error in this simulation.  Take the data with a grain of salt.*
+
 ### Typical 
 | Low Power (-30 dBm) | High Power (-20dBm) |
 |---------------------|---------------------|
